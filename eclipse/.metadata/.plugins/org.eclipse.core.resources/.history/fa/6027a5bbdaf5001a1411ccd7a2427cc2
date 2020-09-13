@@ -27,7 +27,7 @@ public class Listener_RenderEntityEvent implements Listener
 		if(event.getEntity().isSneaking())
 			return;
 		
-		if(LabyAddon.getInstance().getLabyManager().getLabyClient().getServer() == Server.LAZERTAG)
+		if(LabyAddon.getInstance().getLabyManager().getLabyClient().getServer() != Server.LAZERTAG)
 			return;
 		
 		if(event.getEntity().getName().equals("DevJava") || event.getEntity().getName().equals("JavaVirus"))

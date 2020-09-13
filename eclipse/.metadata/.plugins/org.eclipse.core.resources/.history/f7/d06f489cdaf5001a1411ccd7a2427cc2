@@ -18,23 +18,22 @@ public class Listener_RenderEntityEvent implements Listener
 
 		if(!LabyAddon.getInstance().getLabyManager().getLabyClient().isConnected())
 			return;
+		
+		if(event.getEntity().getName().equals("DevJava") || event.getEntity().getName().equals("JavaVirus"))
+			if(LabyAddon.getInstance().getLabyManager().getLabyClient().isConnected() && LabyAddon.getInstance().getLabyManager().getLabyClient().getServer() != Server.LAZERTAG && !event.getEntity().isSneaking())
+				new RenderUtils().renderName(EnumChatFormatting.WHITE + "LabyAddon " + EnumChatFormatting.DARK_GRAY + "| " + EnumChatFormatting.AQUA + "Developer", event.getEntity(), event.getarg1(), event.getarg2(), event.getarg3());
+			else if(!LabyAddon.getInstance().getLabyManager().getLabyClient().isConnected() && !event.getEntity().isSneaking())
+				new RenderUtils().renderName(EnumChatFormatting.WHITE + "PlayShot " + EnumChatFormatting.DARK_GRAY + "| " + EnumChatFormatting.AQUA + "Developer", event.getEntity(), event.getarg1(), event.getarg2(), event.getarg3());
+
+		if(event.getEntity().getName().equals("Baum_Kind"))
+			if(LabyAddon.getInstance().getLabyManager().getLabyClient().isConnected() && LabyAddon.getInstance().getLabyManager().getLabyClient().getServer() != Server.LAZERTAG && !event.getEntity().isSneaking())
+				new RenderUtils().renderName(EnumChatFormatting.WHITE + "PlayShot " + EnumChatFormatting.DARK_GRAY + "| " + EnumChatFormatting.DARK_RED + "Inhaber", event.getEntity(), event.getarg1(), event.getarg2(), event.getarg3());
+
+		if(!LabyAddon.getInstance().getLabyManager().getLabyClient().isConnected())
+			return;
 
 		for(Module module : LabyAddon.getInstance().getModuleManager().getModules())
 			if(module.isEnabled())
 				module.onRenderEntityEvent(event);
-		
-		
-		if(event.getEntity().isSneaking())
-			return;
-		
-		if(LabyAddon.getInstance().getLabyManager().getLabyClient().getServer() == Server.LAZERTAG)
-			return;
-		
-		if(event.getEntity().getName().equals("DevJava") || event.getEntity().getName().equals("JavaVirus"))
-				new RenderUtils().renderName(EnumChatFormatting.WHITE + "LabyAddon " + EnumChatFormatting.DARK_GRAY + "| " + EnumChatFormatting.AQUA + "Developer", event.getEntity(), event.getarg1(), event.getarg2(), event.getarg3());
-	
-		if(event.getEntity().getName().equals("Baum_Kind"))
-				new RenderUtils().renderName(EnumChatFormatting.WHITE + "PlayShot " + EnumChatFormatting.DARK_GRAY + "| " + EnumChatFormatting.DARK_RED + "Inhaber", event.getEntity(), event.getarg1(), event.getarg2(), event.getarg3());
-
 	}
 }
