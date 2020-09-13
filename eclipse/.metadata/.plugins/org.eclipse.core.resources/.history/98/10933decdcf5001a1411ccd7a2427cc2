@@ -20,7 +20,7 @@ import de.devjava.playshot.addon.utils.EntityLaser;
 @SideOnly(Side.CLIENT)
 public class RenderLaser extends Render<EntityLaser>
 {
-	private static final ResourceLocation arrowTextures = new ResourceLocation("laser.png");
+	private static final ResourceLocation arrowTextures = new ResourceLocation("AntMan:textures/entity/laser.png");
 
 	public RenderLaser(RenderManager renderManagerIn)
 	{

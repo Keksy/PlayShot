@@ -23,6 +23,6 @@ public enum CC
 
 	public EnumChatFormatting getChatColor()
 	{
-		return null;
+		return this.enumChatFormatting;
 	}
 }

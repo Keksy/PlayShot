@@ -11,10 +11,10 @@ public class Listener_TickEventRender implements Listener
 {
 	@SubscribeEvent
 	public void onTick(TickEvent.RenderTickEvent event)
-	{		
+	{
 		if(!LabyAddon.getInstance().getLabyManager().getLabyClient().isConnected())
 			return;
-		
+
 		for(Module module : LabyAddon.getInstance().getModuleManager().getModules())
 			module.onTickRender();
 	}

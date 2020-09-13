@@ -3,7 +3,6 @@ package de.devjava.playshot.addon;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Method;
 import java.util.List;
 
 import de.devjava.playshot.addon.listener.Listener_LabyModEvents;
@@ -26,7 +25,7 @@ import de.devjava.playshot.addon.objects.category.Categorys;
 import de.devjava.playshot.addon.objects.modules.Module;
 import de.devjava.playshot.addon.objects.modules.ModuleManager;
 import de.devjava.playshot.addon.objects.modules.Module_AutoGG;
-import de.devjava.playshot.addon.objects.modules.Module_LazerTag;
+import de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam;
 import de.devjava.playshot.addon.objects.modules.Module_Stats;
 import de.devjava.playshot.addon.objects.register.ListenerManager;
 import de.devjava.playshot.addon.objects.settings.SettingsFetcher;
@@ -36,47 +35,44 @@ import net.labymod.addon.AddonLoader;
 import net.labymod.api.LabyModAddon;
 import net.labymod.ingamegui.ModuleCategoryRegistry;
 import net.labymod.settings.elements.SettingsElement;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.multiplayer.PlayerControllerMP;
 
 public class LabyAddon extends LabyModAddon
 {
 	public static LabyAddon instance;
-	
+
 	private SettingsFetcher settingsFetcher;
 	private ListenerManager listenerManager;
 	private ModuleManager moduleManager;
 	private LabyManager labyManager;
 	private Logger logger;
-	
+
 	private File mcFile;
 	private String labyName;
-	
+
 	@Override
 	public void onEnable()
 	{
 		instance = this;
-		
+
 		this.labyName = "PlayShot";
 		this.mcFile = new File(AddonLoader.getConfigDirectory() + "/" + this.labyName);
 		this.logger = new Logger();
-		
+
 		this.mcFile.mkdirs();
-		
+
 		this.settingsFetcher = new SettingsFetcher();
 		this.moduleManager = new ModuleManager();
 		this.listenerManager = new ListenerManager(this);
-		
-		this.labyManager = new LabyManager();
-		
-        this.getApi().registerServerSupport(this, new LabyPlayshot());
 
-        
+		this.labyManager = new LabyManager();
+
+		this.getApi().registerServerSupport(this, new LabyPlayshot());
+
 		this.registerListener();
 		this.registerCategorys();
 		this.registerModule();
-		
 	}
+
 
 	@Override
 	protected void fillSettings(List<SettingsElement> settings)
@@ -92,9 +88,10 @@ public class LabyAddon extends LabyModAddon
 			this.settingsFetcher.loadSettings();
 		}
 		catch(IOException e)
-		{}
+		{
+		}
 	}
-	
+
 	@Override
 	public void onDisable()
 	{
@@ -111,7 +108,7 @@ public class LabyAddon extends LabyModAddon
 	public void registerListener()
 	{
 		new Listener_LabyModEvents(this.getApi()).register();
-		
+
 		this.listenerManager.addListener(new Listener_TickEvent());
 		this.listenerManager.addListener(new Listener_TickEventRender());
 
@@ -128,34 +125,34 @@ public class LabyAddon extends LabyModAddon
 		this.listenerManager.addListener(new Listener_TabListEvent());
 		this.listenerManager.addListener(new Listener_UserMenuActionEvent());
 	}
-	
+
 	public void registerCategorys()
 	{
 		for(Categorys category : Categorys.values())
 			ModuleCategoryRegistry.loadCategory(category.getModuleCategory());
 	}
-	
+
 	public void registerModule()
 	{
 		this.getModuleManager().addModule(new Module_Stats());
 		this.getModuleManager().addModule(new Module_AutoGG());
-		this.getModuleManager().addModule(new Module_LazerTag());
+		this.getModuleManager().addModule(new Module_LazerTagTeam());
 
 		for(Module module : this.getModuleManager().getModules())
 			for(net.labymod.ingamegui.Module module2 : module.registerLabyModules())
 				this.getApi().registerModule(module2);
 	}
-	
+
 	public File getMcFile()
 	{
 		return mcFile;
 	}
-	
+
 	public Logger getLogger()
 	{
 		return logger;
 	}
-	
+
 	public String getLabyName()
 	{
 		return labyName;
@@ -165,22 +162,22 @@ public class LabyAddon extends LabyModAddon
 	{
 		return settingsFetcher;
 	}
-	
+
 	public ModuleManager getModuleManager()
 	{
 		return moduleManager;
 	}
-	
+
 	public ListenerManager getListenerManager()
 	{
 		return listenerManager;
 	}
-	
+
 	public LabyManager getLabyManager()
 	{
 		return labyManager;
 	}
-	
+
 	public static LabyAddon getInstance()
 	{
 		return instance;

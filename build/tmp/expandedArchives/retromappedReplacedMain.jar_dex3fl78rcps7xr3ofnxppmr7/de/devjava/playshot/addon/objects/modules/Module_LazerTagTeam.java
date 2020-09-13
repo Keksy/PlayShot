@@ -19,10 +19,10 @@ import net.minecraft.init.Items;
 import net.minecraft.util.EnumChatFormatting;
 import scala.collection.parallel.ParIterableLike.Min;
 
-public class Module_LazerTag extends Module
+public class Module_LazerTagTeam extends Module
 {
 
-	public Module_LazerTag()
+	public Module_LazerTagTeam()
 	{
 		super(Settings.LAZERTAG_SHOWTEAM);
 	}
@@ -30,10 +30,10 @@ public class Module_LazerTag extends Module
 	public CC getTeamColor(EntityPlayer entityPlayer)
 	{
 		for(int i = 0; i < 4; i++)
-			if(entityPlayer.getCurrentArmor(i) != null)
-				if(entityPlayer.getCurrentArmor(i).getItem().equals(Items.leather_boots))
-					if(entityPlayer.getCurrentArmor(i).serializeNBT().getCompoundTag("tag").getCompoundTag("display").getTag("color") != null)
-						return this.getColor(Integer.valueOf(entityPlayer.getCurrentArmor(i).serializeNBT().getCompoundTag("tag").getCompoundTag("display").getTag("color") + ""));
+			if(entityPlayer.func_82169_q(i) != null)
+				if(entityPlayer.func_82169_q(i).func_77973_b().equals(Items.field_151021_T))
+					if(entityPlayer.func_82169_q(i).serializeNBT().func_74775_l("tag").func_74775_l("display").func_74781_a("color") != null)
+						return this.getColor(Integer.valueOf(entityPlayer.func_82169_q(i).serializeNBT().func_74775_l("tag").func_74775_l("display").func_74781_a("color") + ""));
 		return null;
 	}
 
@@ -54,16 +54,13 @@ public class Module_LazerTag extends Module
 		if(LabyAddon.getInstance().getLabyManager().getLabyClient().getServer() != Server.LAZERTAG)
 			return;
 
-		if(this.getTeamColor(Minecraft.getMinecraft().thePlayer) == null)
+		if(this.getTeamColor(Minecraft.func_71410_x().field_71439_g) == null)
 			return;
 
-		for(Entity entity : Minecraft.getMinecraft().theWorld.loadedEntityList)
-			if(entity instanceof EntityPlayer)
-			{
-				EntityPlayer entityPlayer = (EntityPlayer) entity;
+		EntityPlayer entityPlayer = (EntityPlayer) event.getEntity();
 
-				if(this.getTeamColor(Minecraft.getMinecraft().thePlayer) == this.getTeamColor(entityPlayer))
-					new RenderUtils().renderName(this.getTeamColor(Minecraft.getMinecraft().thePlayer).getChatColor() + "Teammate", event.getEntity(), event.getarg1(), event.getarg2(), event.getarg3());
-			}
+		if(this.getTeamColor(Minecraft.func_71410_x().field_71439_g).name().equals(this.getTeamColor(entityPlayer).name()))
+			new RenderUtils().renderNameBigger(EnumChatFormatting.BOLD + "" + this.getTeamColor(Minecraft.func_71410_x().field_71439_g).getChatColor() + "TEAM", event.getEntity(), event.getarg1(), event.getarg2(), event.getarg3());
+
 	}
 }

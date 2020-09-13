@@ -18,5 +18,6 @@ public class Listener_TickEvent implements Listener
 
 		for(Module module : LabyAddon.getInstance().getModuleManager().getModules())
 			module.onTick();
+		
 	}
 }

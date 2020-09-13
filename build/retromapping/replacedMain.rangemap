@@ -1,189 +1,189 @@
 Symbol range map extraction starting
-Processing 64 files
+Processing 66 files
 processing de\devjava\playshot\addon\LabyAddon.java
 @|de\devjava\playshot\addon\LabyAddon.java|9|34|de.devjava.playshot.addon|package|de.devjava.playshot.addon|(file)
 Class Start: de.devjava.playshot.addon.LabyAddon
-   @|de\devjava\playshot\addon\LabyAddon.java|2275|2284|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-   @|de\devjava\playshot\addon\LabyAddon.java|2285|2293|instance|field|de.devjava.playshot.addon.LabyAddon|instance|
-   @|de\devjava\playshot\addon\LabyAddon.java|2306|2321|SettingsFetcher|class|de.devjava.playshot.addon.objects.settings.SettingsFetcher
-   @|de\devjava\playshot\addon\LabyAddon.java|2322|2337|settingsFetcher|field|de.devjava.playshot.addon.LabyAddon|settingsFetcher|
-   @|de\devjava\playshot\addon\LabyAddon.java|2348|2363|ListenerManager|class|de.devjava.playshot.addon.objects.register.ListenerManager
-   @|de\devjava\playshot\addon\LabyAddon.java|2364|2379|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager|
-   @|de\devjava\playshot\addon\LabyAddon.java|2390|2403|ModuleManager|class|de.devjava.playshot.addon.objects.modules.ModuleManager
-   @|de\devjava\playshot\addon\LabyAddon.java|2404|2417|moduleManager|field|de.devjava.playshot.addon.LabyAddon|moduleManager|
-   @|de\devjava\playshot\addon\LabyAddon.java|2428|2439|LabyManager|class|de.devjava.playshot.addon.objects.LabyManager
-   @|de\devjava\playshot\addon\LabyAddon.java|2440|2451|labyManager|field|de.devjava.playshot.addon.LabyAddon|labyManager|
-   @|de\devjava\playshot\addon\LabyAddon.java|2462|2468|Logger|class|de.devjava.playshot.addon.utils.logger.Logger
-   @|de\devjava\playshot\addon\LabyAddon.java|2469|2475|logger|field|de.devjava.playshot.addon.LabyAddon|logger|
-   @|de\devjava\playshot\addon\LabyAddon.java|2488|2492|File|class|java.io.File
-   @|de\devjava\playshot\addon\LabyAddon.java|2493|2499|mcFile|field|de.devjava.playshot.addon.LabyAddon|mcFile|
-   @|de\devjava\playshot\addon\LabyAddon.java|2510|2516|String|class|java.lang.String
-   @|de\devjava\playshot\addon\LabyAddon.java|2517|2525|labyName|field|de.devjava.playshot.addon.LabyAddon|labyName|
+   @|de\devjava\playshot\addon\LabyAddon.java|2147|2156|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
+   @|de\devjava\playshot\addon\LabyAddon.java|2157|2165|instance|field|de.devjava.playshot.addon.LabyAddon|instance|
+   @|de\devjava\playshot\addon\LabyAddon.java|2177|2192|SettingsFetcher|class|de.devjava.playshot.addon.objects.settings.SettingsFetcher
+   @|de\devjava\playshot\addon\LabyAddon.java|2193|2208|settingsFetcher|field|de.devjava.playshot.addon.LabyAddon|settingsFetcher|
+   @|de\devjava\playshot\addon\LabyAddon.java|2219|2234|ListenerManager|class|de.devjava.playshot.addon.objects.register.ListenerManager
+   @|de\devjava\playshot\addon\LabyAddon.java|2235|2250|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager|
+   @|de\devjava\playshot\addon\LabyAddon.java|2261|2274|ModuleManager|class|de.devjava.playshot.addon.objects.modules.ModuleManager
+   @|de\devjava\playshot\addon\LabyAddon.java|2275|2288|moduleManager|field|de.devjava.playshot.addon.LabyAddon|moduleManager|
+   @|de\devjava\playshot\addon\LabyAddon.java|2299|2310|LabyManager|class|de.devjava.playshot.addon.objects.LabyManager
+   @|de\devjava\playshot\addon\LabyAddon.java|2311|2322|labyManager|field|de.devjava.playshot.addon.LabyAddon|labyManager|
+   @|de\devjava\playshot\addon\LabyAddon.java|2333|2339|Logger|class|de.devjava.playshot.addon.utils.logger.Logger
+   @|de\devjava\playshot\addon\LabyAddon.java|2340|2346|logger|field|de.devjava.playshot.addon.LabyAddon|logger|
+   @|de\devjava\playshot\addon\LabyAddon.java|2358|2362|File|class|java.io.File
+   @|de\devjava\playshot\addon\LabyAddon.java|2363|2369|mcFile|field|de.devjava.playshot.addon.LabyAddon|mcFile|
+   @|de\devjava\playshot\addon\LabyAddon.java|2380|2386|String|class|java.lang.String
+   @|de\devjava\playshot\addon\LabyAddon.java|2387|2395|labyName|field|de.devjava.playshot.addon.LabyAddon|labyName|
    Method Start: onEnable()V
-      @|de\devjava\playshot\addon\LabyAddon.java|2553|2561|onEnable|method|net.labymod.api.LabyModAddon|onEnable|()V
-      @|de\devjava\playshot\addon\LabyAddon.java|2569|2577|instance|field|de.devjava.playshot.addon.LabyAddon|instance
-      @|de\devjava\playshot\addon\LabyAddon.java|2596|2604|labyName|field|de.devjava.playshot.addon.LabyAddon|labyName
-      @|de\devjava\playshot\addon\LabyAddon.java|2626|2632|mcFile|field|de.devjava.playshot.addon.LabyAddon|mcFile
-      @|de\devjava\playshot\addon\LabyAddon.java|2639|2643|File|class|java.io.File
-      @|de\devjava\playshot\addon\LabyAddon.java|2644|2655|AddonLoader|class|net.labymod.addon.AddonLoader
-      @|de\devjava\playshot\addon\LabyAddon.java|2656|2674|getConfigDirectory|method|net.labymod.addon.AddonLoader|getConfigDirectory|()Ljava/io/File;
-      @|de\devjava\playshot\addon\LabyAddon.java|2690|2698|labyName|field|de.devjava.playshot.addon.LabyAddon|labyName
-      @|de\devjava\playshot\addon\LabyAddon.java|2708|2714|logger|field|de.devjava.playshot.addon.LabyAddon|logger
-      @|de\devjava\playshot\addon\LabyAddon.java|2721|2727|Logger|class|de.devjava.playshot.addon.utils.logger.Logger
-      @|de\devjava\playshot\addon\LabyAddon.java|2741|2747|mcFile|field|de.devjava.playshot.addon.LabyAddon|mcFile
-      @|de\devjava\playshot\addon\LabyAddon.java|2748|2754|mkdirs|method|java.io.File|mkdirs|()Z
-      @|de\devjava\playshot\addon\LabyAddon.java|2768|2783|settingsFetcher|field|de.devjava.playshot.addon.LabyAddon|settingsFetcher
-      @|de\devjava\playshot\addon\LabyAddon.java|2790|2805|SettingsFetcher|class|de.devjava.playshot.addon.objects.settings.SettingsFetcher
-      @|de\devjava\playshot\addon\LabyAddon.java|2816|2829|moduleManager|field|de.devjava.playshot.addon.LabyAddon|moduleManager
-      @|de\devjava\playshot\addon\LabyAddon.java|2836|2849|ModuleManager|class|de.devjava.playshot.addon.objects.modules.ModuleManager
-      @|de\devjava\playshot\addon\LabyAddon.java|2860|2875|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|2882|2897|ListenerManager|class|de.devjava.playshot.addon.objects.register.ListenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|2915|2926|labyManager|field|de.devjava.playshot.addon.LabyAddon|labyManager
-      @|de\devjava\playshot\addon\LabyAddon.java|2933|2944|LabyManager|class|de.devjava.playshot.addon.objects.LabyManager
-      @|de\devjava\playshot\addon\LabyAddon.java|2964|2970|getApi|method|net.labymod.api.LabyModAddon|getApi|()Lnet/labymod/api/LabyModAPI;
-      @|de\devjava\playshot\addon\LabyAddon.java|2973|2994|registerServerSupport|method|net.labymod.api.LabyModAPI|registerServerSupport|(Lnet/labymod/api/LabyModAddon;Lnet/labymod/servermanager/Server;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|3005|3017|LabyPlayshot|class|de.devjava.playshot.addon.utils.LabyPlayshot
-      @|de\devjava\playshot\addon\LabyAddon.java|3039|3055|registerListener|method|de.devjava.playshot.addon.LabyAddon|registerListener|()V
-      @|de\devjava\playshot\addon\LabyAddon.java|3066|3083|registerCategorys|method|de.devjava.playshot.addon.LabyAddon|registerCategorys|()V
-      @|de\devjava\playshot\addon\LabyAddon.java|3094|3108|registerModule|method|de.devjava.playshot.addon.LabyAddon|registerModule|()V
+      @|de\devjava\playshot\addon\LabyAddon.java|2422|2430|onEnable|method|net.labymod.api.LabyModAddon|onEnable|()V
+      @|de\devjava\playshot\addon\LabyAddon.java|2438|2446|instance|field|de.devjava.playshot.addon.LabyAddon|instance
+      @|de\devjava\playshot\addon\LabyAddon.java|2463|2471|labyName|field|de.devjava.playshot.addon.LabyAddon|labyName
+      @|de\devjava\playshot\addon\LabyAddon.java|2493|2499|mcFile|field|de.devjava.playshot.addon.LabyAddon|mcFile
+      @|de\devjava\playshot\addon\LabyAddon.java|2506|2510|File|class|java.io.File
+      @|de\devjava\playshot\addon\LabyAddon.java|2511|2522|AddonLoader|class|net.labymod.addon.AddonLoader
+      @|de\devjava\playshot\addon\LabyAddon.java|2523|2541|getConfigDirectory|method|net.labymod.addon.AddonLoader|getConfigDirectory|()Ljava/io/File;
+      @|de\devjava\playshot\addon\LabyAddon.java|2557|2565|labyName|field|de.devjava.playshot.addon.LabyAddon|labyName
+      @|de\devjava\playshot\addon\LabyAddon.java|2575|2581|logger|field|de.devjava.playshot.addon.LabyAddon|logger
+      @|de\devjava\playshot\addon\LabyAddon.java|2588|2594|Logger|class|de.devjava.playshot.addon.utils.logger.Logger
+      @|de\devjava\playshot\addon\LabyAddon.java|2606|2612|mcFile|field|de.devjava.playshot.addon.LabyAddon|mcFile
+      @|de\devjava\playshot\addon\LabyAddon.java|2613|2619|mkdirs|method|java.io.File|mkdirs|()Z
+      @|de\devjava\playshot\addon\LabyAddon.java|2631|2646|settingsFetcher|field|de.devjava.playshot.addon.LabyAddon|settingsFetcher
+      @|de\devjava\playshot\addon\LabyAddon.java|2653|2668|SettingsFetcher|class|de.devjava.playshot.addon.objects.settings.SettingsFetcher
+      @|de\devjava\playshot\addon\LabyAddon.java|2679|2692|moduleManager|field|de.devjava.playshot.addon.LabyAddon|moduleManager
+      @|de\devjava\playshot\addon\LabyAddon.java|2699|2712|ModuleManager|class|de.devjava.playshot.addon.objects.modules.ModuleManager
+      @|de\devjava\playshot\addon\LabyAddon.java|2723|2738|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|2745|2760|ListenerManager|class|de.devjava.playshot.addon.objects.register.ListenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|2776|2787|labyManager|field|de.devjava.playshot.addon.LabyAddon|labyManager
+      @|de\devjava\playshot\addon\LabyAddon.java|2794|2805|LabyManager|class|de.devjava.playshot.addon.objects.LabyManager
+      @|de\devjava\playshot\addon\LabyAddon.java|2817|2823|getApi|method|net.labymod.api.LabyModAddon|getApi|()Lnet/labymod/api/LabyModAPI;
+      @|de\devjava\playshot\addon\LabyAddon.java|2826|2847|registerServerSupport|method|net.labymod.api.LabyModAPI|registerServerSupport|(Lnet/labymod/api/LabyModAddon;Lnet/labymod/servermanager/Server;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|2858|2870|LabyPlayshot|class|de.devjava.playshot.addon.utils.LabyPlayshot
+      @|de\devjava\playshot\addon\LabyAddon.java|2883|2899|registerListener|method|de.devjava.playshot.addon.LabyAddon|registerListener|()V
+      @|de\devjava\playshot\addon\LabyAddon.java|2910|2927|registerCategorys|method|de.devjava.playshot.addon.LabyAddon|registerCategorys|()V
+      @|de\devjava\playshot\addon\LabyAddon.java|2938|2952|registerModule|method|de.devjava.playshot.addon.LabyAddon|registerModule|()V
    Method End: onEnable()V
    Method Start: fillSettings(Ljava/util/List;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|3146|3158|fillSettings|method|net.labymod.api.LabyModAddon|fillSettings|(Ljava/util/List;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|3164|3179|SettingsElement|class|net.labymod.settings.elements.SettingsElement
-      @|de\devjava\playshot\addon\LabyAddon.java|3159|3163|List|class|java.util.List
-      @|de\devjava\playshot\addon\LabyAddon.java|3181|3189|settings|param|de.devjava.playshot.addon.LabyAddon|fillSettings|(Ljava/util/List;)V|settings|0
-      @|de\devjava\playshot\addon\LabyAddon.java|3201|3216|settingsFetcher|field|de.devjava.playshot.addon.LabyAddon|settingsFetcher
-      @|de\devjava\playshot\addon\LabyAddon.java|3217|3228|addSettings|method|de.devjava.playshot.addon.objects.settings.SettingsFetcher|addSettings|(Ljava/util/List;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|3229|3237|settings|param|de.devjava.playshot.addon.LabyAddon|fillSettings|(Ljava/util/List;)V|settings|0
+      @|de\devjava\playshot\addon\LabyAddon.java|2988|3000|fillSettings|method|net.labymod.api.LabyModAddon|fillSettings|(Ljava/util/List;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|3006|3021|SettingsElement|class|net.labymod.settings.elements.SettingsElement
+      @|de\devjava\playshot\addon\LabyAddon.java|3001|3005|List|class|java.util.List
+      @|de\devjava\playshot\addon\LabyAddon.java|3023|3031|settings|param|de.devjava.playshot.addon.LabyAddon|fillSettings|(Ljava/util/List;)V|settings|0
+      @|de\devjava\playshot\addon\LabyAddon.java|3043|3058|settingsFetcher|field|de.devjava.playshot.addon.LabyAddon|settingsFetcher
+      @|de\devjava\playshot\addon\LabyAddon.java|3059|3070|addSettings|method|de.devjava.playshot.addon.objects.settings.SettingsFetcher|addSettings|(Ljava/util/List;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|3071|3079|settings|param|de.devjava.playshot.addon.LabyAddon|fillSettings|(Ljava/util/List;)V|settings|0
    Method End: fillSettings(Ljava/util/List;)V
    Method Start: loadConfig()V
-      @|de\devjava\playshot\addon\LabyAddon.java|3268|3278|loadConfig|method|net.labymod.api.LabyModAddon|loadConfig|()V
-      @|de\devjava\playshot\addon\LabyAddon.java|3302|3317|settingsFetcher|field|de.devjava.playshot.addon.LabyAddon|settingsFetcher
-      @|de\devjava\playshot\addon\LabyAddon.java|3318|3330|loadSettings|method|de.devjava.playshot.addon.objects.settings.SettingsFetcher|loadSettings|()V
-      @|de\devjava\playshot\addon\LabyAddon.java|3346|3357|IOException|class|java.io.IOException
+      @|de\devjava\playshot\addon\LabyAddon.java|3110|3120|loadConfig|method|net.labymod.api.LabyModAddon|loadConfig|()V
+      @|de\devjava\playshot\addon\LabyAddon.java|3144|3159|settingsFetcher|field|de.devjava.playshot.addon.LabyAddon|settingsFetcher
+      @|de\devjava\playshot\addon\LabyAddon.java|3160|3172|loadSettings|method|de.devjava.playshot.addon.objects.settings.SettingsFetcher|loadSettings|()V
+      @|de\devjava\playshot\addon\LabyAddon.java|3188|3199|IOException|class|java.io.IOException
    Method End: loadConfig()V
    Method Start: onDisable()V
-      @|de\devjava\playshot\addon\LabyAddon.java|3395|3404|onDisable|method|net.labymod.api.LabyModAddon|onDisable|()V
-      @|de\devjava\playshot\addon\LabyAddon.java|3428|3443|settingsFetcher|field|de.devjava.playshot.addon.LabyAddon|settingsFetcher
-      @|de\devjava\playshot\addon\LabyAddon.java|3444|3456|saveSettings|method|de.devjava.playshot.addon.objects.settings.SettingsFetcher|saveSettings|()V
-      @|de\devjava\playshot\addon\LabyAddon.java|3468|3478|saveConfig|method|net.labymod.api.LabyModAddon|saveConfig|()V
-      @|de\devjava\playshot\addon\LabyAddon.java|3494|3505|IOException|class|java.io.IOException
+      @|de\devjava\playshot\addon\LabyAddon.java|3239|3248|onDisable|method|net.labymod.api.LabyModAddon|onDisable|()V
+      @|de\devjava\playshot\addon\LabyAddon.java|3272|3287|settingsFetcher|field|de.devjava.playshot.addon.LabyAddon|settingsFetcher
+      @|de\devjava\playshot\addon\LabyAddon.java|3288|3300|saveSettings|method|de.devjava.playshot.addon.objects.settings.SettingsFetcher|saveSettings|()V
+      @|de\devjava\playshot\addon\LabyAddon.java|3312|3322|saveConfig|method|net.labymod.api.LabyModAddon|saveConfig|()V
+      @|de\devjava\playshot\addon\LabyAddon.java|3338|3349|IOException|class|java.io.IOException
    Method End: onDisable()V
    Method Start: registerListener()V
-      @|de\devjava\playshot\addon\LabyAddon.java|3534|3550|registerListener|method|de.devjava.playshot.addon.LabyAddon|registerListener|()V
-      @|de\devjava\playshot\addon\LabyAddon.java|3562|3584|Listener_LabyModEvents|class|de.devjava.playshot.addon.listener.Listener_LabyModEvents
-      @|de\devjava\playshot\addon\LabyAddon.java|3590|3596|getApi|method|net.labymod.api.LabyModAddon|getApi|()Lnet/labymod/api/LabyModAPI;
-      @|de\devjava\playshot\addon\LabyAddon.java|3600|3608|register|method|de.devjava.playshot.addon.listener.Listener_LabyModEvents|register|()V
-      @|de\devjava\playshot\addon\LabyAddon.java|3622|3637|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|3638|3649|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|3654|3672|Listener_TickEvent|class|de.devjava.playshot.addon.listener.Listener_TickEvent
-      @|de\devjava\playshot\addon\LabyAddon.java|3684|3699|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|3700|3711|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|3716|3740|Listener_TickEventRender|class|de.devjava.playshot.addon.listener.Listener_TickEventRender
-      @|de\devjava\playshot\addon\LabyAddon.java|3753|3768|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|3769|3780|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|3785|3810|Listener_MessageSendEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_MessageSendEvent
-      @|de\devjava\playshot\addon\LabyAddon.java|3822|3837|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|3838|3849|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|3854|3880|Listener_ModifyChatMessage|class|de.devjava.playshot.addon.listener.labymod.Listener_ModifyChatMessage
-      @|de\devjava\playshot\addon\LabyAddon.java|3892|3907|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|3908|3919|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|3924|3946|Listener_OnAttackEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_OnAttackEvent
-      @|de\devjava\playshot\addon\LabyAddon.java|3958|3973|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|3974|3985|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|3990|4020|Listener_OnIncomingPacketEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_OnIncomingPacketEvent
-      @|de\devjava\playshot\addon\LabyAddon.java|4032|4047|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|4048|4059|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|4064|4084|Listener_OnJoinEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_OnJoinEvent
-      @|de\devjava\playshot\addon\LabyAddon.java|4096|4111|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|4112|4123|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|4128|4148|Listener_OnQuitEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_OnQuitEvent
-      @|de\devjava\playshot\addon\LabyAddon.java|4160|4175|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|4176|4187|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|4192|4219|Listener_PluginMessageEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_PluginMessageEvent
-      @|de\devjava\playshot\addon\LabyAddon.java|4231|4246|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|4247|4258|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|4263|4290|Listener_ReceiveChatMessage|class|de.devjava.playshot.addon.listener.labymod.Listener_ReceiveChatMessage
-      @|de\devjava\playshot\addon\LabyAddon.java|4302|4317|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|4318|4329|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|4334|4360|Listener_RenderEntityEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent
-      @|de\devjava\playshot\addon\LabyAddon.java|4372|4387|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|4388|4399|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|4404|4431|Listener_ServerMessageEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_ServerMessageEvent
-      @|de\devjava\playshot\addon\LabyAddon.java|4443|4458|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|4459|4470|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|4475|4496|Listener_TabListEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_TabListEvent
-      @|de\devjava\playshot\addon\LabyAddon.java|4508|4523|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|4524|4535|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|4540|4568|Listener_UserMenuActionEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_UserMenuActionEvent
+      @|de\devjava\playshot\addon\LabyAddon.java|3378|3394|registerListener|method|de.devjava.playshot.addon.LabyAddon|registerListener|()V
+      @|de\devjava\playshot\addon\LabyAddon.java|3406|3428|Listener_LabyModEvents|class|de.devjava.playshot.addon.listener.Listener_LabyModEvents
+      @|de\devjava\playshot\addon\LabyAddon.java|3434|3440|getApi|method|net.labymod.api.LabyModAddon|getApi|()Lnet/labymod/api/LabyModAPI;
+      @|de\devjava\playshot\addon\LabyAddon.java|3444|3452|register|method|de.devjava.playshot.addon.listener.Listener_LabyModEvents|register|()V
+      @|de\devjava\playshot\addon\LabyAddon.java|3464|3479|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|3480|3491|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|3496|3514|Listener_TickEvent|class|de.devjava.playshot.addon.listener.Listener_TickEvent
+      @|de\devjava\playshot\addon\LabyAddon.java|3526|3541|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|3542|3553|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|3558|3582|Listener_TickEventRender|class|de.devjava.playshot.addon.listener.Listener_TickEventRender
+      @|de\devjava\playshot\addon\LabyAddon.java|3595|3610|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|3611|3622|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|3627|3652|Listener_MessageSendEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_MessageSendEvent
+      @|de\devjava\playshot\addon\LabyAddon.java|3664|3679|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|3680|3691|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|3696|3722|Listener_ModifyChatMessage|class|de.devjava.playshot.addon.listener.labymod.Listener_ModifyChatMessage
+      @|de\devjava\playshot\addon\LabyAddon.java|3734|3749|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|3750|3761|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|3766|3788|Listener_OnAttackEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_OnAttackEvent
+      @|de\devjava\playshot\addon\LabyAddon.java|3800|3815|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|3816|3827|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|3832|3862|Listener_OnIncomingPacketEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_OnIncomingPacketEvent
+      @|de\devjava\playshot\addon\LabyAddon.java|3874|3889|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|3890|3901|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|3906|3926|Listener_OnJoinEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_OnJoinEvent
+      @|de\devjava\playshot\addon\LabyAddon.java|3938|3953|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|3954|3965|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|3970|3990|Listener_OnQuitEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_OnQuitEvent
+      @|de\devjava\playshot\addon\LabyAddon.java|4002|4017|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|4018|4029|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|4034|4061|Listener_PluginMessageEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_PluginMessageEvent
+      @|de\devjava\playshot\addon\LabyAddon.java|4073|4088|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|4089|4100|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|4105|4132|Listener_ReceiveChatMessage|class|de.devjava.playshot.addon.listener.labymod.Listener_ReceiveChatMessage
+      @|de\devjava\playshot\addon\LabyAddon.java|4144|4159|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|4160|4171|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|4176|4202|Listener_RenderEntityEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent
+      @|de\devjava\playshot\addon\LabyAddon.java|4214|4229|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|4230|4241|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|4246|4273|Listener_ServerMessageEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_ServerMessageEvent
+      @|de\devjava\playshot\addon\LabyAddon.java|4285|4300|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|4301|4312|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|4317|4338|Listener_TabListEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_TabListEvent
+      @|de\devjava\playshot\addon\LabyAddon.java|4350|4365|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|4366|4377|addListener|method|de.devjava.playshot.addon.objects.register.ListenerManager|addListener|(Lde/devjava/playshot/addon/objects/register/Listener;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|4382|4410|Listener_UserMenuActionEvent|class|de.devjava.playshot.addon.listener.labymod.Listener_UserMenuActionEvent
    Method End: registerListener()V
    Method Start: registerCategorys()V
-      @|de\devjava\playshot\addon\LabyAddon.java|4591|4608|registerCategorys|method|de.devjava.playshot.addon.LabyAddon|registerCategorys|()V
-      @|de\devjava\playshot\addon\LabyAddon.java|4620|4629|Categorys|class|de.devjava.playshot.addon.objects.category.Categorys
-      @|de\devjava\playshot\addon\LabyAddon.java|4641|4650|Categorys|class|de.devjava.playshot.addon.objects.category.Categorys
-      @|de\devjava\playshot\addon\LabyAddon.java|4651|4657|values|method|de.devjava.playshot.addon.objects.category.Categorys|values|()[Lde/devjava/playshot/addon/objects/category/Categorys;
-      @|de\devjava\playshot\addon\LabyAddon.java|4664|4686|ModuleCategoryRegistry|class|net.labymod.ingamegui.ModuleCategoryRegistry
-      @|de\devjava\playshot\addon\LabyAddon.java|4687|4699|loadCategory|method|net.labymod.ingamegui.ModuleCategoryRegistry|loadCategory|(Lnet/labymod/ingamegui/ModuleCategory;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|4709|4726|getModuleCategory|method|de.devjava.playshot.addon.objects.category.Categorys|getModuleCategory|()Lnet/labymod/ingamegui/ModuleCategory;
+      @|de\devjava\playshot\addon\LabyAddon.java|4432|4449|registerCategorys|method|de.devjava.playshot.addon.LabyAddon|registerCategorys|()V
+      @|de\devjava\playshot\addon\LabyAddon.java|4461|4470|Categorys|class|de.devjava.playshot.addon.objects.category.Categorys
+      @|de\devjava\playshot\addon\LabyAddon.java|4482|4491|Categorys|class|de.devjava.playshot.addon.objects.category.Categorys
+      @|de\devjava\playshot\addon\LabyAddon.java|4492|4498|values|method|de.devjava.playshot.addon.objects.category.Categorys|values|()[Lde/devjava/playshot/addon/objects/category/Categorys;
+      @|de\devjava\playshot\addon\LabyAddon.java|4505|4527|ModuleCategoryRegistry|class|net.labymod.ingamegui.ModuleCategoryRegistry
+      @|de\devjava\playshot\addon\LabyAddon.java|4528|4540|loadCategory|method|net.labymod.ingamegui.ModuleCategoryRegistry|loadCategory|(Lnet/labymod/ingamegui/ModuleCategory;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|4550|4567|getModuleCategory|method|de.devjava.playshot.addon.objects.category.Categorys|getModuleCategory|()Lnet/labymod/ingamegui/ModuleCategory;
    Method End: registerCategorys()V
    Method Start: registerModule()V
-      @|de\devjava\playshot\addon\LabyAddon.java|4749|4763|registerModule|method|de.devjava.playshot.addon.LabyAddon|registerModule|()V
-      @|de\devjava\playshot\addon\LabyAddon.java|4776|4792|getModuleManager|method|de.devjava.playshot.addon.LabyAddon|getModuleManager|()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
-      @|de\devjava\playshot\addon\LabyAddon.java|4795|4804|addModule|method|de.devjava.playshot.addon.objects.modules.ModuleManager|addModule|(Lde/devjava/playshot/addon/objects/modules/Module;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|4809|4821|Module_Stats|class|de.devjava.playshot.addon.objects.modules.Module_Stats
-      @|de\devjava\playshot\addon\LabyAddon.java|4833|4849|getModuleManager|method|de.devjava.playshot.addon.LabyAddon|getModuleManager|()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
-      @|de\devjava\playshot\addon\LabyAddon.java|4852|4861|addModule|method|de.devjava.playshot.addon.objects.modules.ModuleManager|addModule|(Lde/devjava/playshot/addon/objects/modules/Module;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|4866|4879|Module_AutoGG|class|de.devjava.playshot.addon.objects.modules.Module_AutoGG
-      @|de\devjava\playshot\addon\LabyAddon.java|4891|4907|getModuleManager|method|de.devjava.playshot.addon.LabyAddon|getModuleManager|()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
-      @|de\devjava\playshot\addon\LabyAddon.java|4910|4919|addModule|method|de.devjava.playshot.addon.objects.modules.ModuleManager|addModule|(Lde/devjava/playshot/addon/objects/modules/Module;)V
-      @|de\devjava\playshot\addon\LabyAddon.java|4924|4939|Module_LazerTag|class|de.devjava.playshot.addon.objects.modules.Module_LazerTag
-      @|de\devjava\playshot\addon\LabyAddon.java|4951|4957|Module|class|de.devjava.playshot.addon.objects.modules.Module
-      @|de\devjava\playshot\addon\LabyAddon.java|4972|4988|getModuleManager|method|de.devjava.playshot.addon.LabyAddon|getModuleManager|()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
-      @|de\devjava\playshot\addon\LabyAddon.java|4991|5001|getModules|method|de.devjava.playshot.addon.objects.modules.ModuleManager|getModules|()Ljava/util/List;
-      @|de\devjava\playshot\addon\LabyAddon.java|5012|5040|net.labymod.ingamegui.Module|class|net.labymod.ingamegui.Module
-      @|de\devjava\playshot\addon\LabyAddon.java|5058|5077|registerLabyModules|method|de.devjava.playshot.addon.objects.modules.Module|registerLabyModules|()Ljava/util/List;
-      @|de\devjava\playshot\addon\LabyAddon.java|5090|5096|getApi|method|net.labymod.api.LabyModAddon|getApi|()Lnet/labymod/api/LabyModAPI;
-      @|de\devjava\playshot\addon\LabyAddon.java|5099|5113|registerModule|method|net.labymod.api.LabyModAPI|registerModule|(Lnet/labymod/ingamegui/Module;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|4589|4603|registerModule|method|de.devjava.playshot.addon.LabyAddon|registerModule|()V
+      @|de\devjava\playshot\addon\LabyAddon.java|4616|4632|getModuleManager|method|de.devjava.playshot.addon.LabyAddon|getModuleManager|()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
+      @|de\devjava\playshot\addon\LabyAddon.java|4635|4644|addModule|method|de.devjava.playshot.addon.objects.modules.ModuleManager|addModule|(Lde/devjava/playshot/addon/objects/modules/Module;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|4649|4661|Module_Stats|class|de.devjava.playshot.addon.objects.modules.Module_Stats
+      @|de\devjava\playshot\addon\LabyAddon.java|4673|4689|getModuleManager|method|de.devjava.playshot.addon.LabyAddon|getModuleManager|()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
+      @|de\devjava\playshot\addon\LabyAddon.java|4692|4701|addModule|method|de.devjava.playshot.addon.objects.modules.ModuleManager|addModule|(Lde/devjava/playshot/addon/objects/modules/Module;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|4706|4719|Module_AutoGG|class|de.devjava.playshot.addon.objects.modules.Module_AutoGG
+      @|de\devjava\playshot\addon\LabyAddon.java|4731|4747|getModuleManager|method|de.devjava.playshot.addon.LabyAddon|getModuleManager|()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
+      @|de\devjava\playshot\addon\LabyAddon.java|4750|4759|addModule|method|de.devjava.playshot.addon.objects.modules.ModuleManager|addModule|(Lde/devjava/playshot/addon/objects/modules/Module;)V
+      @|de\devjava\playshot\addon\LabyAddon.java|4764|4783|Module_LazerTagTeam|class|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam
+      @|de\devjava\playshot\addon\LabyAddon.java|4795|4801|Module|class|de.devjava.playshot.addon.objects.modules.Module
+      @|de\devjava\playshot\addon\LabyAddon.java|4816|4832|getModuleManager|method|de.devjava.playshot.addon.LabyAddon|getModuleManager|()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
+      @|de\devjava\playshot\addon\LabyAddon.java|4835|4845|getModules|method|de.devjava.playshot.addon.objects.modules.ModuleManager|getModules|()Ljava/util/List;
+      @|de\devjava\playshot\addon\LabyAddon.java|4856|4884|net.labymod.ingamegui.Module|class|net.labymod.ingamegui.Module
+      @|de\devjava\playshot\addon\LabyAddon.java|4902|4921|registerLabyModules|method|de.devjava.playshot.addon.objects.modules.Module|registerLabyModules|()Ljava/util/List;
+      @|de\devjava\playshot\addon\LabyAddon.java|4934|4940|getApi|method|net.labymod.api.LabyModAddon|getApi|()Lnet/labymod/api/LabyModAPI;
+      @|de\devjava\playshot\addon\LabyAddon.java|4943|4957|registerModule|method|net.labymod.api.LabyModAPI|registerModule|(Lnet/labymod/ingamegui/Module;)V
    Method End: registerModule()V
    Method Start: getMcFile()Ljava/io/File;
-      @|de\devjava\playshot\addon\LabyAddon.java|5142|5151|getMcFile|method|de.devjava.playshot.addon.LabyAddon|getMcFile|()Ljava/io/File;
-      @|de\devjava\playshot\addon\LabyAddon.java|5137|5141|File|class|java.io.File
-      @|de\devjava\playshot\addon\LabyAddon.java|5166|5172|mcFile|field|de.devjava.playshot.addon.LabyAddon|mcFile
+      @|de\devjava\playshot\addon\LabyAddon.java|4985|4994|getMcFile|method|de.devjava.playshot.addon.LabyAddon|getMcFile|()Ljava/io/File;
+      @|de\devjava\playshot\addon\LabyAddon.java|4980|4984|File|class|java.io.File
+      @|de\devjava\playshot\addon\LabyAddon.java|5009|5015|mcFile|field|de.devjava.playshot.addon.LabyAddon|mcFile
    Method End: getMcFile()Ljava/io/File;
    Method Start: getLogger()Lde/devjava/playshot/addon/utils/logger/Logger;
-      @|de\devjava\playshot\addon\LabyAddon.java|5194|5203|getLogger|method|de.devjava.playshot.addon.LabyAddon|getLogger|()Lde/devjava/playshot/addon/utils/logger/Logger;
-      @|de\devjava\playshot\addon\LabyAddon.java|5187|5193|Logger|class|de.devjava.playshot.addon.utils.logger.Logger
-      @|de\devjava\playshot\addon\LabyAddon.java|5218|5224|logger|field|de.devjava.playshot.addon.LabyAddon|logger
+      @|de\devjava\playshot\addon\LabyAddon.java|5036|5045|getLogger|method|de.devjava.playshot.addon.LabyAddon|getLogger|()Lde/devjava/playshot/addon/utils/logger/Logger;
+      @|de\devjava\playshot\addon\LabyAddon.java|5029|5035|Logger|class|de.devjava.playshot.addon.utils.logger.Logger
+      @|de\devjava\playshot\addon\LabyAddon.java|5060|5066|logger|field|de.devjava.playshot.addon.LabyAddon|logger
    Method End: getLogger()Lde/devjava/playshot/addon/utils/logger/Logger;
    Method Start: getLabyName()Ljava/lang/String;
-      @|de\devjava\playshot\addon\LabyAddon.java|5246|5257|getLabyName|method|de.devjava.playshot.addon.LabyAddon|getLabyName|()Ljava/lang/String;
-      @|de\devjava\playshot\addon\LabyAddon.java|5239|5245|String|class|java.lang.String
-      @|de\devjava\playshot\addon\LabyAddon.java|5272|5280|labyName|field|de.devjava.playshot.addon.LabyAddon|labyName
+      @|de\devjava\playshot\addon\LabyAddon.java|5087|5098|getLabyName|method|de.devjava.playshot.addon.LabyAddon|getLabyName|()Ljava/lang/String;
+      @|de\devjava\playshot\addon\LabyAddon.java|5080|5086|String|class|java.lang.String
+      @|de\devjava\playshot\addon\LabyAddon.java|5113|5121|labyName|field|de.devjava.playshot.addon.LabyAddon|labyName
    Method End: getLabyName()Ljava/lang/String;
    Method Start: getSettingsFetcher()Lde/devjava/playshot/addon/objects/settings/SettingsFetcher;
-      @|de\devjava\playshot\addon\LabyAddon.java|5310|5328|getSettingsFetcher|method|de.devjava.playshot.addon.LabyAddon|getSettingsFetcher|()Lde/devjava/playshot/addon/objects/settings/SettingsFetcher;
-      @|de\devjava\playshot\addon\LabyAddon.java|5294|5309|SettingsFetcher|class|de.devjava.playshot.addon.objects.settings.SettingsFetcher
-      @|de\devjava\playshot\addon\LabyAddon.java|5343|5358|settingsFetcher|field|de.devjava.playshot.addon.LabyAddon|settingsFetcher
+      @|de\devjava\playshot\addon\LabyAddon.java|5151|5169|getSettingsFetcher|method|de.devjava.playshot.addon.LabyAddon|getSettingsFetcher|()Lde/devjava/playshot/addon/objects/settings/SettingsFetcher;
+      @|de\devjava\playshot\addon\LabyAddon.java|5135|5150|SettingsFetcher|class|de.devjava.playshot.addon.objects.settings.SettingsFetcher
+      @|de\devjava\playshot\addon\LabyAddon.java|5184|5199|settingsFetcher|field|de.devjava.playshot.addon.LabyAddon|settingsFetcher
    Method End: getSettingsFetcher()Lde/devjava/playshot/addon/objects/settings/SettingsFetcher;
    Method Start: getModuleManager()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
-      @|de\devjava\playshot\addon\LabyAddon.java|5387|5403|getModuleManager|method|de.devjava.playshot.addon.LabyAddon|getModuleManager|()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
-      @|de\devjava\playshot\addon\LabyAddon.java|5373|5386|ModuleManager|class|de.devjava.playshot.addon.objects.modules.ModuleManager
-      @|de\devjava\playshot\addon\LabyAddon.java|5418|5431|moduleManager|field|de.devjava.playshot.addon.LabyAddon|moduleManager
+      @|de\devjava\playshot\addon\LabyAddon.java|5227|5243|getModuleManager|method|de.devjava.playshot.addon.LabyAddon|getModuleManager|()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
+      @|de\devjava\playshot\addon\LabyAddon.java|5213|5226|ModuleManager|class|de.devjava.playshot.addon.objects.modules.ModuleManager
+      @|de\devjava\playshot\addon\LabyAddon.java|5258|5271|moduleManager|field|de.devjava.playshot.addon.LabyAddon|moduleManager
    Method End: getModuleManager()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
    Method Start: getListenerManager()Lde/devjava/playshot/addon/objects/register/ListenerManager;
-      @|de\devjava\playshot\addon\LabyAddon.java|5462|5480|getListenerManager|method|de.devjava.playshot.addon.LabyAddon|getListenerManager|()Lde/devjava/playshot/addon/objects/register/ListenerManager;
-      @|de\devjava\playshot\addon\LabyAddon.java|5446|5461|ListenerManager|class|de.devjava.playshot.addon.objects.register.ListenerManager
-      @|de\devjava\playshot\addon\LabyAddon.java|5495|5510|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|5301|5319|getListenerManager|method|de.devjava.playshot.addon.LabyAddon|getListenerManager|()Lde/devjava/playshot/addon/objects/register/ListenerManager;
+      @|de\devjava\playshot\addon\LabyAddon.java|5285|5300|ListenerManager|class|de.devjava.playshot.addon.objects.register.ListenerManager
+      @|de\devjava\playshot\addon\LabyAddon.java|5334|5349|listenerManager|field|de.devjava.playshot.addon.LabyAddon|listenerManager
    Method End: getListenerManager()Lde/devjava/playshot/addon/objects/register/ListenerManager;
    Method Start: getLabyManager()Lde/devjava/playshot/addon/objects/LabyManager;
-      @|de\devjava\playshot\addon\LabyAddon.java|5537|5551|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
-      @|de\devjava\playshot\addon\LabyAddon.java|5525|5536|LabyManager|class|de.devjava.playshot.addon.objects.LabyManager
-      @|de\devjava\playshot\addon\LabyAddon.java|5566|5577|labyManager|field|de.devjava.playshot.addon.LabyAddon|labyManager
+      @|de\devjava\playshot\addon\LabyAddon.java|5375|5389|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
+      @|de\devjava\playshot\addon\LabyAddon.java|5363|5374|LabyManager|class|de.devjava.playshot.addon.objects.LabyManager
+      @|de\devjava\playshot\addon\LabyAddon.java|5404|5415|labyManager|field|de.devjava.playshot.addon.LabyAddon|labyManager
    Method End: getLabyManager()Lde/devjava/playshot/addon/objects/LabyManager;
    Method Start: getInstance()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\LabyAddon.java|5609|5620|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\LabyAddon.java|5599|5608|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-      @|de\devjava\playshot\addon\LabyAddon.java|5635|5643|instance|field|de.devjava.playshot.addon.LabyAddon|instance
+      @|de\devjava\playshot\addon\LabyAddon.java|5446|5457|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
+      @|de\devjava\playshot\addon\LabyAddon.java|5436|5445|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
+      @|de\devjava\playshot\addon\LabyAddon.java|5472|5480|instance|field|de.devjava.playshot.addon.LabyAddon|instance
    Method End: getInstance()Lde/devjava/playshot/addon/LabyAddon;
 Class End  : de.devjava.playshot.addon.LabyAddon
 endProcessing de\devjava\playshot\addon\LabyAddon.java
@@ -490,17 +490,17 @@ Class Start: de.devjava.playshot.addon.listener.Listener_TickEventRender
       @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|422|428|onTick|method|de.devjava.playshot.addon.listener.Listener_TickEventRender|onTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$RenderTickEvent;)V
       @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|429|454|TickEvent.RenderTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.RenderTickEvent
       @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|455|460|event|param|de.devjava.playshot.addon.listener.Listener_TickEventRender|onTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$RenderTickEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|473|482|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|483|494|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|497|511|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
-      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|514|527|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
-      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|530|541|isConnected|method|de.devjava.playshot.addon.objects.LabyClient|isConnected|()Z
-      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|565|571|Module|class|de.devjava.playshot.addon.objects.modules.Module
-      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|581|590|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|591|602|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|605|621|getModuleManager|method|de.devjava.playshot.addon.LabyAddon|getModuleManager|()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
-      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|624|634|getModules|method|de.devjava.playshot.addon.objects.modules.ModuleManager|getModules|()Ljava/util/List;
-      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|648|660|onTickRender|method|de.devjava.playshot.addon.objects.modules.Module|onTickRender|()V
+      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|471|480|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
+      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|481|492|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
+      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|495|509|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
+      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|512|525|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
+      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|528|539|isConnected|method|de.devjava.playshot.addon.objects.LabyClient|isConnected|()Z
+      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|561|567|Module|class|de.devjava.playshot.addon.objects.modules.Module
+      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|577|586|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
+      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|587|598|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
+      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|601|617|getModuleManager|method|de.devjava.playshot.addon.LabyAddon|getModuleManager|()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
+      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|620|630|getModules|method|de.devjava.playshot.addon.objects.modules.ModuleManager|getModules|()Ljava/util/List;
+      @|de\devjava\playshot\addon\listener\Listener_TickEventRender.java|644|656|onTickRender|method|de.devjava.playshot.addon.objects.modules.Module|onTickRender|()V
    Method End: onTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$RenderTickEvent;)V
 Class End  : de.devjava.playshot.addon.listener.Listener_TickEventRender
 endProcessing de\devjava\playshot\addon\listener\Listener_TickEventRender.java
@@ -1159,116 +1159,76 @@ processing de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent
 @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|9|51|de.devjava.playshot.addon.listener.labymod|package|de.devjava.playshot.addon.listener.labymod|(file)
 Class Start: de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent
    Method Start: onRenderEntityEvent(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|918|937|onRenderEntityEvent|method|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|938|955|RenderEntityEvent|class|de.devjava.playshot.addon.listener.custom.RenderEntityEvent
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|956|961|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|972|981|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|982|993|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|996|1010|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1013|1026|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1029|1040|isConnected|method|de.devjava.playshot.addon.objects.LabyClient|isConnected|()Z
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1063|1068|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1069|1078|getEntity|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1081|1088|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1091|1097|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1112|1117|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1118|1127|getEntity|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1130|1137|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1140|1146|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1167|1176|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1177|1188|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1191|1205|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1208|1221|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1224|1235|isConnected|method|de.devjava.playshot.addon.objects.LabyClient|isConnected|()Z
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1241|1250|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1251|1262|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1265|1279|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1282|1295|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1298|1307|getServer|method|de.devjava.playshot.addon.objects.LabyClient|getServer|()Lde/devjava/playshot/addon/utils/Server;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1313|1319|Server|class|de.devjava.playshot.addon.utils.Server
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1320|1328|LAZERTAG|field|de.devjava.playshot.addon.utils.Server|LAZERTAG
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1338|1349|RenderUtils|class|de.devjava.playshot.addon.render.RenderUtils
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1352|1362|renderName|method|de.devjava.playshot.addon.render.RenderUtils|renderName|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1363|1381|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1382|1387|WHITE|field|net.minecraft.util.EnumChatFormatting|WHITE
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1405|1423|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1424|1433|DARK_GRAY|field|net.minecraft.util.EnumChatFormatting|DARK_GRAY
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1443|1461|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1462|1466|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1482|1487|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1488|1497|getEntity|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1501|1506|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1507|1514|getarg1|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg1|()D
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1518|1523|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1524|1531|getarg2|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg2|()D
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1535|1540|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1541|1548|getarg3|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg3|()D
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1565|1574|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1575|1586|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1589|1603|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1606|1619|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1622|1633|isConnected|method|de.devjava.playshot.addon.objects.LabyClient|isConnected|()Z
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1646|1657|RenderUtils|class|de.devjava.playshot.addon.render.RenderUtils
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1660|1670|renderName|method|de.devjava.playshot.addon.render.RenderUtils|renderName|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1671|1689|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1690|1695|WHITE|field|net.minecraft.util.EnumChatFormatting|WHITE
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1712|1730|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1731|1740|DARK_GRAY|field|net.minecraft.util.EnumChatFormatting|DARK_GRAY
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1750|1768|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1769|1773|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1789|1794|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1795|1804|getEntity|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1808|1813|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1814|1821|getarg1|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg1|()D
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1825|1830|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1831|1838|getarg2|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg2|()D
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1842|1847|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1848|1855|getarg3|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg3|()D
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1866|1871|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1872|1881|getEntity|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1884|1891|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1894|1900|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1921|1930|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1931|1942|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1945|1959|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1962|1975|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1978|1989|isConnected|method|de.devjava.playshot.addon.objects.LabyClient|isConnected|()Z
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1995|2004|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2005|2016|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2019|2033|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2036|2049|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2052|2061|getServer|method|de.devjava.playshot.addon.objects.LabyClient|getServer|()Lde/devjava/playshot/addon/utils/Server;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2067|2073|Server|class|de.devjava.playshot.addon.utils.Server
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2074|2082|LAZERTAG|field|de.devjava.playshot.addon.utils.Server|LAZERTAG
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2092|2103|RenderUtils|class|de.devjava.playshot.addon.render.RenderUtils
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2106|2116|renderName|method|de.devjava.playshot.addon.render.RenderUtils|renderName|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2117|2135|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2136|2141|WHITE|field|net.minecraft.util.EnumChatFormatting|WHITE
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2158|2176|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2177|2186|DARK_GRAY|field|net.minecraft.util.EnumChatFormatting|DARK_GRAY
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2196|2214|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2215|2223|DARK_RED|field|net.minecraft.util.EnumChatFormatting|DARK_RED
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2237|2242|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2243|2252|getEntity|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2256|2261|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2262|2269|getarg1|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg1|()D
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2273|2278|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2279|2286|getarg2|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg2|()D
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2290|2295|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2296|2303|getarg3|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg3|()D
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2315|2324|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2325|2336|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2339|2353|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2356|2369|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2372|2383|isConnected|method|de.devjava.playshot.addon.objects.LabyClient|isConnected|()Z
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2405|2411|Module|class|de.devjava.playshot.addon.objects.modules.Module
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2421|2430|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2431|2442|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2445|2461|getModuleManager|method|de.devjava.playshot.addon.LabyAddon|getModuleManager|()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2464|2474|getModules|method|de.devjava.playshot.addon.objects.modules.ModuleManager|getModules|()Ljava/util/List;
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2491|2500|isEnabled|method|de.devjava.playshot.addon.objects.modules.Module|isEnabled|()Z
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2515|2534|onRenderEntityEvent|method|de.devjava.playshot.addon.objects.modules.Module|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V
-      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|2535|2540|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|584|603|onRenderEntityEvent|method|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|604|621|RenderEntityEvent|class|de.devjava.playshot.addon.listener.custom.RenderEntityEvent
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|622|627|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|639|648|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|649|660|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|663|677|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|680|693|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|696|707|isConnected|method|de.devjava.playshot.addon.objects.LabyClient|isConnected|()Z
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|729|735|Module|class|de.devjava.playshot.addon.objects.modules.Module
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|745|754|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|755|766|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|769|785|getModuleManager|method|de.devjava.playshot.addon.LabyAddon|getModuleManager|()Lde/devjava/playshot/addon/objects/modules/ModuleManager;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|788|798|getModules|method|de.devjava.playshot.addon.objects.modules.ModuleManager|getModules|()Ljava/util/List;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|815|824|isEnabled|method|de.devjava.playshot.addon.objects.modules.Module|isEnabled|()Z
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|839|858|onRenderEntityEvent|method|de.devjava.playshot.addon.objects.modules.Module|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|859|864|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|878|883|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|884|893|getEntity|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|896|906|isSneaking|method|net.minecraft.entity.Entity|isSneaking|()Z
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|929|938|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|939|950|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|953|967|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|970|983|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|986|995|getServer|method|de.devjava.playshot.addon.objects.LabyClient|getServer|()Lde/devjava/playshot/addon/utils/Server;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1001|1007|Server|class|de.devjava.playshot.addon.utils.Server
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1008|1016|LAZERTAG|field|de.devjava.playshot.addon.utils.Server|LAZERTAG
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1037|1042|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1043|1052|getEntity|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1055|1062|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1065|1071|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1086|1091|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1092|1101|getEntity|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1104|1111|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1114|1120|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1143|1154|RenderUtils|class|de.devjava.playshot.addon.render.RenderUtils
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1157|1167|renderName|method|de.devjava.playshot.addon.render.RenderUtils|renderName|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1168|1186|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1187|1192|WHITE|field|net.minecraft.util.EnumChatFormatting|WHITE
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1210|1228|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1229|1238|DARK_GRAY|field|net.minecraft.util.EnumChatFormatting|DARK_GRAY
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1248|1266|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1267|1271|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1287|1292|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1293|1302|getEntity|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1306|1311|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1312|1319|getarg1|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg1|()D
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1323|1328|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1329|1336|getarg2|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg2|()D
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1340|1345|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1346|1353|getarg3|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg3|()D
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1365|1370|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1371|1380|getEntity|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1383|1390|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1393|1399|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1422|1433|RenderUtils|class|de.devjava.playshot.addon.render.RenderUtils
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1436|1446|renderName|method|de.devjava.playshot.addon.render.RenderUtils|renderName|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1447|1465|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1466|1471|WHITE|field|net.minecraft.util.EnumChatFormatting|WHITE
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1488|1506|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1507|1516|DARK_GRAY|field|net.minecraft.util.EnumChatFormatting|DARK_GRAY
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1526|1544|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1545|1553|DARK_RED|field|net.minecraft.util.EnumChatFormatting|DARK_RED
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1567|1572|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1573|1582|getEntity|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1586|1591|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1592|1599|getarg1|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg1|()D
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1603|1608|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1609|1616|getarg2|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg2|()D
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1620|1625|event|param|de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java|1626|1633|getarg3|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg3|()D
    Method End: onRenderEntityEvent(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V
 Class End  : de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent
 endProcessing de\devjava\playshot\addon\listener\labymod\Listener_RenderEntityEvent.java
@@ -1698,100 +1658,101 @@ Class Start: de.devjava.playshot.addon.objects.modules.Module_AutoGG
 Class End  : de.devjava.playshot.addon.objects.modules.Module_AutoGG
 endProcessing de\devjava\playshot\addon\objects\modules\Module_AutoGG.java
 
-processing de\devjava\playshot\addon\objects\modules\Module_LazerTag.java
-@|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|9|50|de.devjava.playshot.addon.objects.modules|package|de.devjava.playshot.addon.objects.modules|(file)
-Class Start: de.devjava.playshot.addon.objects.modules.Module_LazerTag
-   Method Start: Module_LazerTag()V
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|935|950|Module_LazerTag|method|de.devjava.playshot.addon.objects.modules.Module_LazerTag|Module_LazerTag|()V
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|964|972|Settings|class|de.devjava.playshot.addon.objects.settings.Settings
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|973|990|LAZERTAG_SHOWTEAM|field|de.devjava.playshot.addon.objects.settings.Settings|LAZERTAG_SHOWTEAM
-   Method End: Module_LazerTag()V
+processing de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java
+@|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|9|50|de.devjava.playshot.addon.objects.modules|package|de.devjava.playshot.addon.objects.modules|(file)
+Class Start: de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam
+   Method Start: Module_LazerTagTeam()V
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|939|958|Module_LazerTagTeam|method|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|Module_LazerTagTeam|()V
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|972|980|Settings|class|de.devjava.playshot.addon.objects.settings.Settings
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|981|998|LAZERTAG_SHOWTEAM|field|de.devjava.playshot.addon.objects.settings.Settings|LAZERTAG_SHOWTEAM
+   Method End: Module_LazerTagTeam()V
    Method Start: getTeamColor(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1008|1020|getTeamColor|method|de.devjava.playshot.addon.objects.modules.Module_LazerTag|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1005|1007|CC|class|de.devjava.playshot.addon.utils.CC
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1021|1033|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1034|1046|entityPlayer|param|de.devjava.playshot.addon.objects.modules.Module_LazerTag|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;|entityPlayer|0
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1086|1098|entityPlayer|param|de.devjava.playshot.addon.objects.modules.Module_LazerTag|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;|entityPlayer|0
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1099|1114|getCurrentArmor|method|net.minecraft.entity.EntityLivingBase|getCurrentArmor|(I)Lnet/minecraft/item/ItemStack;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1134|1146|entityPlayer|param|de.devjava.playshot.addon.objects.modules.Module_LazerTag|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;|entityPlayer|0
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1147|1162|getCurrentArmor|method|net.minecraft.entity.EntityLivingBase|getCurrentArmor|(I)Lnet/minecraft/item/ItemStack;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1166|1173|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1176|1182|equals|method|java.lang.Object|equals|(Ljava/lang/Object;)Z
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1183|1188|Items|class|net.minecraft.init.Items
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1189|1202|leather_boots|field|net.minecraft.init.Items|leather_boots
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1213|1225|entityPlayer|param|de.devjava.playshot.addon.objects.modules.Module_LazerTag|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;|entityPlayer|0
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1226|1241|getCurrentArmor|method|net.minecraft.entity.EntityLivingBase|getCurrentArmor|(I)Lnet/minecraft/item/ItemStack;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1245|1257|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1260|1274|getCompoundTag|method|net.minecraft.nbt.NBTTagCompound|getCompoundTag|(Ljava/lang/String;)Lnet/minecraft/nbt/NBTTagCompound;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1282|1296|getCompoundTag|method|net.minecraft.nbt.NBTTagCompound|getCompoundTag|(Ljava/lang/String;)Lnet/minecraft/nbt/NBTTagCompound;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1308|1314|getTag|method|net.minecraft.nbt.NBTTagCompound|getTag|(Ljava/lang/String;)Lnet/minecraft/nbt/NBTBase;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1351|1359|getColor|method|de.devjava.playshot.addon.objects.modules.Module_LazerTag|getColor|(I)Lde/devjava/playshot/addon/utils/CC;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1360|1367|Integer|class|java.lang.Integer
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1368|1375|valueOf|method|java.lang.Integer|valueOf|(Ljava/lang/String;)Ljava/lang/Integer;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1376|1388|entityPlayer|param|de.devjava.playshot.addon.objects.modules.Module_LazerTag|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;|entityPlayer|0
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1389|1404|getCurrentArmor|method|net.minecraft.entity.EntityLivingBase|getCurrentArmor|(I)Lnet/minecraft/item/ItemStack;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1408|1420|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1423|1437|getCompoundTag|method|net.minecraft.nbt.NBTTagCompound|getCompoundTag|(Ljava/lang/String;)Lnet/minecraft/nbt/NBTTagCompound;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1445|1459|getCompoundTag|method|net.minecraft.nbt.NBTTagCompound|getCompoundTag|(Ljava/lang/String;)Lnet/minecraft/nbt/NBTTagCompound;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1471|1477|getTag|method|net.minecraft.nbt.NBTTagCompound|getTag|(Ljava/lang/String;)Lnet/minecraft/nbt/NBTBase;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1016|1028|getTeamColor|method|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1013|1015|CC|class|de.devjava.playshot.addon.utils.CC
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1029|1041|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1042|1054|entityPlayer|param|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;|entityPlayer|0
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1094|1106|entityPlayer|param|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;|entityPlayer|0
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1107|1122|getCurrentArmor|method|net.minecraft.entity.EntityLivingBase|getCurrentArmor|(I)Lnet/minecraft/item/ItemStack;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1142|1154|entityPlayer|param|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;|entityPlayer|0
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1155|1170|getCurrentArmor|method|net.minecraft.entity.EntityLivingBase|getCurrentArmor|(I)Lnet/minecraft/item/ItemStack;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1174|1181|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1184|1190|equals|method|java.lang.Object|equals|(Ljava/lang/Object;)Z
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1191|1196|Items|class|net.minecraft.init.Items
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1197|1210|leather_boots|field|net.minecraft.init.Items|leather_boots
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1221|1233|entityPlayer|param|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;|entityPlayer|0
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1234|1249|getCurrentArmor|method|net.minecraft.entity.EntityLivingBase|getCurrentArmor|(I)Lnet/minecraft/item/ItemStack;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1253|1265|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1268|1282|getCompoundTag|method|net.minecraft.nbt.NBTTagCompound|getCompoundTag|(Ljava/lang/String;)Lnet/minecraft/nbt/NBTTagCompound;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1290|1304|getCompoundTag|method|net.minecraft.nbt.NBTTagCompound|getCompoundTag|(Ljava/lang/String;)Lnet/minecraft/nbt/NBTTagCompound;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1316|1322|getTag|method|net.minecraft.nbt.NBTTagCompound|getTag|(Ljava/lang/String;)Lnet/minecraft/nbt/NBTBase;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1359|1367|getColor|method|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|getColor|(I)Lde/devjava/playshot/addon/utils/CC;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1368|1375|Integer|class|java.lang.Integer
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1376|1383|valueOf|method|java.lang.Integer|valueOf|(Ljava/lang/String;)Ljava/lang/Integer;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1384|1396|entityPlayer|param|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;|entityPlayer|0
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1397|1412|getCurrentArmor|method|net.minecraft.entity.EntityLivingBase|getCurrentArmor|(I)Lnet/minecraft/item/ItemStack;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1416|1428|serializeNBT|method|net.minecraftforge.common.util.INBTSerializable|serializeNBT|()Lnet/minecraft/nbt/NBTBase;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1431|1445|getCompoundTag|method|net.minecraft.nbt.NBTTagCompound|getCompoundTag|(Ljava/lang/String;)Lnet/minecraft/nbt/NBTTagCompound;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1453|1467|getCompoundTag|method|net.minecraft.nbt.NBTTagCompound|getCompoundTag|(Ljava/lang/String;)Lnet/minecraft/nbt/NBTTagCompound;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1479|1485|getTag|method|net.minecraft.nbt.NBTTagCompound|getTag|(Ljava/lang/String;)Lnet/minecraft/nbt/NBTBase;
    Method End: getTeamColor(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;
    Method Start: getColor(I)Lde/devjava/playshot/addon/utils/CC;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1525|1533|getColor|method|de.devjava.playshot.addon.objects.modules.Module_LazerTag|getColor|(I)Lde/devjava/playshot/addon/utils/CC;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1522|1524|CC|class|de.devjava.playshot.addon.utils.CC
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1538|1545|colorid|param|de.devjava.playshot.addon.objects.modules.Module_LazerTag|getColor|(I)Lde/devjava/playshot/addon/utils/CC;|colorid|0
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1556|1558|CC|class|de.devjava.playshot.addon.utils.CC
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1564|1566|CC|class|de.devjava.playshot.addon.utils.CC
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1567|1573|values|method|de.devjava.playshot.addon.utils.CC|values|()[Lde/devjava/playshot/addon/utils/CC;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1583|1590|colorid|param|de.devjava.playshot.addon.objects.modules.Module_LazerTag|getColor|(I)Lde/devjava/playshot/addon/utils/CC;|colorid|0
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1597|1605|getColor|method|de.devjava.playshot.addon.utils.CC|getColor|()I
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1533|1541|getColor|method|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|getColor|(I)Lde/devjava/playshot/addon/utils/CC;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1530|1532|CC|class|de.devjava.playshot.addon.utils.CC
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1546|1553|colorid|param|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|getColor|(I)Lde/devjava/playshot/addon/utils/CC;|colorid|0
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1564|1566|CC|class|de.devjava.playshot.addon.utils.CC
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1572|1574|CC|class|de.devjava.playshot.addon.utils.CC
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1575|1581|values|method|de.devjava.playshot.addon.utils.CC|values|()[Lde/devjava/playshot/addon/utils/CC;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1591|1598|colorid|param|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|getColor|(I)Lde/devjava/playshot/addon/utils/CC;|colorid|0
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1605|1613|getColor|method|de.devjava.playshot.addon.utils.CC|getColor|()I
    Method End: getColor(I)Lde/devjava/playshot/addon/utils/CC;
    Method Start: onRenderEntityEvent(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1667|1686|onRenderEntityEvent|method|de.devjava.playshot.addon.objects.modules.Module|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1687|1704|RenderEntityEvent|class|de.devjava.playshot.addon.listener.custom.RenderEntityEvent
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1705|1710|event|param|de.devjava.playshot.addon.objects.modules.Module_LazerTag|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1721|1730|isEnabled|method|de.devjava.playshot.addon.objects.modules.Module|isEnabled|()Z
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1751|1760|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1761|1772|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1775|1789|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1792|1805|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1808|1817|getServer|method|de.devjava.playshot.addon.objects.LabyClient|getServer|()Lde/devjava/playshot/addon/utils/Server;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1823|1829|Server|class|de.devjava.playshot.addon.utils.Server
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1830|1838|LAZERTAG|field|de.devjava.playshot.addon.utils.Server|LAZERTAG
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1862|1874|getTeamColor|method|de.devjava.playshot.addon.objects.modules.Module_LazerTag|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1875|1884|Minecraft|class|net.minecraft.client.Minecraft
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1885|1897|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1900|1909|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1938|1944|Entity|class|net.minecraft.entity.Entity
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1954|1963|Minecraft|class|net.minecraft.client.Minecraft
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1964|1976|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1979|1987|theWorld|field|net.minecraft.client.Minecraft|theWorld
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|1988|2004|loadedEntityList|field|net.minecraft.world.World|loadedEntityList
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2030|2042|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2053|2065|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2082|2094|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2117|2129|getTeamColor|method|de.devjava.playshot.addon.objects.modules.Module_LazerTag|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2130|2139|Minecraft|class|net.minecraft.client.Minecraft
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2140|2152|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2155|2164|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2174|2186|getTeamColor|method|de.devjava.playshot.addon.objects.modules.Module_LazerTag|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2211|2222|RenderUtils|class|de.devjava.playshot.addon.render.RenderUtils
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2225|2235|renderName|method|de.devjava.playshot.addon.render.RenderUtils|renderName|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2241|2253|getTeamColor|method|de.devjava.playshot.addon.objects.modules.Module_LazerTag|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2254|2263|Minecraft|class|net.minecraft.client.Minecraft
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2264|2276|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2279|2288|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2290|2302|getChatColor|method|de.devjava.playshot.addon.utils.CC|getChatColor|()Lnet/minecraft/util/EnumChatFormatting;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2319|2324|event|param|de.devjava.playshot.addon.objects.modules.Module_LazerTag|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2325|2334|getEntity|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2338|2343|event|param|de.devjava.playshot.addon.objects.modules.Module_LazerTag|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2344|2351|getarg1|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg1|()D
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2355|2360|event|param|de.devjava.playshot.addon.objects.modules.Module_LazerTag|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2361|2368|getarg2|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg2|()D
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2372|2377|event|param|de.devjava.playshot.addon.objects.modules.Module_LazerTag|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
-      @|de\devjava\playshot\addon\objects\modules\Module_LazerTag.java|2378|2385|getarg3|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg3|()D
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1675|1694|onRenderEntityEvent|method|de.devjava.playshot.addon.objects.modules.Module|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1695|1712|RenderEntityEvent|class|de.devjava.playshot.addon.listener.custom.RenderEntityEvent
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1713|1718|event|param|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1729|1738|isEnabled|method|de.devjava.playshot.addon.objects.modules.Module|isEnabled|()Z
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1759|1768|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1769|1780|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1783|1797|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1800|1813|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1816|1825|getServer|method|de.devjava.playshot.addon.objects.LabyClient|getServer|()Lde/devjava/playshot/addon/utils/Server;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1831|1837|Server|class|de.devjava.playshot.addon.utils.Server
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1838|1846|LAZERTAG|field|de.devjava.playshot.addon.utils.Server|LAZERTAG
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1870|1882|getTeamColor|method|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1883|1892|Minecraft|class|net.minecraft.client.Minecraft
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1893|1905|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1908|1917|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1942|1954|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1971|1983|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1985|1990|event|param|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|1991|2000|getEntity|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2015|2027|getTeamColor|method|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2028|2037|Minecraft|class|net.minecraft.client.Minecraft
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2038|2050|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2053|2062|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2064|2068|name|method|java.lang.Enum|name|()Ljava/lang/String;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2071|2077|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2083|2095|getTeamColor|method|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2110|2114|name|method|java.lang.Enum|name|()Ljava/lang/String;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2126|2137|RenderUtils|class|de.devjava.playshot.addon.render.RenderUtils
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2140|2156|renderNameBigger|method|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2157|2175|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2176|2180|BOLD|field|net.minecraft.util.EnumChatFormatting|BOLD
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2193|2205|getTeamColor|method|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|getTeamColor|(Lnet/minecraft/entity/player/EntityPlayer;)Lde/devjava/playshot/addon/utils/CC;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2206|2215|Minecraft|class|net.minecraft.client.Minecraft
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2216|2228|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2231|2240|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2242|2254|getChatColor|method|de.devjava.playshot.addon.utils.CC|getChatColor|()Lnet/minecraft/util/EnumChatFormatting;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2267|2272|event|param|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2273|2282|getEntity|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2286|2291|event|param|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2292|2299|getarg1|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg1|()D
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2303|2308|event|param|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2309|2316|getarg2|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg2|()D
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2320|2325|event|param|de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam|onRenderEntityEvent|(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V|event|0
+      @|de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java|2326|2333|getarg3|method|de.devjava.playshot.addon.listener.custom.RenderEntityEvent|getarg3|()D
    Method End: onRenderEntityEvent(Lde/devjava/playshot/addon/listener/custom/RenderEntityEvent;)V
-Class End  : de.devjava.playshot.addon.objects.modules.Module_LazerTag
-endProcessing de\devjava\playshot\addon\objects\modules\Module_LazerTag.java
+Class End  : de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam
+endProcessing de\devjava\playshot\addon\objects\modules\Module_LazerTagTeam.java
 
 processing de\devjava\playshot\addon\objects\modules\Module_Stats.java
 @|de\devjava\playshot\addon\objects\modules\Module_Stats.java|9|50|de.devjava.playshot.addon.objects.modules|package|de.devjava.playshot.addon.objects.modules|(file)
@@ -3686,6 +3647,162 @@ Class Start: de.devjava.playshot.addon.objects.settings.SettingsFetcher
 Class End  : de.devjava.playshot.addon.objects.settings.SettingsFetcher
 endProcessing de\devjava\playshot\addon\objects\settings\SettingsFetcher.java
 
+processing de\devjava\playshot\addon\render\RenderLaser.java
+@|de\devjava\playshot\addon\render\RenderLaser.java|9|41|de.devjava.playshot.addon.render|package|de.devjava.playshot.addon.render|(file)
+Class Start: de.devjava.playshot.addon.render.RenderLaser
+   @|de\devjava\playshot\addon\render\RenderLaser.java|827|843|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|de\devjava\playshot\addon\render\RenderLaser.java|844|857|arrowTextures|field|de.devjava.playshot.addon.render.RenderLaser|arrowTextures|
+   @|de\devjava\playshot\addon\render\RenderLaser.java|864|880|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   Method Start: RenderLaser(Lnet/minecraft/client/renderer/entity/RenderManager;)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|927|938|RenderLaser|method|de.devjava.playshot.addon.render.RenderLaser|RenderLaser|(Lnet/minecraft/client/renderer/entity/RenderManager;)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|939|952|RenderManager|class|net.minecraft.client.renderer.entity.RenderManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|953|968|renderManagerIn|param|de.devjava.playshot.addon.render.RenderLaser|RenderLaser|(Lnet/minecraft/client/renderer/entity/RenderManager;)V|renderManagerIn|0
+      @|de\devjava\playshot\addon\render\RenderLaser.java|981|996|renderManagerIn|param|de.devjava.playshot.addon.render.RenderLaser|RenderLaser|(Lnet/minecraft/client/renderer/entity/RenderManager;)V|renderManagerIn|0
+   Method End: RenderLaser(Lnet/minecraft/client/renderer/entity/RenderManager;)V
+   Method Start: doRender(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1016|1024|doRender|method|net.minecraft.client.renderer.entity.Render|doRender|(Lnet/minecraft/entity/Entity;DDDFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1025|1036|EntityLaser|class|de.devjava.playshot.addon.utils.EntityLaser
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1037|1043|entity|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|entity|0
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1052|1053|x|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|x|1
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1062|1063|y|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|y|2
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1072|1073|z|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|z|3
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1081|1090|entityYaw|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|entityYaw|4
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1098|1110|partialTicks|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|partialTicks|5
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1118|1135|bindEntityTexture|method|net.minecraft.client.renderer.entity.Render|bindEntityTexture|(Lnet/minecraft/entity/Entity;)Z
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1137|1148|EntityLaser|class|de.devjava.playshot.addon.utils.EntityLaser
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1150|1156|entity|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|entity|0
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1161|1175|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1176|1181|color|method|net.minecraft.client.renderer.GlStateManager|color|(FFFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1209|1223|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1224|1234|pushMatrix|method|net.minecraft.client.renderer.GlStateManager|pushMatrix|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1240|1254|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1255|1264|translate|method|net.minecraft.client.renderer.GlStateManager|translate|(FFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1273|1274|x|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|x|1
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1284|1285|y|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|y|2
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1295|1296|z|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|z|3
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1301|1315|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1316|1325|translate|method|net.minecraft.client.renderer.GlStateManager|translate|(FFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1326|1332|entity|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|entity|0
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1333|1348|prevRotationYaw|field|net.minecraft.entity.Entity|prevRotationYaw
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1352|1358|entity|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|entity|0
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1359|1370|rotationYaw|field|net.minecraft.entity.Entity|rotationYaw
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1373|1379|entity|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|entity|0
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1380|1395|prevRotationYaw|field|net.minecraft.entity.Entity|prevRotationYaw
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1399|1411|partialTicks|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|partialTicks|5
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1436|1450|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1451|1460|translate|method|net.minecraft.client.renderer.GlStateManager|translate|(FFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1461|1467|entity|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|entity|0
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1468|1485|prevRotationPitch|field|net.minecraft.entity.Entity|prevRotationPitch
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1489|1495|entity|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|entity|0
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1496|1509|rotationPitch|field|net.minecraft.entity.Entity|rotationPitch
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1512|1518|entity|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|entity|0
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1519|1536|prevRotationPitch|field|net.minecraft.entity.Entity|prevRotationPitch
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1540|1552|partialTicks|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|partialTicks|5
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1569|1580|Tessellator|class|net.minecraft.client.renderer.Tessellator
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1595|1606|Tessellator|class|net.minecraft.client.renderer.Tessellator
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1607|1618|getInstance|method|net.minecraft.client.renderer.Tessellator|getInstance|()Lnet/minecraft/client/renderer/Tessellator;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1624|1637|WorldRenderer|class|net.minecraft.client.renderer.WorldRenderer
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1666|1682|getWorldRenderer|method|net.minecraft.client.renderer.Tessellator|getWorldRenderer|()Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1688|1702|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1703|1718|disableLighting|method|net.minecraft.client.renderer.GlStateManager|disableLighting|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1748|1760|OpenGlHelper|class|net.minecraft.client.renderer.OpenGlHelper
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1761|1776|lastBrightnessX|field|net.minecraft.client.renderer.OpenGlHelper|lastBrightnessX
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1804|1816|OpenGlHelper|class|net.minecraft.client.renderer.OpenGlHelper
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1817|1832|lastBrightnessY|field|net.minecraft.client.renderer.OpenGlHelper|lastBrightnessY
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1836|1848|OpenGlHelper|class|net.minecraft.client.renderer.OpenGlHelper
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1849|1873|setLightmapTextureCoords|method|net.minecraft.client.renderer.OpenGlHelper|setLightmapTextureCoords|(IFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1874|1886|OpenGlHelper|class|net.minecraft.client.renderer.OpenGlHelper
+      @|de\devjava\playshot\addon\render\RenderLaser.java|1887|1902|lightmapTexUnit|field|net.minecraft.client.renderer.OpenGlHelper|lightmapTexUnit
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2179|2193|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2194|2213|enableRescaleNormal|method|net.minecraft.client.renderer.GlStateManager|enableRescaleNormal|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2237|2249|partialTicks|param|de.devjava.playshot.addon.render.RenderLaser|doRender|(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V|partialTicks|5
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2287|2297|MathHelper|class|net.minecraft.util.MathHelper
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2298|2301|sin|method|net.minecraft.util.MathHelper|sin|(F)F
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2322|2336|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2337|2343|rotate|method|net.minecraft.client.renderer.GlStateManager|rotate|(FFFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2374|2388|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2389|2395|rotate|method|net.minecraft.client.renderer.GlStateManager|rotate|(FFFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2424|2438|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2439|2444|scale|method|net.minecraft.client.renderer.GlStateManager|scale|(FFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2460|2474|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2475|2484|translate|method|net.minecraft.client.renderer.GlStateManager|translate|(FFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2507|2511|GL11|class|org.lwjgl.opengl.GL11
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2512|2522|glNormal3f|method|org.lwjgl.opengl.GL11|glNormal3f|(FFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2556|2561|begin|method|net.minecraft.client.renderer.WorldRenderer|begin|(ILnet/minecraft/client/renderer/vertex/VertexFormat;)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2565|2585|DefaultVertexFormats|class|net.minecraft.client.renderer.vertex.DefaultVertexFormats
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2586|2598|POSITION_TEX|field|net.minecraft.client.renderer.vertex.DefaultVertexFormats|POSITION_TEX
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2617|2620|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2642|2645|tex|method|net.minecraft.client.renderer.WorldRenderer|tex|(DD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2654|2663|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2683|2686|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2707|2710|tex|method|net.minecraft.client.renderer.WorldRenderer|tex|(DD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2719|2728|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2748|2751|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2771|2774|tex|method|net.minecraft.client.renderer.WorldRenderer|tex|(DD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2783|2792|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2812|2815|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2836|2839|tex|method|net.minecraft.client.renderer.WorldRenderer|tex|(DD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2848|2857|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2875|2879|draw|method|net.minecraft.client.renderer.Tessellator|draw|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2885|2889|GL11|class|org.lwjgl.opengl.GL11
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2890|2900|glNormal3f|method|org.lwjgl.opengl.GL11|glNormal3f|(FFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2935|2940|begin|method|net.minecraft.client.renderer.WorldRenderer|begin|(ILnet/minecraft/client/renderer/vertex/VertexFormat;)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2944|2964|DefaultVertexFormats|class|net.minecraft.client.renderer.vertex.DefaultVertexFormats
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2965|2977|POSITION_TEX|field|net.minecraft.client.renderer.vertex.DefaultVertexFormats|POSITION_TEX
+      @|de\devjava\playshot\addon\render\RenderLaser.java|2996|2999|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3020|3023|tex|method|net.minecraft.client.renderer.WorldRenderer|tex|(DD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3032|3041|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3061|3064|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3084|3087|tex|method|net.minecraft.client.renderer.WorldRenderer|tex|(DD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3096|3105|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3125|3128|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3149|3152|tex|method|net.minecraft.client.renderer.WorldRenderer|tex|(DD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3161|3170|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3190|3193|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3215|3218|tex|method|net.minecraft.client.renderer.WorldRenderer|tex|(DD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3227|3236|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3254|3258|draw|method|net.minecraft.client.renderer.Tessellator|draw|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3298|3312|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3313|3319|rotate|method|net.minecraft.client.renderer.GlStateManager|rotate|(FFFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3349|3353|GL11|class|org.lwjgl.opengl.GL11
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3354|3364|glNormal3f|method|org.lwjgl.opengl.GL11|glNormal3f|(FFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3399|3404|begin|method|net.minecraft.client.renderer.WorldRenderer|begin|(ILnet/minecraft/client/renderer/vertex/VertexFormat;)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3408|3428|DefaultVertexFormats|class|net.minecraft.client.renderer.vertex.DefaultVertexFormats
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3429|3441|POSITION_TEX|field|net.minecraft.client.renderer.vertex.DefaultVertexFormats|POSITION_TEX
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3461|3464|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3485|3488|tex|method|net.minecraft.client.renderer.WorldRenderer|tex|(DD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3496|3505|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3526|3529|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3549|3552|tex|method|net.minecraft.client.renderer.WorldRenderer|tex|(DD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3561|3570|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3591|3594|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3613|3616|tex|method|net.minecraft.client.renderer.WorldRenderer|tex|(DD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3625|3634|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3655|3658|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3678|3681|tex|method|net.minecraft.client.renderer.WorldRenderer|tex|(DD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3689|3698|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3717|3721|draw|method|net.minecraft.client.renderer.Tessellator|draw|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3731|3743|OpenGlHelper|class|net.minecraft.client.renderer.OpenGlHelper
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3744|3768|setLightmapTextureCoords|method|net.minecraft.client.renderer.OpenGlHelper|setLightmapTextureCoords|(IFF)V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3769|3781|OpenGlHelper|class|net.minecraft.client.renderer.OpenGlHelper
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3782|3797|lightmapTexUnit|field|net.minecraft.client.renderer.OpenGlHelper|lightmapTexUnit
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3836|3850|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3851|3865|enableLighting|method|net.minecraft.client.renderer.GlStateManager|enableLighting|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3871|3885|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3886|3906|disableRescaleNormal|method|net.minecraft.client.renderer.GlStateManager|disableRescaleNormal|()V
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3912|3926|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3927|3936|popMatrix|method|net.minecraft.client.renderer.GlStateManager|popMatrix|()V
+   Method End: doRender(Lde/devjava/playshot/addon/utils/EntityLaser;DDDFF)V
+   Method Start: getEntityTexture(Lde/devjava/playshot/addon/utils/EntityLaser;)Lnet/minecraft/util/ResourceLocation;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3983|3999|getEntityTexture|method|net.minecraft.client.renderer.entity.Render|getEntityTexture|(Lnet/minecraft/entity/Entity;)Lnet/minecraft/util/ResourceLocation;
+      @|de\devjava\playshot\addon\render\RenderLaser.java|3966|3982|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|de\devjava\playshot\addon\render\RenderLaser.java|4000|4011|EntityLaser|class|de.devjava.playshot.addon.utils.EntityLaser
+      @|de\devjava\playshot\addon\render\RenderLaser.java|4012|4018|entity|param|de.devjava.playshot.addon.render.RenderLaser|getEntityTexture|(Lde/devjava/playshot/addon/utils/EntityLaser;)Lnet/minecraft/util/ResourceLocation;|entity|0
+      @|de\devjava\playshot\addon\render\RenderLaser.java|4032|4045|arrowTextures|field|de.devjava.playshot.addon.render.RenderLaser|arrowTextures
+   Method End: getEntityTexture(Lde/devjava/playshot/addon/utils/EntityLaser;)Lnet/minecraft/util/ResourceLocation;
+Class End  : de.devjava.playshot.addon.render.RenderLaser
+endProcessing de\devjava\playshot\addon\render\RenderLaser.java
+
 processing de\devjava\playshot\addon\render\RenderUtils.java
 @|de\devjava\playshot\addon\render\RenderUtils.java|8|40|de.devjava.playshot.addon.render|package|de.devjava.playshot.addon.render|(file)
 Class Start: de.devjava.playshot.addon.render.RenderUtils
@@ -3789,6 +3906,103 @@ Class Start: de.devjava.playshot.addon.render.RenderUtils
       @|de\devjava\playshot\addon\render\RenderUtils.java|2628|2642|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
       @|de\devjava\playshot\addon\render\RenderUtils.java|2643|2652|popMatrix|method|net.minecraft.client.renderer.GlStateManager|popMatrix|()V
    Method End: renderName(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V
+   Method Start: renderNameBigger(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2675|2691|renderNameBigger|method|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2692|2698|String|class|java.lang.String
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2699|2702|str|param|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V|str|0
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2704|2710|Entity|class|net.minecraft.entity.Entity
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2711|2717|entity|param|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V|entity|1
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2726|2727|x|param|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V|x|2
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2736|2737|y|param|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V|y|3
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2746|2747|z|param|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V|z|4
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2754|2766|FontRenderer|class|net.minecraft.client.gui.FontRenderer
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2782|2791|Minecraft|class|net.minecraft.client.Minecraft
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2792|2804|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2807|2823|getRenderManager|method|net.minecraft.client.Minecraft|getRenderManager|()Lnet/minecraft/client/renderer/entity/RenderManager;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2826|2841|getFontRenderer|method|net.minecraft.client.renderer.entity.RenderManager|getFontRenderer|()Lnet/minecraft/client/gui/FontRenderer;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2892|2906|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2907|2917|pushMatrix|method|net.minecraft.client.renderer.GlStateManager|pushMatrix|()V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2923|2937|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2938|2947|translate|method|net.minecraft.client.renderer.GlStateManager|translate|(FFF)V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2956|2957|x|param|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V|x|2
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2974|2975|y|param|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V|y|3
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2978|2984|entity|param|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V|entity|1
+      @|de\devjava\playshot\addon\render\RenderUtils.java|2985|2991|height|field|net.minecraft.entity.Entity|height
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3008|3009|z|param|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V|z|4
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3014|3018|GL11|class|org.lwjgl.opengl.GL11
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3019|3029|glNormal3f|method|org.lwjgl.opengl.GL11|glNormal3f|(FFF)V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3051|3065|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3066|3072|rotate|method|net.minecraft.client.renderer.GlStateManager|rotate|(FFFF)V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3074|3083|Minecraft|class|net.minecraft.client.Minecraft
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3084|3096|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3099|3115|getRenderManager|method|net.minecraft.client.Minecraft|getRenderManager|()Lnet/minecraft/client/renderer/entity/RenderManager;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3118|3129|playerViewY|field|net.minecraft.client.renderer.entity.RenderManager|playerViewY
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3152|3166|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3167|3173|rotate|method|net.minecraft.client.renderer.GlStateManager|rotate|(FFFF)V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3174|3183|Minecraft|class|net.minecraft.client.Minecraft
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3184|3196|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3199|3215|getRenderManager|method|net.minecraft.client.Minecraft|getRenderManager|()Lnet/minecraft/client/renderer/entity/RenderManager;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3218|3229|playerViewX|field|net.minecraft.client.renderer.entity.RenderManager|playerViewX
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3252|3266|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3267|3272|scale|method|net.minecraft.client.renderer.GlStateManager|scale|(FFF)V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3290|3304|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3305|3320|disableLighting|method|net.minecraft.client.renderer.GlStateManager|disableLighting|()V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3326|3340|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3341|3350|depthMask|method|net.minecraft.client.renderer.GlStateManager|depthMask|(Z)V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3361|3375|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3376|3388|disableDepth|method|net.minecraft.client.renderer.GlStateManager|disableDepth|()V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3394|3408|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3409|3420|enableBlend|method|net.minecraft.client.renderer.GlStateManager|enableBlend|()V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3426|3440|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3441|3461|tryBlendFuncSeparate|method|net.minecraft.client.renderer.GlStateManager|tryBlendFuncSeparate|(IIII)V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3481|3492|Tessellator|class|net.minecraft.client.renderer.Tessellator
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3507|3518|Tessellator|class|net.minecraft.client.renderer.Tessellator
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3519|3530|getInstance|method|net.minecraft.client.renderer.Tessellator|getInstance|()Lnet/minecraft/client/renderer/Tessellator;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3536|3549|WorldRenderer|class|net.minecraft.client.renderer.WorldRenderer
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3578|3594|getWorldRenderer|method|net.minecraft.client.renderer.Tessellator|getWorldRenderer|()Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3634|3648|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3649|3652|str|param|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V|str|0
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3661|3675|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3676|3692|disableTexture2D|method|net.minecraft.client.renderer.GlStateManager|disableTexture2D|()V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3712|3717|begin|method|net.minecraft.client.renderer.WorldRenderer|begin|(ILnet/minecraft/client/renderer/vertex/VertexFormat;)V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3721|3741|DefaultVertexFormats|class|net.minecraft.client.renderer.vertex.DefaultVertexFormats
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3742|3756|POSITION_COLOR|field|net.minecraft.client.renderer.vertex.DefaultVertexFormats|POSITION_COLOR
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3775|3778|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3805|3810|color|method|net.minecraft.client.renderer.WorldRenderer|color|(FFFF)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3836|3845|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3865|3868|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3894|3899|color|method|net.minecraft.client.renderer.WorldRenderer|color|(FFFF)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3925|3934|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3954|3957|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|3982|3987|color|method|net.minecraft.client.renderer.WorldRenderer|color|(FFFF)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4013|4022|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4042|4045|pos|method|net.minecraft.client.renderer.WorldRenderer|pos|(DDD)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4071|4076|color|method|net.minecraft.client.renderer.WorldRenderer|color|(FFFF)Lnet/minecraft/client/renderer/WorldRenderer;
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4102|4111|endVertex|method|net.minecraft.client.renderer.WorldRenderer|endVertex|()V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4129|4133|draw|method|net.minecraft.client.renderer.Tessellator|draw|()V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4139|4153|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4154|4169|enableTexture2D|method|net.minecraft.client.renderer.GlStateManager|enableTexture2D|()V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4188|4198|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4199|4202|str|param|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V|str|0
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4218|4232|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4233|4236|str|param|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V|str|0
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4252|4266|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4267|4278|enableDepth|method|net.minecraft.client.renderer.GlStateManager|enableDepth|()V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4284|4298|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4299|4308|depthMask|method|net.minecraft.client.renderer.GlStateManager|depthMask|(Z)V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4331|4341|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4342|4345|str|param|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V|str|0
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4361|4375|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4376|4379|str|param|de.devjava.playshot.addon.render.RenderUtils|renderNameBigger|(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V|str|0
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4395|4409|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4410|4424|enableLighting|method|net.minecraft.client.renderer.GlStateManager|enableLighting|()V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4430|4444|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4445|4457|disableBlend|method|net.minecraft.client.renderer.GlStateManager|disableBlend|()V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4463|4477|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4478|4483|color|method|net.minecraft.client.renderer.GlStateManager|color|(FFFF)V
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4511|4525|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|de\devjava\playshot\addon\render\RenderUtils.java|4526|4535|popMatrix|method|net.minecraft.client.renderer.GlStateManager|popMatrix|()V
+   Method End: renderNameBigger(Ljava/lang/String;Lnet/minecraft/entity/Entity;DDD)V
 Class End  : de.devjava.playshot.addon.render.RenderUtils
 endProcessing de\devjava\playshot\addon\render\RenderUtils.java
 
@@ -3867,6 +4081,7 @@ Enum Start: de.devjava.playshot.addon.utils.CC
    Method Start: getChatColor()Lnet/minecraft/util/EnumChatFormatting;
       @|de\devjava\playshot\addon\utils\CC.java|1123|1135|getChatColor|method|de.devjava.playshot.addon.utils.CC|getChatColor|()Lnet/minecraft/util/EnumChatFormatting;
       @|de\devjava\playshot\addon\utils\CC.java|1104|1122|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|de\devjava\playshot\addon\utils\CC.java|1155|1173|enumChatFormatting|field|de.devjava.playshot.addon.utils.CC|enumChatFormatting
    Method End: getChatColor()Lnet/minecraft/util/EnumChatFormatting;
 Enum End  : de.devjava.playshot.addon.utils.CC
 endProcessing de\devjava\playshot\addon\utils\CC.java
@@ -4407,6 +4622,102 @@ Enum Start: de.devjava.playshot.addon.utils.DyeColor
 Enum End  : de.devjava.playshot.addon.utils.DyeColor
 endProcessing de\devjava\playshot\addon\utils\DyeColor.java
 
+processing de\devjava\playshot\addon\utils\EntityLaser.java
+@|de\devjava\playshot\addon\utils\EntityLaser.java|9|40|de.devjava.playshot.addon.utils|package|de.devjava.playshot.addon.utils|(file)
+Class Start: de.devjava.playshot.addon.utils.EntityLaser
+   Method Start: EntityLaser(Lnet/minecraft/world/World;Lnet/minecraft/entity/EntityLivingBase;DDD)V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|408|419|EntityLaser|method|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;Lnet/minecraft/entity/EntityLivingBase;DDD)V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|420|425|World|class|net.minecraft.world.World
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|426|431|world|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;Lnet/minecraft/entity/EntityLivingBase;DDD)V|world|0
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|433|449|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|450|456|entity|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;Lnet/minecraft/entity/EntityLivingBase;DDD)V|entity|1
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|465|466|x|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;Lnet/minecraft/entity/EntityLivingBase;DDD)V|x|2
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|475|476|y|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;Lnet/minecraft/entity/EntityLivingBase;DDD)V|y|3
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|485|486|z|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;Lnet/minecraft/entity/EntityLivingBase;DDD)V|z|4
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|499|504|world|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;Lnet/minecraft/entity/EntityLivingBase;DDD)V|world|0
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|506|512|entity|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;Lnet/minecraft/entity/EntityLivingBase;DDD)V|entity|1
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|517|528|setPosition|method|net.minecraft.entity.Entity|setPosition|(DDD)V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|529|530|x|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;Lnet/minecraft/entity/EntityLivingBase;DDD)V|x|2
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|532|533|y|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;Lnet/minecraft/entity/EntityLivingBase;DDD)V|y|3
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|535|536|z|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;Lnet/minecraft/entity/EntityLivingBase;DDD)V|z|4
+   Method End: EntityLaser(Lnet/minecraft/world/World;Lnet/minecraft/entity/EntityLivingBase;DDD)V
+   Method Start: EntityLaser(Lnet/minecraft/world/World;)V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|551|562|EntityLaser|method|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;)V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|563|568|World|class|net.minecraft.world.World
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|569|574|world|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;)V|world|0
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|587|592|world|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;)V|world|0
+   Method End: EntityLaser(Lnet/minecraft/world/World;)V
+   Method Start: EntityLaser(Lnet/minecraft/world/World;DDD)V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|607|618|EntityLaser|method|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;DDD)V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|619|624|World|class|net.minecraft.world.World
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|625|630|world|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;DDD)V|world|0
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|639|643|par2|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;DDD)V|par2|1
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|652|656|par4|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;DDD)V|par4|2
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|665|669|par6|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;DDD)V|par6|3
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|682|687|world|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;DDD)V|world|0
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|689|693|par2|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;DDD)V|par2|1
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|695|699|par4|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;DDD)V|par4|2
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|701|705|par6|param|de.devjava.playshot.addon.utils.EntityLaser|EntityLaser|(Lnet/minecraft/world/World;DDD)V|par6|3
+   Method End: EntityLaser(Lnet/minecraft/world/World;DDD)V
+   Method Start: func_70071_h_()V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|725|738|func_70071_h_|method|de.devjava.playshot.addon.utils.EntityLaser|func_70071_h_|()V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|752|760|onUpdate|method|net.minecraft.entity.Entity|onUpdate|()V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|771|779|worldObj|field|net.minecraft.entity.Entity|worldObj
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|780|793|spawnParticle|method|net.minecraft.world.World|spawnParticle|(Lnet/minecraft/util/EnumParticleTypes;DDDDDD[I)V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|794|811|EnumParticleTypes|class|net.minecraft.util.EnumParticleTypes
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|812|824|SMOKE_NORMAL|field|net.minecraft.util.EnumParticleTypes|SMOKE_NORMAL
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|831|835|posX|field|net.minecraft.entity.Entity|posX
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|842|846|posY|field|net.minecraft.entity.Entity|posY
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|853|857|posZ|field|net.minecraft.entity.Entity|posZ
+   Method End: func_70071_h_()V
+   Method Start: func_70184_a(Lnet/minecraft/util/MovingObjectPosition;)V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|910|922|func_70184_a|method|de.devjava.playshot.addon.utils.EntityLaser|func_70184_a|(Lnet/minecraft/util/MovingObjectPosition;)V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|923|943|MovingObjectPosition|class|net.minecraft.util.MovingObjectPosition
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|944|947|mop|param|de.devjava.playshot.addon.utils.EntityLaser|func_70184_a|(Lnet/minecraft/util/MovingObjectPosition;)V|mop|0
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|957|960|mop|param|de.devjava.playshot.addon.utils.EntityLaser|func_70184_a|(Lnet/minecraft/util/MovingObjectPosition;)V|mop|0
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|961|970|entityHit|field|net.minecraft.util.MovingObjectPosition|entityHit
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|987|990|mop|param|de.devjava.playshot.addon.utils.EntityLaser|func_70184_a|(Lnet/minecraft/util/MovingObjectPosition;)V|mop|0
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|991|1000|entityHit|field|net.minecraft.util.MovingObjectPosition|entityHit
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1001|1017|attackEntityFrom|method|net.minecraft.entity.Entity|attackEntityFrom|(Lnet/minecraft/util/DamageSource;F)Z
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1018|1030|DamageSource|class|net.minecraft.util.DamageSource
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1031|1048|causeThrownDamage|method|net.minecraft.util.DamageSource|causeThrownDamage|(Lnet/minecraft/entity/Entity;Lnet/minecraft/entity/Entity;)Lnet/minecraft/util/DamageSource;
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1050|1056|Entity|class|net.minecraft.entity.Entity
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1065|1071|Entity|class|net.minecraft.entity.Entity
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1073|1083|getThrower|method|net.minecraft.entity.projectile.EntityThrowable|getThrower|()Lnet/minecraft/entity/EntityLivingBase;
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1098|1101|mop|param|de.devjava.playshot.addon.utils.EntityLaser|func_70184_a|(Lnet/minecraft/util/MovingObjectPosition;)V|mop|0
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1102|1111|entityHit|field|net.minecraft.util.MovingObjectPosition|entityHit
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1112|1119|setFire|method|net.minecraft.entity.Entity|setFire|(I)V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1140|1148|worldObj|field|net.minecraft.entity.Entity|worldObj
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1149|1157|isRemote|field|net.minecraft.world.World|isRemote
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1167|1175|worldObj|field|net.minecraft.entity.Entity|worldObj
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1176|1188|newExplosion|method|net.minecraft.world.World|newExplosion|(Lnet/minecraft/entity/Entity;DDDFZZ)Lnet/minecraft/world/Explosion;
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1190|1196|Entity|class|net.minecraft.entity.Entity
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1209|1213|posX|field|net.minecraft.entity.Entity|posX
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1220|1224|posY|field|net.minecraft.entity.Entity|posY
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1231|1235|posZ|field|net.minecraft.entity.Entity|posZ
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1264|1272|worldObj|field|net.minecraft.entity.Entity|worldObj
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1273|1286|spawnParticle|method|net.minecraft.world.World|spawnParticle|(Lnet/minecraft/util/EnumParticleTypes;DDDDDD[I)V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1287|1304|EnumParticleTypes|class|net.minecraft.util.EnumParticleTypes
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1305|1310|FLAME|field|net.minecraft.util.EnumParticleTypes|FLAME
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1317|1321|posX|field|net.minecraft.entity.Entity|posX
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1328|1332|posY|field|net.minecraft.entity.Entity|posY
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1339|1343|posZ|field|net.minecraft.entity.Entity|posZ
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1378|1385|setDead|method|net.minecraft.entity.Entity|setDead|()V
+   Method End: func_70184_a(Lnet/minecraft/util/MovingObjectPosition;)V
+   Method Start: func_70185_h()F
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1410|1422|func_70185_h|method|de.devjava.playshot.addon.utils.EntityLaser|func_70185_h|()F
+   Method End: func_70185_h()F
+   Method Start: func_70182_d()F
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1466|1478|func_70182_d|method|de.devjava.playshot.addon.utils.EntityLaser|func_70182_d|()F
+   Method End: func_70182_d()F
+   Method Start: onImpact(Lnet/minecraft/util/MovingObjectPosition;)V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1530|1538|onImpact|method|net.minecraft.entity.projectile.EntityThrowable|onImpact|(Lnet/minecraft/util/MovingObjectPosition;)V
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1539|1559|MovingObjectPosition|class|net.minecraft.util.MovingObjectPosition
+      @|de\devjava\playshot\addon\utils\EntityLaser.java|1560|1570|p_70184_1_|param|de.devjava.playshot.addon.utils.EntityLaser|onImpact|(Lnet/minecraft/util/MovingObjectPosition;)V|p_70184_1_|0
+   Method End: onImpact(Lnet/minecraft/util/MovingObjectPosition;)V
+Class End  : de.devjava.playshot.addon.utils.EntityLaser
+endProcessing de\devjava\playshot\addon\utils\EntityLaser.java
+
 processing de\devjava\playshot\addon\utils\EnumDyeColor.java
 @|de\devjava\playshot\addon\utils\EnumDyeColor.java|8|39|de.devjava.playshot.addon.utils|package|de.devjava.playshot.addon.utils|(file)
 Enum Start: de.devjava.playshot.addon.utils.EnumDyeColor
@@ -4607,74 +4918,74 @@ processing de\devjava\playshot\addon\utils\LabyPlayshot.java
 @|de\devjava\playshot\addon\utils\LabyPlayshot.java|8|39|de.devjava.playshot.addon.utils|package|de.devjava.playshot.addon.utils|(file)
 Class Start: de.devjava.playshot.addon.utils.LabyPlayshot
    Method Start: LabyPlayshot()V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|506|518|LabyPlayshot|method|de.devjava.playshot.addon.utils.LabyPlayshot|LabyPlayshot|()V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|553|559|String|class|java.lang.String
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|453|465|LabyPlayshot|method|de.devjava.playshot.addon.utils.LabyPlayshot|LabyPlayshot|()V
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|500|506|String|class|java.lang.String
    Method End: LabyPlayshot()V
    Method Start: onJoin(Lnet/minecraft/client/multiplayer/ServerData;)V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|639|645|onJoin|method|net.labymod.servermanager.Server|onJoin|(Lnet/minecraft/client/multiplayer/ServerData;)V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|646|656|ServerData|class|net.minecraft.client.multiplayer.ServerData
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|657|667|serverData|param|de.devjava.playshot.addon.utils.LabyPlayshot|onJoin|(Lnet/minecraft/client/multiplayer/ServerData;)V|serverData|0
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|684|690|System|class|java.lang.System
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|691|694|out|field|java.lang.System|out
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|695|702|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|734|743|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|744|755|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|758|772|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|775|788|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|791|803|setConnected|method|de.devjava.playshot.addon.objects.LabyClient|setConnected|(Z)V
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|586|592|onJoin|method|net.labymod.servermanager.Server|onJoin|(Lnet/minecraft/client/multiplayer/ServerData;)V
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|593|603|ServerData|class|net.minecraft.client.multiplayer.ServerData
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|604|614|serverData|param|de.devjava.playshot.addon.utils.LabyPlayshot|onJoin|(Lnet/minecraft/client/multiplayer/ServerData;)V|serverData|0
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|631|637|System|class|java.lang.System
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|638|641|out|field|java.lang.System|out
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|642|649|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|681|690|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|691|702|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|705|719|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|722|735|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|738|750|setConnected|method|de.devjava.playshot.addon.objects.LabyClient|setConnected|(Z)V
    Method End: onJoin(Lnet/minecraft/client/multiplayer/ServerData;)V
    Method Start: reset()V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|848|853|reset|method|net.labymod.servermanager.Server|reset|()V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|871|877|System|class|java.lang.System
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|878|881|out|field|java.lang.System|out
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|882|889|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|921|930|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|931|942|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|945|959|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|962|975|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|978|990|setConnected|method|de.devjava.playshot.addon.objects.LabyClient|setConnected|(Z)V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1007|1016|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1017|1028|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1031|1045|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1048|1061|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1064|1073|setServer|method|de.devjava.playshot.addon.objects.LabyClient|setServer|(Lde/devjava/playshot/addon/utils/Server;)V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1074|1112|de.devjava.playshot.addon.utils.Server|class|de.devjava.playshot.addon.utils.Server
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1113|1120|OFFLINE|field|de.devjava.playshot.addon.utils.Server|OFFLINE
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|795|800|reset|method|net.labymod.servermanager.Server|reset|()V
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|818|824|System|class|java.lang.System
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|825|828|out|field|java.lang.System|out
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|829|836|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|868|877|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|878|889|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|892|906|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|909|922|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|925|937|setConnected|method|de.devjava.playshot.addon.objects.LabyClient|setConnected|(Z)V
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|954|963|LabyAddon|class|de.devjava.playshot.addon.LabyAddon
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|964|975|getInstance|method|de.devjava.playshot.addon.LabyAddon|getInstance|()Lde/devjava/playshot/addon/LabyAddon;
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|978|992|getLabyManager|method|de.devjava.playshot.addon.LabyAddon|getLabyManager|()Lde/devjava/playshot/addon/objects/LabyManager;
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|995|1008|getLabyClient|method|de.devjava.playshot.addon.objects.LabyManager|getLabyClient|()Lde/devjava/playshot/addon/objects/LabyClient;
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1011|1020|setServer|method|de.devjava.playshot.addon.objects.LabyClient|setServer|(Lde/devjava/playshot/addon/utils/Server;)V
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1021|1059|de.devjava.playshot.addon.utils.Server|class|de.devjava.playshot.addon.utils.Server
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1060|1067|OFFLINE|field|de.devjava.playshot.addon.utils.Server|OFFLINE
    Method End: reset()V
    Method Start: handleChatMessage(Ljava/lang/String;Ljava/lang/String;)Lnet/labymod/servermanager/ChatDisplayAction;
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1173|1190|handleChatMessage|method|net.labymod.servermanager.Server|handleChatMessage|(Ljava/lang/String;Ljava/lang/String;)Lnet/labymod/servermanager/ChatDisplayAction;
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1155|1172|ChatDisplayAction|class|net.labymod.servermanager.ChatDisplayAction
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1219|1228|Exception|class|java.lang.Exception
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1191|1197|String|class|java.lang.String
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1198|1199|s|param|de.devjava.playshot.addon.utils.LabyPlayshot|handleChatMessage|(Ljava/lang/String;Ljava/lang/String;)Lnet/labymod/servermanager/ChatDisplayAction;|s|0
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1201|1207|String|class|java.lang.String
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1208|1210|s1|param|de.devjava.playshot.addon.utils.LabyPlayshot|handleChatMessage|(Ljava/lang/String;Ljava/lang/String;)Lnet/labymod/servermanager/ChatDisplayAction;|s1|1
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1250|1267|ChatDisplayAction|class|net.labymod.servermanager.ChatDisplayAction
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1268|1274|NORMAL|field|net.labymod.servermanager.ChatDisplayAction|NORMAL
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1120|1137|handleChatMessage|method|net.labymod.servermanager.Server|handleChatMessage|(Ljava/lang/String;Ljava/lang/String;)Lnet/labymod/servermanager/ChatDisplayAction;
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1102|1119|ChatDisplayAction|class|net.labymod.servermanager.ChatDisplayAction
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1166|1175|Exception|class|java.lang.Exception
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1138|1144|String|class|java.lang.String
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1145|1146|s|param|de.devjava.playshot.addon.utils.LabyPlayshot|handleChatMessage|(Ljava/lang/String;Ljava/lang/String;)Lnet/labymod/servermanager/ChatDisplayAction;|s|0
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1148|1154|String|class|java.lang.String
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1155|1157|s1|param|de.devjava.playshot.addon.utils.LabyPlayshot|handleChatMessage|(Ljava/lang/String;Ljava/lang/String;)Lnet/labymod/servermanager/ChatDisplayAction;|s1|1
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1197|1214|ChatDisplayAction|class|net.labymod.servermanager.ChatDisplayAction
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1215|1221|NORMAL|field|net.labymod.servermanager.ChatDisplayAction|NORMAL
    Method End: handleChatMessage(Ljava/lang/String;Ljava/lang/String;)Lnet/labymod/servermanager/ChatDisplayAction;
    Method Start: handlePluginMessage(Ljava/lang/String;Lnet/minecraft/network/PacketBuffer;)V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1313|1332|handlePluginMessage|method|net.labymod.servermanager.Server|handlePluginMessage|(Ljava/lang/String;Lnet/minecraft/network/PacketBuffer;)V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1377|1386|Exception|class|java.lang.Exception
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1333|1339|String|class|java.lang.String
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1340|1341|s|param|de.devjava.playshot.addon.utils.LabyPlayshot|handlePluginMessage|(Ljava/lang/String;Lnet/minecraft/network/PacketBuffer;)V|s|0
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1343|1355|PacketBuffer|class|net.minecraft.network.PacketBuffer
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1356|1368|packetBuffer|param|de.devjava.playshot.addon.utils.LabyPlayshot|handlePluginMessage|(Ljava/lang/String;Lnet/minecraft/network/PacketBuffer;)V|packetBuffer|1
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1260|1279|handlePluginMessage|method|net.labymod.servermanager.Server|handlePluginMessage|(Ljava/lang/String;Lnet/minecraft/network/PacketBuffer;)V
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1324|1333|Exception|class|java.lang.Exception
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1280|1286|String|class|java.lang.String
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1287|1288|s|param|de.devjava.playshot.addon.utils.LabyPlayshot|handlePluginMessage|(Ljava/lang/String;Lnet/minecraft/network/PacketBuffer;)V|s|0
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1290|1302|PacketBuffer|class|net.minecraft.network.PacketBuffer
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1303|1315|packetBuffer|param|de.devjava.playshot.addon.utils.LabyPlayshot|handlePluginMessage|(Ljava/lang/String;Lnet/minecraft/network/PacketBuffer;)V|packetBuffer|1
    Method End: handlePluginMessage(Ljava/lang/String;Lnet/minecraft/network/PacketBuffer;)V
    Method Start: handleTabInfoMessage(Lnet/labymod/api/events/TabListEvent$Type;Ljava/lang/String;Ljava/lang/String;)V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1432|1452|handleTabInfoMessage|method|net.labymod.servermanager.Server|handleTabInfoMessage|(Lnet/labymod/api/events/TabListEvent$Type;Ljava/lang/String;Ljava/lang/String;)V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1505|1514|Exception|class|java.lang.Exception
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1453|1470|TabListEvent.Type|class|net.labymod.api.events.TabListEvent.Type
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1471|1475|type|param|de.devjava.playshot.addon.utils.LabyPlayshot|handleTabInfoMessage|(Lnet/labymod/api/events/TabListEvent$Type;Ljava/lang/String;Ljava/lang/String;)V|type|0
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1477|1483|String|class|java.lang.String
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1484|1485|s|param|de.devjava.playshot.addon.utils.LabyPlayshot|handleTabInfoMessage|(Lnet/labymod/api/events/TabListEvent$Type;Ljava/lang/String;Ljava/lang/String;)V|s|1
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1487|1493|String|class|java.lang.String
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1494|1496|s1|param|de.devjava.playshot.addon.utils.LabyPlayshot|handleTabInfoMessage|(Lnet/labymod/api/events/TabListEvent$Type;Ljava/lang/String;Ljava/lang/String;)V|s1|2
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1379|1399|handleTabInfoMessage|method|net.labymod.servermanager.Server|handleTabInfoMessage|(Lnet/labymod/api/events/TabListEvent$Type;Ljava/lang/String;Ljava/lang/String;)V
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1452|1461|Exception|class|java.lang.Exception
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1400|1417|TabListEvent.Type|class|net.labymod.api.events.TabListEvent.Type
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1418|1422|type|param|de.devjava.playshot.addon.utils.LabyPlayshot|handleTabInfoMessage|(Lnet/labymod/api/events/TabListEvent$Type;Ljava/lang/String;Ljava/lang/String;)V|type|0
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1424|1430|String|class|java.lang.String
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1431|1432|s|param|de.devjava.playshot.addon.utils.LabyPlayshot|handleTabInfoMessage|(Lnet/labymod/api/events/TabListEvent$Type;Ljava/lang/String;Ljava/lang/String;)V|s|1
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1434|1440|String|class|java.lang.String
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1441|1443|s1|param|de.devjava.playshot.addon.utils.LabyPlayshot|handleTabInfoMessage|(Lnet/labymod/api/events/TabListEvent$Type;Ljava/lang/String;Ljava/lang/String;)V|s1|2
    Method End: handleTabInfoMessage(Lnet/labymod/api/events/TabListEvent$Type;Ljava/lang/String;Ljava/lang/String;)V
    Method Start: fillSubSettings(Ljava/util/List;)V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1560|1575|fillSubSettings|method|net.labymod.servermanager.Server|fillSubSettings|(Ljava/util/List;)V
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1581|1596|SettingsElement|class|net.labymod.settings.elements.SettingsElement
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1576|1580|List|class|java.util.List
-      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1598|1602|list|param|de.devjava.playshot.addon.utils.LabyPlayshot|fillSubSettings|(Ljava/util/List;)V|list|0
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1507|1522|fillSubSettings|method|net.labymod.servermanager.Server|fillSubSettings|(Ljava/util/List;)V
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1528|1543|SettingsElement|class|net.labymod.settings.elements.SettingsElement
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1523|1527|List|class|java.util.List
+      @|de\devjava\playshot\addon\utils\LabyPlayshot.java|1545|1549|list|param|de.devjava.playshot.addon.utils.LabyPlayshot|fillSubSettings|(Ljava/util/List;)V|list|0
    Method End: fillSubSettings(Ljava/util/List;)V
 Class End  : de.devjava.playshot.addon.utils.LabyPlayshot
 endProcessing de\devjava\playshot\addon\utils\LabyPlayshot.java

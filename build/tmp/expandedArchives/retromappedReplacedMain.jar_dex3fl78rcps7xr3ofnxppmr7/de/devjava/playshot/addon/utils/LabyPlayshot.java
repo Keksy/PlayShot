@@ -3,7 +3,6 @@ package de.devjava.playshot.addon.utils;
 import java.util.List;
 
 import de.devjava.playshot.addon.LabyAddon;
-import de.devjava.playshot.addon.objects.LabyClient;
 import net.labymod.api.events.TabListEvent;
 import net.labymod.servermanager.ChatDisplayAction;
 import net.labymod.servermanager.Server;
