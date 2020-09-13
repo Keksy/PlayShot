@@ -1,0 +1,6 @@
+package de.devjava.playshot.addon.objects.modules;
+
+public class Modul
+{
+
+}

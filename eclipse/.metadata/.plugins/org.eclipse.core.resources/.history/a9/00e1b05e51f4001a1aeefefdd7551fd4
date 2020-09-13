@@ -1,0 +1,90 @@
+package de.devjava.playshot.addon.utils;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.URL;
+import java.net.URLConnection;
+import java.nio.charset.Charset;
+import java.util.Scanner;
+
+import org.apache.commons.io.IOUtils;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import net.minecraft.client.Minecraft;
+import scala.collection.parallel.ParIterableLike.Min;
+
+
+public class JsonReader {
+
+	private Server server;
+	private Search search;
+	private String result;
+	
+	public JsonReader(Server server, Search search)
+	{
+		this.server = server;
+		this.search = search;
+		this.result = "n/A";
+		
+		if(server.getValue().equals("err"))
+			return;
+		
+		this.result = this.load();
+	}
+	
+	public Server getServer()
+	{
+		return server;
+	}
+	
+	public Search getSearch()
+	{
+		return search;
+	}
+	
+	public String getResult()
+	{
+		return result;
+	}
+	
+	@SuppressWarnings("resource")
+	private String load()
+	{
+		try
+		{
+			URL url = new URL("https://public-teamspeak.net/stats/" + this.getServer().getValue() + ".php");
+	
+		        try (BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()))) {
+		            String line;
+		            StringBuilder sb = new StringBuilder();
+		            while ((line = br.readLine()) != null) {
+		                sb.append(line);
+		                sb.append(System.lineSeparator());
+		            }
+
+					JSONParser parser = new JSONParser();
+
+					JSONArray array = (JSONArray) new JSONParser().parse(sb.toString());
+					for(int i = 0; i < array.size(); i++)
+					{
+						JSONObject property = (JSONObject) array.get(i);
+						String name = (String) property.get("name");
+						if(name.equals(Minecraft.getMinecraft().thePlayer.getName()))
+						{
+							Object result = property.get(this.getSearch().getValue());
+							return result.toString();
+						}
+					}		        }
+		
+		}
+		catch(Exception exception)
+		{
+			return "Error";
+		}
+		return "n/A";
+	}
+}

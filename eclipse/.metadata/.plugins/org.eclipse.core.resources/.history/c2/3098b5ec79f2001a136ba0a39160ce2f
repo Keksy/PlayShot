@@ -1,0 +1,19 @@
+
+package de.devjava.playshot.addon.listener;
+
+import de.devjava.playshot.addon.LabyAddon;
+import de.devjava.playshot.addon.objects.register.Listener;
+import net.labymod.ingamegui.Module;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.InputEvent;
+
+public class Listener_KeyInputEvent implements Listener
+{
+	@SubscribeEvent
+	public void onKeyInputEvent(InputEvent.KeyInputEvent event)
+	{
+		for(final Module module : LabyAddon.getInstance().getModuleManager().getModules())
+			if(module.getKeyBinding().isPressed())
+				module.toggle();
+	}
+}

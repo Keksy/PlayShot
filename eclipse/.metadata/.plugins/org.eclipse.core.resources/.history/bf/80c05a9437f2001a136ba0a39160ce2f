@@ -1,0 +1,54 @@
+package de.devjava.playshot.addon.objects.settings;
+
+import java.io.IOException;
+
+import de.devjava.playshot.addon.LabyAddon;
+
+public enum Settings {
+
+    THOUSANDS_SEPARATOR(true, "Thousands Separator", "Separate thousands with a comma or a dot, depending on the system language", "LEVER");
+
+    private boolean value;
+    private String briefDesc, brieferDesc, labyIcon;
+
+    Settings(boolean value, String brieferDesc, String briefDesc, String labyIcon) {
+        this.value = value;
+        this.briefDesc = briefDesc;
+        this.brieferDesc = brieferDesc;
+        this.labyIcon = labyIcon;
+    }
+
+    public boolean getValue() {
+        return value;
+    }
+
+    public void setValue(boolean value) {
+        this.value = value;
+
+        try {
+            LabyAddon.getInstance().getSettingsFetcher().saveSettings();
+        } catch (IOException e) {
+            LabyAddon.getInstance().getLogger().info("Failed to save Settings");
+            e.printStackTrace();
+        }
+
+    }
+
+    public String getBriefDescription() {
+        return briefDesc;
+    }
+
+    public void setValueWithoutSaving(boolean value) {
+        this.value = value;
+
+
+    }
+
+    public String getBrieferDescription() {
+        return brieferDesc;
+    }
+
+    public String getLabyIcon() {
+        return labyIcon;
+    }
+}

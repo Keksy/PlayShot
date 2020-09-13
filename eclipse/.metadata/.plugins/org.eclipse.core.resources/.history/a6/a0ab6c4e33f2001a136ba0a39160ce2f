@@ -1,0 +1,9 @@
+package de.devjava.playshot.addon.objects;
+
+public class LabyManager {
+
+	public LabyManager() 
+	{
+		
+	}
+}

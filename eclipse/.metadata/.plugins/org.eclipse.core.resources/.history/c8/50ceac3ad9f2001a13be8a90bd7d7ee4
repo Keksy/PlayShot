@@ -1,0 +1,22 @@
+
+package de.devjava.playshot.addon.listener.labymod;
+
+import de.devjava.playshot.addon.LabyAddon;
+import de.devjava.playshot.addon.listener.custom.TabListEvent;
+import de.devjava.playshot.addon.objects.modules.Module;
+import de.devjava.playshot.addon.objects.register.LabyModEvent;
+import de.devjava.playshot.addon.objects.register.Listener;
+import net.minecraft.client.Minecraft;
+
+public class Listener_TabListEvent implements Listener
+{
+	@LabyModEvent
+	public void onRenderEntityEvent(TabListEvent event)
+	{
+		for(Module module : LabyAddon.getInstance().getModuleManager().getModules())
+			if(module.isEnabled())
+				module.onTabListEvent(event);
+		
+		System.out.println(event.getarg1().split("[\\r\\n]+")[3].length());
+	}
+}

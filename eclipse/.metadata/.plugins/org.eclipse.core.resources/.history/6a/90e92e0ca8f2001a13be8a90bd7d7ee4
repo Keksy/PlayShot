@@ -1,0 +1,99 @@
+package de.devjava.playshot.addon.objects.modules.LabyModule;
+
+import net.labymod.ingamegui.Module;
+import net.labymod.settings.elements.ControlElement;
+import net.labymod.utils.Material;
+import net.labymod.utils.ModColor;
+import net.minecraft.client.gui.Gui;
+
+/**
+ * Test module
+ */
+public class Laby_Module extends Module {
+
+    @Override
+    public void draw( int x, int y, int rightX ) {
+        // Just drawing a white rectangle
+        Gui.drawRect( x, y, ( int ) (x + getWidth()), ( int ) (y + getHeight()), ModColor.toRGB( 255, 255, 255, 100 ) );
+    }
+
+    /**
+     * The module's display-icon that will be shown in the module GUI
+     *
+     * @return the icon-data for this module
+     */
+    @Override
+    public ControlElement.IconData getIconData() {
+        // You can use ResourceLocation, items etc.
+        return new ControlElement.IconData( Material.PAPER );
+    }
+
+    /**
+     * The module's minecraft-width
+     *
+     * @return the width
+     */
+    @Override
+    public double getWidth() {
+        return 100;
+    }
+
+    /**
+     * The module's minecraft-height
+     *
+     * @return the height
+     */
+    @Override
+    public double getHeight() {
+        return 20;
+    }
+
+    /**
+     * Called after the module's config-values have been loaded
+     * -> You can use this method to get attributes
+     */
+    @Override
+    public void loadSettings() {
+
+    }
+
+    /**
+     * The module's name that will be shown in the module GUIs etc.
+     *
+     * @return the display name
+     */
+    @Override
+    public String getControlName() {
+        return "Module display name";
+    }
+
+    /**
+     * For translation stuff
+     *
+     * @return the setting name
+     */
+    @Override
+    public String getSettingName() {
+        return "modulename_id";
+    }
+
+    /**
+     * The module's description that will be shown when the mouse is over the module toggle element
+     *
+     * @return the description or an empty string if there shouldn't be a description
+     */
+    @Override
+    public String getDescription() {
+        return "Just a test module";
+    }
+
+    /**
+     * The modules are getting sorted in ascending order in the module GUI
+     *
+     * @return the sorting id the modules are getting sorted by
+     */
+    @Override
+    public int getSortingId() {
+        return 0;
+    }
+}

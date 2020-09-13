@@ -1,0 +1,28 @@
+package de.devjava.playshot.addon.objects.modules;
+
+import de.devjava.playshot.addon.LabyAddon;
+import de.devjava.playshot.addon.listener.custom.ReceiveChatMessage;
+import de.devjava.playshot.addon.objects.settings.Settings;
+import de.devjava.playshot.addon.utils.Server;
+import net.labymod.core.LabyModCore;
+
+public class Module_AutoGG extends Module
+{
+
+	public Module_AutoGG()
+	{
+		super(Settings.AUTO_GG);
+	}
+	
+	@Override
+	public void onReceiveChatMessage(ReceiveChatMessage event)
+	{
+		if(LabyAddon.getInstance().getLabyManager().getLabyClient().getServer() == Server.LAZERTAG)
+			if(event.getarg0().contains("The server restarts in 30 seconds.") || event.getarg1().contains("The server restarts in 30 seconds."))
+				LabyModCore.getMinecraft().getPlayer().sendChatMessage("GG");
+
+		if(LabyAddon.getInstance().getLabyManager().getLabyClient().getServer() == Server.BEDWARS)
+			if(event.getarg0().contains("§eRestarting server in §330 §eseconds.") || event.getarg1().contains("Restarting server in 30 §eseconds."))
+				LabyModCore.getMinecraft().getPlayer().sendChatMessage("GG");
+	}
+}

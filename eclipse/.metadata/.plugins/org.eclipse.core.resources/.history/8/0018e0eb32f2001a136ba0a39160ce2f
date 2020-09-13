@@ -1,0 +1,11 @@
+package de.devjava.playshot.addon.objects;
+
+public class LabyClientSettings {
+
+	
+	
+	public LabyClientSettings() {
+		// TODO Auto-generated constructor stub
+	}
+	
+}

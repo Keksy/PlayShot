@@ -1,0 +1,73 @@
+package de.devjava.playshot.addon.objects.modules.LabyModule;
+
+import net.labymod.ingamegui.Module;
+import net.labymod.settings.elements.ControlElement;
+import net.labymod.utils.Material;
+import net.labymod.utils.ModColor;
+import net.minecraft.client.gui.Gui;
+
+
+public class Laby_Module extends Module {
+
+	private Material material;
+	private String settingName, settingDescription;
+	private int id;
+	
+	public Laby_Module(String settingName, String settingDescription, Material material, int id)
+	{
+		this.settingName = settingName;
+		this.settingDescription = settingDescription;
+		this.material = material;
+		this.id = id;
+	}
+		
+	public Material getMaterial()
+	{
+		return this.material;
+	}
+	
+    @Override
+    public void draw( int x, int y, int rightX ) {
+        Gui.drawRect( x, y, ( int ) (x + getWidth()), ( int ) (y + getHeight()), ModColor.toRGB( 255, 255, 255, 100 ) );
+    }
+
+    @Override
+    public ControlElement.IconData getIconData() {
+        return new ControlElement.IconData( this.getMaterial() );
+    }
+
+    @Override
+    public double getWidth() {
+        return 100;
+    }
+
+    @Override
+    public double getHeight() {
+        return 20;
+    }
+   
+    @Override
+    public void loadSettings() {
+
+    }
+ 
+    @Override
+    public String getControlName() {
+        return this.settingName;
+    }
+
+    @Override
+    public String getSettingName() {
+        return "";
+    }
+
+    @Override
+    public String getDescription() {
+        return this.settingDescription;
+    }
+
+    @Override
+    public int getSortingId() {
+        return 99;
+    }
+}

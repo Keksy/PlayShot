@@ -1,0 +1,80 @@
+﻿itemGroup.tabAntMan=蟻人
+potion.shrink=縮小
+potion.grow=變大
+
+antman.info.tier=等級
+antman.info.infinite=無限
+antman.info.creative=創造模式
+antman.info.shrinkparticledesc=皮姆粒子(縮小)
+antman.info.growparticledesc=皮姆粒子(變大)
+antman.info.nopymparticles=沒有皮姆粒子!
+antman.info.regulator1=不要拿走調節器. 如果
+antman.info.regulator2=調節器被拆解, 你將變成亞原子的大小.
+antman.info.refill=注滿你的皮姆粒子!
+antman.info.recipes=安裝 Just Enough Item 來顯示合成表.
+antman.info.abilites=能力
+antman.info.save=保存
+antman.info.size=大小
+antman.info.small=小
+antman.info.big=大
+antman.info.findinquantumrealm=可在量子領域中找到
+
+antman.info.regulatorbutton1=調節大小
+antman.info.regulatorbutton2=只能縮小
+antman.info.regulatorbutton3=只能變大
+antman.info.regulatorbutton4=(空位) 無管制地縮小. 量子領域!
+antman.info.regulatorbutton5=當你進入量子領域時 請確保
+antman.info.regulatorbutton6=你有皮姆粒子盤(變大)回到主世界!
+
+ability.shrink.name=縮小
+ability.grow.name=放大
+ability.flight.name=飛行
+ability.laser.name=激光發射
+ability.sizeRegulator.name=調節大小
+
+tile.pymWorkbench.name=皮姆工作台
+tile.pymParticleProducer.name=皮姆粒子生產器
+tile.quantumRealmBlock.name=量子領域方塊
+tile.quantumRealmChest.name=量子領域箱
+fluid.shrinkpymparticles=縮小 皮姆粒子
+fluid.growpymparticles=變大 皮姆粒子
+
+item.regulator.name=調節器
+item.yjRegulator.name=黃蜂戰士 調節器
+item.filter.name=過濾
+item.empCummunicationDevice.name=EMP通信設備
+item.antAntenna.name=螞蟻天線
+item.yjLaserArm.name=黃蜂戰士 雷射臂
+item.waspWing.name=黃蜂女 翼
+item.pymTank.name=皮姆粒子罐
+
+item.discShrink.name=皮姆粒子盤(縮小)
+item.discGrow.name=皮姆粒子盤(變大)
+
+item.mcu_antmanHelmet.name=蟻人 頭盔
+item.mcu_antmanChestplate.name=蟻人 胸甲
+item.mcu_antmanLegs.name=蟻人 護腿
+item.mcu_antmanBoots.name=蟻人 靴子
+
+item.mcu_yellowjacketHelmet.name=黃蜂戰士 頭盔
+item.mcu_yellowjacketChestplate.name=黃蜂戰士 胸甲
+item.mcu_yellowjacketLegs.name=黃蜂戰士 護腿
+item.mcu_yellowjacketBoots.name=黃蜂戰士 靴子
+
+item.mcu_waspHelmet.name=黃蜂女 頭盔
+item.mcu_waspChestplate.name=黃蜂女 胸甲
+item.mcu_waspLegs.name=黃蜂女 護腿
+item.mcu_waspBoots.name=黃蜂女 靴子
+
+item.mcu_antman_2Helmet.name=蟻人 頭盔(美國隊長3)
+item.mcu_antman_2Chestplate.name=蟻人 胸甲(美國隊長3)
+item.mcu_antman_2Legs.name=蟻人 護腿(美國隊長3)
+item.mcu_antman_2Boots.name=蟻人 靴子(美國隊長3)
+
+antman.keybinding.keySize=調節大小
+antman.keybinding.sizeGUI=調節器介面
+antman.keybinding.togglehelmet=開/關頭盔
+antman.keybinding.togglehud=皮姆粒子顯示器
+antman.keybinding.laser=激光發射
+
+death.attack.suffocate=%1$s 窒息了

@@ -1,0 +1,24 @@
+
+package de.devjava.controladdon.listener;
+
+import javax.management.openmbean.KeyAlreadyExistsException;
+
+import org.lwjgl.input.Keyboard;
+
+import de.devjava.controladdon.LabyAddon;
+import de.devjava.controladdon.objects.listener.Listener;
+import de.devjava.controladdon.objects.module.Module;
+import net.minecraft.client.settings.KeyBinding;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.InputEvent;
+
+public class Listener_KeyInputEvent implements Listener
+{
+	@SubscribeEvent
+	public void onKeyInputEvent(InputEvent.KeyInputEvent event)
+	{
+		for(final Module module : LabyAddon.getInstance().getModuleManager().getModules())
+			if(module.getKeyBinding().isPressed())
+				module.toggle();
+	}
+}

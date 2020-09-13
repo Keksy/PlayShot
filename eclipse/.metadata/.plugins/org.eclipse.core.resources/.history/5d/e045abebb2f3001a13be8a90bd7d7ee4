@@ -1,0 +1,82 @@
+package de.devjava.playshot.addon.utils;
+
+import de.devjava.playshot.addon.LabyAddon;
+import net.labymod.ingamegui.ModuleCategory;
+import net.labymod.settings.elements.ControlElement.IconData;
+import net.labymod.utils.Material;
+
+public class LabyTextModule2
+{
+	private String moduleDisplayName, moduleControlName, moduleDescription, moduledefaultValue;
+	private ModuleCategory moduleCategory;
+	private IconData iconData;
+	
+	public LabyTextModule2(String moduleDisplayName, String moduleControlName, String moduleDescription, String moduledefaultValue, ModuleCategory moduleCategory, IconData iconData)
+	{	
+		super();
+		
+		this.moduleDisplayName = moduleDisplayName;
+		this.moduleControlName = moduleControlName;
+		this.moduleDescription = moduleDescription;
+		this.moduledefaultValue = moduledefaultValue;
+		this.moduleCategory = moduleCategory;
+		this.iconData = iconData;
+	}
+	
+	public SimpleModule create()
+	{
+		SimpleModule x = new SimpleModule()
+		{
+			
+			@Override
+			public String getDisplayName()
+			{
+				return moduleDisplayName;
+			}
+
+			@Override
+			public String getDisplayValue()
+			{
+				return super.getd;
+			}
+
+			@Override
+			public String getDescription()
+			{
+				return moduleDescription;
+			}
+
+			@Override
+			public IconData getIconData()
+			{
+				return iconData;
+			}
+
+			@Override
+			public String getSettingName()
+			{
+				return "";
+			}
+
+			@Override
+			public int getSortingId()
+			{
+				return 0;
+			}
+
+			@Override
+			public void loadSettings()
+			{
+				
+			}
+
+			@Override
+			public String getDefaultValue()
+			{
+				return moduledefaultValue;
+			}
+		};
+		
+		return x;
+	}
+}

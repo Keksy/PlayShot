@@ -1,0 +1,55 @@
+
+package de.devjava.playshot.addon.objects.modules;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import de.devjava.playshot.addon.LabyAddon;
+import de.devjava.playshot.addon.listener.custom.MessageSendEvent;
+import de.devjava.playshot.addon.objects.category.Categorys;
+import de.devjava.playshot.addon.objects.modules.LabyModule.Laby_SimpleModule;
+import de.devjava.playshot.addon.objects.modules.LabyModule.Laby_SimpleModule2;
+import de.devjava.playshot.addon.objects.settings.Settings;
+import de.devjava.playshot.addon.utils.JsonReader;
+import de.devjava.playshot.addon.utils.LabyTextModule;
+import de.devjava.playshot.addon.utils.Search;
+import de.devjava.playshot.addon.utils.SimpleModule;
+import net.labymod.ingamegui.ModuleCategoryRegistry;
+import net.labymod.ingamegui.enums.EnumDisplayType;
+import net.labymod.settings.elements.ControlElement.IconData;
+import net.labymod.utils.Material;
+
+public class Module_Stats extends Module
+{
+
+	public Module_Stats()
+	{
+		super(Settings.STATS_VIEWER);
+
+		SimpleModule x = new LabyTextModule("Test1", "Test1 Module", "", "n/A", Categorys.CATEGORY_STATS.getModuleCategory(), new IconData(Material.ACACIA_STAIRS));
+		SimpleModule x2 = new Laby_SimpleModule2();
+
+		LabyAddon.getInstance().getApi().registerModule(x);
+		LabyAddon.getInstance().getApi().registerModule(x2);
+
+
+//		Timer t = new Timer();
+//		t.schedule(new TimerTask() {
+//		    @Override
+//		    public void run() {
+//		      
+//		    	if(x.isEnabled(EnumDisplayType.INGAME))
+//		    		x.setValue("Value1-" + new Random().nextInt(900));
+//		    	
+//		    	if(x2.isEnabled(EnumDisplayType.INGAME))
+//		    		x2.setValue("Value2-" + new Random().nextInt(900));
+//		    	
+//		    	
+//		    }
+//		}, 0, 5000);
+	}
+}

@@ -1,0 +1,18 @@
+package de.devjava.playshot.addon.utils;
+
+public enum MiniGames {
+
+	LAZERTAG("lasertag_jsonAPI"), BEDWARS, CITYBUILD, NOTHING;
+	
+	private String value; 
+	
+	private MiniGames(String value)
+	{
+		this.value = value;
+	}
+	
+	public String getValue()
+	{
+		return value;
+	}
+}

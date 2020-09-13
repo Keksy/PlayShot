@@ -1,0 +1,8 @@
+{
+   "grow": {"category": "master","sounds": [{"name": "grow","stream": false}]},
+   "shrink": {"category": "master","sounds": [{"name": "shrink","stream": false}]},
+   "laser1": {"category": "master","sounds": [{"name": "laser1","stream": false}]},
+   "laser2": {"category": "master","sounds": [{"name": "laser2","stream": false}]},
+   "jetpack": {"category": "master","sounds": [{"name": "jetpack","stream": false}]},
+   "wings": {"category": "master","sounds": [{"name": "wings","stream": false}]}
+}

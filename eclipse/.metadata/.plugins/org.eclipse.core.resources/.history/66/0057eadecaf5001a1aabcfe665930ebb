@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "antman:pymParticleProducer_active" },
+        "facing=south": { "model": "antman:pymParticleProducer_active", "y": 180 },
+        "facing=west":  { "model": "antman:pymParticleProducer_active", "y": 270 },
+        "facing=east":  { "model": "antman:pymParticleProducer_active", "y": 90 }
+    }
+}

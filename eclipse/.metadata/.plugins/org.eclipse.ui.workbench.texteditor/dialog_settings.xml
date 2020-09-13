@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="729" key="DIALOG_X_ORIGIN"/>
+		<item value="403" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="drawRect" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="func_73734_a"/>
+			<item value="field_78288_b"/>
+			<item value="func_78276_b"/>
+			<item value="func_78256_a"/>
+			<item value="func_96678_d"/>
+			<item value="func_175179_f"/>
+			<item value="entInstance.getCommandSenderName()"/>
+			<item value="RED"/>
+			<item value="16711680"/>
+			<item value="YELL"/>
+			<item value="3361970"/>
+			<item value="Join PlayShot"/>
+			<item value="de.devjava.controladdon.objects.listener.custom."/>
+		</list>
+		<list key="replacehistory">
+			<item value="drawRect"/>
+			<item value="FONT_HEIGHT"/>
+			<item value="drawString"/>
+			<item value="getStringWidth"/>
+			<item value="getDisplayName"/>
+			<item value="getFontRenderer"/>
+			<item value="entInstance.getCommandSenderEntity().getName()"/>
+			<item value="de.devjava.playshot.addon.listener.custom."/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="284" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="391" key="DIALOG_HEIGHT"/>
+		<item value="826" key="DIALOG_X_ORIGIN"/>
+		<item value="268" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

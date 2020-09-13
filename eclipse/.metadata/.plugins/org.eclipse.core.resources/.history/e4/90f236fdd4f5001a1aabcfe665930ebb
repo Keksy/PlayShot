@@ -1,0 +1,106 @@
+itemGroup.tabAntMan=Ant-Man
+potion.shrink=Schrumpfen
+potion.grow=Wachsen
+
+antman.info.tier=Stufe
+antman.info.infinite=Unendlich
+antman.info.creative=Kreativer
+antman.info.shrinkparticledesc=Schrumpf Pym-Partikel
+antman.info.growparticledesc=Wachstums Pym-Partikel
+antman.info.nopymparticles=Keine Pym-Partikel vorhanden!
+antman.info.regulator1=Finger weg von diesem Regulator! Denn wenn du diesen
+antman.info.regulator2=Regulator beschädigst, endest du im subatomaren Raum.
+antman.info.refill=Fülle deine Pym-Partikel nach!
+antman.info.recipes=Installiere Just Enough Items um die Crafting-Rezepte anzuzeigen.
+antman.info.abilites=Fähigkeiten
+antman.info.save=Speichern
+antman.info.size=Größe
+antman.info.small=Klein
+antman.info.big=Groß
+antman.info.findinquantumrealm=Kann in der Quantenebene gefunden werden
+
+antman.info.regulatorbutton1=Reguliertes Schrumpfen und Wachsen
+antman.info.regulatorbutton2=Nur Schrumpfen
+antman.info.regulatorbutton3=Nur Wachsen
+antman.info.regulatorbutton4=(Leerer Slot) Unreguliertes Schrumpfen. Quantenebene!
+antman.info.regulatorbutton5=Nimm eine Wachstumsdisk mit, wenn
+antman.info.regulatorbutton6=du die Quantenebene betrittst!
+
+antman.shrinker.mcu_antman.name=Ant-Man
+antman.shrinker.mcu_antman_2.name=Ant-Man
+antman.shrinker.mcu_yellowjacket.name=Yellowjacket
+antman.shrinker.mcu_wasp.name=Wasp
+antman.shrinker.comic_antman.name=Ant-Man
+antman.shrinker.comic_wasp.name=Wasp
+
+ability.shrink.name=Schrumpfen
+ability.grow.name=Wachsen
+ability.flight.name=Fliegen
+ability.laser.name=Laser schießen
+ability.sizeRegulator.name=Größe regulieren
+ability.antControlling.name=Ameisen kontrollieren
+
+tile.pymWorkbench.name=Pym Werkbank
+tile.pymParticleProducer.name=Pym-Partikel Erzeuger
+tile.quantumRealmBlock.name=Quantenebenenblock
+tile.quantumRealmChest.name=Quantenebenenkiste
+fluid.shrinkpymparticles=Schrumpf Pym-Partikel
+fluid.growpymparticles=Wachstums Pym-Partikel
+
+item.regulator.name=Regulator
+item.yjRegulator.name=Yellowjackets Regulator
+item.filter.name=Filter
+item.empCummunicationDevice.name=EMP Kummunikations Gerät
+item.antAntenna.name=Ameisenantenna
+item.yjLaserArm.name=Yellowjackets Laserarm
+item.waspWing.name=Wasps Flügel
+item.pymTank.name=Pym-Partikel Tank
+
+item.discShrink.name=Schrumpfdisk
+item.discGrow.name=Wachstumsdisk
+
+item.mcu_antmanHelmet.name=Ant-Man Helm
+item.mcu_antmanChestplate.name=Ant-Man Brustpanzer
+item.mcu_antmanLegs.name=Ant-Man Hose
+item.mcu_antmanBoots.name=Ant-Man Schuhe
+
+item.mcu_yellowjacketHelmet.name=Yellowjacket Helm
+item.mcu_yellowjacketChestplate.name=Yellowjacket Brustpanzer
+item.mcu_yellowjacketLegs.name=Yellowjacket Hose
+item.mcu_yellowjacketBoots.name=Yellowjacket Schuhe
+
+item.mcu_waspHelmet.name=Wasp Helm
+item.mcu_waspChestplate.name=Wasp Brustpanzer
+item.mcu_waspLegs.name=Wasp Hose
+item.mcu_waspBoots.name=Wasp Schuhe
+
+item.mcu_antman_2Helmet.name=Ant-Man Helm
+item.mcu_antman_2Chestplate.name=Ant-Man Brustpanzer
+item.mcu_antman_2Legs.name=Ant-Man Hose
+item.mcu_antman_2Boots.name=Ant-Man Schuhe
+
+item.comic_antmanHelmet.name=Ant-Man Helm
+item.comic_antmanChestplate.name=Ant-Man Brustpanzer
+item.comic_antmanLegs.name=Ant-Man Hose
+item.comic_antmanBoots.name=Ant-Man Schuhe
+
+item.comic_waspHelmet.name=Wasp Helm
+item.comic_waspChestplate.name=Wasp Brustpanzer
+item.comic_waspLegs.name=Wasp Hose
+item.comic_waspBoots.name=Wasp Schuhe
+
+antman.keybinding.keySize=Größe ändern
+antman.keybinding.sizeGUI=Regulator GUI
+antman.keybinding.togglehelmet=Helm öffnen/schließen
+antman.keybinding.togglehud=HUD de-/aktivieren
+antman.keybinding.laser=Yellowjacket Laser
+
+death.attack.suffocate=%1$s erstack
+
+entity.AntMan.bulletAnt.name=Gewehrkugelameise
+entity.AntMan.carpenterAnt.name=Rossameise
+
+book.chapter.antman.name=Ant-Man Anzüge
+book.chapter.antman_ants.name=Ant-Man Ameisen
+book.ants.bulletAnt.desc=Diese Ameisen sind Nummer 1 im Schmidt-Schmerz-Index. Nachdem du sie gezähmt hast unterstützen sie dich im Bekämpfen deiner Feinde und lassen dich auf Ihnen reiten.
+book.ants.carpenterAnt.desc=Rossameisen können fliegen. Du kannst sie reiten und kontrollieren. R.I.P. Ant-thony.

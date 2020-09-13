@@ -1,0 +1,80 @@
+itemGroup.tabAntMan=Ant-Man
+potion.shrink=Rétrécir
+potion.grow=Grandir
+
+antman.info.tier=Tier
+antman.info.infinite=Infini
+antman.info.creative=Creatif
+antman.info.shrinkparticledesc=Rétrécir les Particules-Pym
+antman.info.growparticledesc=Grandir les Particules-Pym
+antman.info.nopymparticles=Pas de Particule-Pym !
+antman.info.regulator1=Ne vissez pas le regulateur. Si vous faites cela
+antman.info.regulator2=le régulateur est compromis, vous seriez submatomic.
+antman.info.refill=Rechargez vos Particules-Pym !
+antman.info.recipes=Installez juste assez d'items pour afficher les crafts.
+antman.info.abilites=Capacités
+antman.info.save=Sauvegarder
+antman.info.size=Taille
+antman.info.small=Petit
+antman.info.big=Grand
+antman.info.findinquantumrealm=Ils peuvent être trouvés dans le Quantum Realm.
+
+antman.info.regulatorbutton1=Agrandissement et Rétrécissement réglés
+antman.info.regulatorbutton2=Uniquement le Rétrécissement
+antman.info.regulatorbutton3=Uniquement l'Agrandissement
+antman.info.regulatorbutton4=(Case Vide) Rétrécissement déréglé. Quantum Realm !
+antman.info.regulatorbutton5=Quand vous entrez dans le Quantum Realm,
+antman.info.regulatorbutton6=soyez sur d'avoir un CD d'agrandissement sur vous afin de pouvoir revenir !
+
+ability.shrink.name=Rétrécir
+ability.grow.name=Grandir
+ability.flight.name=Vol
+ability.laser.name=Tirer des Lasers
+ability.sizeRegulator.name=Réglé la Taille
+
+tile.pymWorkbench.name=Table de Craft Pym
+tile.pymParticleProducer.name=Producteur de Particules-Pym
+tile.quantumRealmBlock.name=Bloc du Quantum Realm
+tile.quantumRealmChest.name=Coffre du Quantum Realm
+fluid.shrinkpymparticles=Rétrécir les Particules-Pym
+fluid.growpymparticles=Agrandir les Particules-Pym
+
+item.regulator.name=Régulateur
+item.yjRegulator.name=Régulateur de YellowJacket
+item.filter.name=Filtre
+item.empCummunicationDevice.name=Dispositif de Communication EMP
+item.antAntenna.name=Antenne Ant
+item.yjLaserArm.name=Bras-Laser de YellowJacket
+item.waspWing.name=Aile de Wasp
+item.pymTank.name=Tank de Particules-Pym
+
+item.discShrink.name=CD Rétrécissement
+item.discGrow.name=CD Agrandissement
+
+item.mcu_antmanHelmet.name=Casque de Ant-Man
+item.mcu_antmanChestplate.name=Plastron d'Ant-Man
+item.mcu_antmanLegs.name=Jambières d'Ant-Man
+item.mcu_antmanBoots.name=Bottes d'Ant-Man
+
+item.mcu_yellowjacketHelmet.name=Casque de Yellowjacket
+item.mcu_yellowjacketChestplate.name=Plastron de Yellowjacket
+item.mcu_yellowjacketLegs.name=Jambières de Yellowjacket
+item.mcu_yellowjacketBoots.name=Bottes de Yellowjacket
+
+item.mcu_waspHelmet.name=Casque de Wasp
+item.mcu_waspChestplate.name=Plastron de Wasp
+item.mcu_waspLegs.name=Jambières de Wasp
+item.mcu_waspBoots.name=Bottes de Wasp
+
+item.mcu_antman_2Helmet.name=Casque d'Ant-Man
+item.mcu_antman_2Chestplate.name=Plastron d'Ant-Man
+item.mcu_antman_2Legs.name=Jambières d'Ant-Man
+item.mcu_antman_2Boots.name=Bottes d'Ant-Man
+
+antman.keybinding.keySize=Changer la Taille
+antman.keybinding.sizeGUI=Regulateur GUI
+antman.keybinding.togglehelmet=Ouvrir/Fermer le Casque
+antman.keybinding.togglehud=Changer l'HUD
+antman.keybinding.laser=Laser de Yellowjacket
+
+death.attack.suffocate=%1$s s'étouffe

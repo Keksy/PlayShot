@@ -1,0 +1,26 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "forge:fluid"
+    },
+    "variants": {
+        "growpymparticles": [{ "custom": { "fluid": "growpymparticles" } }],
+        "normal": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=0": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=1": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=2": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=3": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=4": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=5": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=6": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=7": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=8": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=9": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=10": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=11": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=12": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=13": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=14": [{ "custom": { "fluid": "growpymparticles" } }],
+        "level=15": [{ "custom": { "fluid": "growpymparticles" } }]
+    }
+}

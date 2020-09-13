@@ -1,0 +1,19 @@
+package de.devjava.playshot.addon.objects.modules;
+
+import de.devjava.playshot.addon.objects.settings.Settings;
+import scala.tools.nsc.backend.icode.BBFlags;
+
+public class Modul
+{
+	private Settings settings;
+	
+	public Modul(Settings settings)
+	{
+		this.settings = settings;
+	}
+	
+	public String getModuleName()
+	{
+		return this.settings.getBrieferDescription();
+	}
+}

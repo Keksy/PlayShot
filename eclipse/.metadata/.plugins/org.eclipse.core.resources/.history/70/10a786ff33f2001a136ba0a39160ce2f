@@ -1,0 +1,21 @@
+package de.devjava.playshot.addon.objects;
+
+import de.devjava.playshot.addon.utils.MiniGames;
+
+public class LabyClient 
+{
+
+	private LabyClientSettings labyClientSettings;
+	
+	private boolean isConnected, isPlaying;
+	private MiniGames miniGame;
+
+	
+	public LabyClient()
+	{
+		this.isConnected = false;
+		this.isPlaying = false;
+		
+		this.miniGame = MiniGames.NOTHING;
+	}
+}

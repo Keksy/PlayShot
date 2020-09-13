@@ -1,0 +1,125 @@
+
+package de.devjava.playshot.addon.utils;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.URL;
+import java.net.URLConnection;
+import java.nio.charset.Charset;
+import java.util.Scanner;
+
+import org.apache.commons.io.IOUtils;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import net.minecraft.client.Minecraft;
+import scala.collection.parallel.ParIterableLike.Min;
+
+public class JsonReader
+{
+
+	private Server server;
+	private Search search;
+	private String result;
+
+	public JsonReader(Server server, Search search)
+	{
+		this.server = server;
+		this.search = search;
+		this.result = "n/A";
+
+		if(server.getValue().equals("err"))
+			return;
+
+		this.result = this.load();
+	}
+
+	public Server getServer()
+	{
+		return server;
+	}
+
+	public Search getSearch()
+	{
+		return search;
+	}
+
+	public String getResult()
+	{
+		return result;
+	}
+
+	 StringBuffer readFromUrl(String Url)
+	  {
+	    StringBuffer sb=new StringBuffer();
+	    BufferedReader in=null;
+	    
+	    try
+	    {
+	      in=new BufferedReader(new InputStreamReader(new URL(Url).openStream()));
+	      String inputLine;
+	    
+	      while ((inputLine=in.readLine()) != null) sb.append(inputLine+"\n");
+	      in.close();
+	    }
+	    catch (Exception e) { e.printStackTrace(); }
+	    finally 
+	    {
+	      try 
+	      {
+	        if (in!=null)
+	        {
+	          in.close();
+	          in=null;
+	        }
+	      }
+	      catch (Exception ex) { ex.printStackTrace(); }
+	    }
+	    return sb;
+	  }
+	
+	private String load()
+	{
+		try
+		{
+
+		      CloseableHttpClient httpclient = HttpClients.createDefault();
+		      HttpGet httpget = new HttpGet("https://public-teamspeak.net/stats/" + server.getValue() + ".php");
+		      HttpResponse httpresponse = httpclient.execute(httpget);
+		      Scanner sc = new Scanner(httpresponse.getEntity().getContent());
+		      StringBuffer sb = new StringBuffer();
+		      while(sc.hasNext()) {
+		         sb.append(sc.next());
+		      }
+		      sc.close();
+		      String resultt = sb.toString();
+			
+			JSONParser parser = new JSONParser();
+			JSONArray array = (JSONArray) new JSONParser().parse(resultt);
+			for(int i = 0; i < array.size(); i++)
+			{
+				JSONObject property = (JSONObject) array.get(i);
+				String name = (String) property.get("name");
+				if(name.equals(Minecraft.getMinecraft().thePlayer.getName()))
+				{
+					Object result = property.get(this.getSearch().getValue());
+					return result.toString();
+				}
+			}
+
+		}
+		catch(Exception exception)
+		{
+			return exception.getLocalizedMessage();
+		}
+		return "n/A";
+	}
+}

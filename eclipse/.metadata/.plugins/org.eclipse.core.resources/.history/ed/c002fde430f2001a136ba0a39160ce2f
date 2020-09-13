@@ -1,0 +1,53 @@
+package com.example.examplemod;
+
+import java.util.List;
+
+import org.lwjgl.opengl.GL11;
+
+import net.labymod.api.LabyModAddon;
+import net.labymod.settings.elements.SettingsElement;
+import net.minecraft.client.gui.FontRenderer;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.client.renderer.WorldRenderer;
+import net.minecraft.client.renderer.entity.RendererLivingEntity;
+import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.util.EnumChatFormatting;
+import net.minecraftforge.client.event.RenderPlayerEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
+public class ExampleMod extends LabyModAddon {
+
+	@Override
+	protected void fillSettings(List<SettingsElement> arg0) {
+
+	}
+
+	@Override
+	public void loadConfig() {
+
+	}
+
+	@Override
+	public void onEnable() {
+
+		this.getApi().registerForgeListener(this);
+
+	}
+
+	@SubscribeEvent
+	public void render(RenderPlayerEvent.Pre event) {
+		double offset = 0.3D;
+
+		if (!event.entity.isSneaking())
+			renderName((RendererLivingEntity) event.renderer, "LabyAddon | Developer", event.entityPlayer, event.x, event.y + offset,event.z, EnumChatFormatting.AQUA);
+
+	}
+
+
+}

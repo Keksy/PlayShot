@@ -1,0 +1,23 @@
+package de.devjava.playshot.addon.objects.modules;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import de.devjava.playshot.addon.objects.category.Categorys;
+import de.devjava.playshot.addon.objects.modules.LabyModule.Laby_SimpleModule;
+import de.devjava.playshot.addon.objects.settings.Settings;
+import net.labymod.ingamegui.ModuleCategoryRegistry;
+
+public class Module_UpdateMiniGame extends Module
+{
+
+	
+	public Module_UpdateMiniGame()
+	{
+		super(Settings.STATS_VIEWER);
+	}
+	
+
+
+}

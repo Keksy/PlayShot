@@ -1,0 +1,6 @@
+
+{
+  "uuid": "c57dc1bc-a08f-4338-92d6-5a8b60a47882",
+  "name": "TestAddon",
+  "mainClass": "de.devjava.playshot.addon.LabyAddon"
+}

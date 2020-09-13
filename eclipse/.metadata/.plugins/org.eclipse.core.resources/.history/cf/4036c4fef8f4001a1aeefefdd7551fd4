@@ -1,0 +1,12 @@
+package de.devjava.playshot.addon.objects.modules;
+
+import de.devjava.playshot.addon.objects.settings.Settings;
+
+public class Module_AutoGG extends Module
+{
+
+	public Module_AutoGG()
+	{
+		super(settings);
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "uuid": "%uuid%",
+  "name": "PlayShot Support",
+  "mainClass": "de.devjava.playshot.addon.LabyAddon",
+  "description": "Support addon for PlayShot",
+  "version": 1,
+  "author": "DevJava",
+  "category": 1,
+  "icon": "http://link-to-icon.net/icon64x64.png"
+}

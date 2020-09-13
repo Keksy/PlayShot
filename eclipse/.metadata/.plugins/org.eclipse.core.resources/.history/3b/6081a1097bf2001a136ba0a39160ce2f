@@ -1,0 +1,26 @@
+
+package de.devjava.controladdon.listener.labymod;
+
+import de.devjava.controladdon.LabyAddon;
+import de.devjava.controladdon.objects.listener.LabyModEvent;
+import de.devjava.controladdon.objects.listener.Listener;
+import de.devjava.controladdon.objects.listener.custom.OnIncomingPacketEvent;
+import de.devjava.controladdon.objects.listener.custom.RenderEntityEvent;
+import de.devjava.controladdon.objects.module.Module;
+import net.labymod.api.events.MessageSendEvent;
+import net.labymod.main.LabyMod;
+import net.labymod.utils.Consumer;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
+
+public class Listener_OnIncomingPacketEvent implements Listener
+{
+	@LabyModEvent
+	public void OnIncomingPacketEvent(OnIncomingPacketEvent event)
+	{
+		for(Module module : LabyAddon.getInstance().getModuleManager().getModules())
+			if(module.isEnabled())
+				module.OnIncomingPacketEvent(event);
+	}
+}

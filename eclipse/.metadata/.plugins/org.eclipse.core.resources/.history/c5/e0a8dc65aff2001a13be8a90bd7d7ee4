@@ -1,0 +1,31 @@
+package de.devjava.playshot.addon.objects.modules;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import de.devjava.playshot.addon.objects.category.Categorys;
+import de.devjava.playshot.addon.objects.modules.LabyModule.Laby_SimpleModule;
+import de.devjava.playshot.addon.objects.settings.Settings;
+import net.labymod.ingamegui.ModuleCategoryRegistry;
+
+public class Module_UpdateMiniGame extends Module
+{
+
+	private Laby_SimpleModule statsModule;
+	
+	public Module_UpdateMiniGame()
+	{
+		super(Settings.STATS_VIEWER);
+		
+		this.statsModule = new Laby_SimpleModule(Settings.STATS_VIEWER, Categorys.CATEGORY_STATS.getModuleCategory());
+		this.statsModule.setValue("test");
+	}
+	
+
+	@Override
+	public List<net.labymod.ingamegui.Module> registerLabyModules()
+	{
+		return Arrays.asList(this.statsModule);
+	}
+}

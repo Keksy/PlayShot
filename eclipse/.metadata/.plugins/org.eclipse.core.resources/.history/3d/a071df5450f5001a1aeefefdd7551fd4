@@ -1,0 +1,46 @@
+package de.devjava.playshot.addon.utils.data.json;
+
+import com.google.gson.*;
+import net.minecraft.command.CommandNotFoundException;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.JsonToNBT;
+import net.minecraft.nbt.NBTTagCompound;
+
+import javax.annotation.Nonnull;
+import java.lang.reflect.Type;
+import java.util.Map;
+
+public class ItemStackSerializer implements JsonSerializer<ItemStack>, JsonDeserializer<ItemStack> {
+
+    @Override
+    public JsonElement serialize(ItemStack src, Type typeOfSrc, JsonSerializationContext context) {
+        JsonObject object = new JsonObject();
+
+        object.add("stack", new JsonPrimitive(String.valueOf(src.write(new CompoundNBT()))));
+
+        return object;
+    }
+
+    @Override
+    @Nonnull
+    public ItemStack deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
+        if (!json.isJsonObject()) {
+            return null;
+        }
+        NBTTagCompound stackTag = null;
+
+        for (Map.Entry<String, JsonElement> entry : json.getAsJsonObject().entrySet()) {
+            String key = entry.getKey();
+            JsonElement element = entry.getValue();
+
+            if (key.equals("stack")) {
+                try {
+                    stackTag = JsonToNBT.getTagFromJson(element.getAsString());
+                } catch (CommandNotFoundException e) {
+                    System.out.println(e);
+                }
+            }
+        }
+        return stackTag == null ? null : ItemStack.loadItemStackFromNBT(stackTag);
+    }
+}

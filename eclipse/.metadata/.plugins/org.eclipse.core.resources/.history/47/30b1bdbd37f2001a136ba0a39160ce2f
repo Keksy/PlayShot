@@ -1,0 +1,27 @@
+kage de.devjava.playshot.addon.objects;
+
+import de.devjava.playshot.addon.utils.MiniGames;
+
+public class LabyClientSettings
+{
+
+	private boolean showStats;
+
+	public LabyClientSettings()
+	{
+		this.showStats = false;
+	}
+
+	public boolean isShowStats()
+	{
+		return showStats;
+	}
+
+	public void setShowStats(boolean showStats)
+	{
+		this.showStats = showStats;
+	}
+
+	View your stats
+
+}

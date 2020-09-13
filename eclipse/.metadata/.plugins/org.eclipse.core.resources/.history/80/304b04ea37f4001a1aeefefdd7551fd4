@@ -1,0 +1,31 @@
+
+package de.devjava.playshot.addon.objects.modules;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
+import de.devjava.playshot.addon.objects.modules.simplemodule.stats.Kills;
+import de.devjava.playshot.addon.objects.settings.Settings;
+import net.labymod.ingamegui.enums.EnumDisplayType;
+import net.labymod.ingamegui.moduletypes.SimpleModule;
+
+public class Module_Stats extends Module
+{
+
+	public Module_Stats()
+	{
+		super(Settings.STATS_VIEWER);
+
+		SimpleModule x3 = new Kills();
+
+		Timer t = new Timer();
+		t.schedule(new TimerTask() {
+		    @Override
+		    public void run() {
+		      
+		    	if(x3.isEnabled(EnumDisplayType.INGAME))
+		    		x3.setValue("KÄSE KUCHEN");
+		    }
+		}, 0, 5000);
+	}
+}

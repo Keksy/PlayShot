@@ -1,0 +1,80 @@
+itemGroup.tabAntMan=Ant-Man
+potion.shrink=Liit
+potion.grow=Laki
+
+antman.info.tier=Palapag
+antman.info.infinite=Hindi Nauubos
+antman.info.creative=Creative
+antman.info.shrinkparticledesc=Pampaliit na Pym Butil
+antman.info.growparticledesc=Pampalaki na Pym Butil
+antman.info.nopymparticles=Ubos na ang mga Butil!
+antman.info.regulator1=Wag mong gamitin ang Regulador sa kabobohan. Kung
+antman.info.regulator2=nasira yan, magiging mas maliit ka kaysa sa mga atoma.
+antman.info.refill=Punuin mo ang mga tanke!
+antman.info.recipes=Maglagay ka ng Just Enough Items para makita paano gumawa ng mga bagay.
+antman.info.abilites=Mga Kaya
+antman.info.save=Mag-Save
+antman.info.size=Sukat
+antman.info.small=Maliit
+antman.info.big=Malaki
+antman.info.findinquantumrealm=Pwedeng mahanap sa Kahariang Kwantum
+
+antman.info.regulatorbutton1=Wasto ang pagbabago ng sukat
+antman.info.regulatorbutton2=Paliit lang
+antman.info.regulatorbutton3=Palaki lang
+antman.info.regulatorbutton4=(Empty slot) Hindi wasto ang paliit. Kahariang Kwantum!
+antman.info.regulatorbutton5=Paga pumasok ka sa Kahariang Kwantum, siguraduhin 
+antman.info.regulatorbutton6=mo na mayroong kang Diskong Pagpapalaki para lumabas.
+
+ability.shrink.name=Liit
+ability.grow.name=Laki
+ability.flight.name=Lipad
+ability.laser.name=Baril na Laser
+ability.sizeRegulator.name=Wasto ang pagbabago ng sukat
+
+tile.pymWorkbench.name=Sulatang Pym
+tile.pymParticleProducer.name=Taga-gawa ng Pym Butil
+tile.quantumRealmBlock.name=Blokeng Kwantum
+tile.quantumRealmChest.name=Kabang Kwantum
+fluid.shrinkpymparticles=Pampapaliit na Pym Butil
+fluid.growpymparticles=Pampapalaki na Pym Butil
+
+item.regulator.name=Regulador
+item.yjRegulator.name=Regulador ni Yellowjacket
+item.filter.name=Salaan
+item.empCummunicationDevice.name=Pagsalita sa mga Langgam
+item.antAntenna.name=Antena ng Langgam
+item.yjLaserArm.name=Brasong Laser ni Yellowjacket
+item.waspWing.name=Pakpak ni Wasp
+item.pymTank.name=Tanke ng Pym Butil
+
+item.discShrink.name=Diskong Pampapaliit
+item.discGrow.name=Diskong Pampapalaki
+
+item.mcu_antmanHelmet.name=Kupyang Ant-Man
+item.mcu_antmanChestplate.name=Kasuutang Ant-Man
+item.mcu_antmanLegs.name=Pantalong Ant-Man
+item.mcu_antmanBoots.name=Botang Ant-Man
+
+item.mcu_yellowjacketHelmet.name=Kupyang Yellowjacket
+item.mcu_yellowjacketChestplate.name=Kasuutang Yellowjacket
+item.mcu_yellowjacketLegs.name=Pantalong Yellowjacket
+item.mcu_yellowjacketBoots.name=Botang Yellowjacket
+
+item.mcu_waspHelmet.name=Kupyang Wasp
+item.mcu_waspChestplate.name=Kasuutang Wasp
+item.mcu_waspLegs.name=Pantalong Wasp
+item.mcu_waspBoots.name=Botang Wasp
+
+item.mcu_antman_2Helmet.name=Kupyang Ant-Man
+item.mcu_antman_2Chestplate.name=Kasuutang Ant-Man
+item.mcu_antman_2Legs.name=Pantalong Ant-Man
+item.mcu_antman_2Boots.name=Botang Ant-Man
+
+antman.keybinding.keySize=Pagbabago ng Sukat
+antman.keybinding.sizeGUI=Kontrol ng Regulador
+antman.keybinding.togglehelmet=Ibukas/Isara ang Kupya
+antman.keybinding.togglehud=Ipakita/Itago ang Impormasyon
+antman.keybinding.laser=Laser ni Yellowjacket
+
+death.attack.suffocate=%1$s suffocates

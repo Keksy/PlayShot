@@ -1,0 +1,120 @@
+
+package de.devjava.playshot.addon.objects.modules.LabyModule;
+
+import java.lang.reflect.Field;
+import java.util.Random;
+
+import de.devjava.playshot.addon.LabyAddon;
+import de.devjava.playshot.addon.objects.category.Categorys;
+import de.devjava.playshot.addon.objects.settings.Settings;
+import net.labymod.ingamegui.ModuleCategory;
+import net.labymod.ingamegui.ModuleCategoryRegistry;
+import net.labymod.ingamegui.moduletypes.SimpleModule;
+import net.labymod.settings.elements.ControlElement;
+import net.labymod.settings.elements.ControlElement.IconData;
+import net.labymod.utils.Material;
+
+public class Laby_SimpleModule extends SimpleModule
+{
+
+	private String displayName, controlerName, description, value, defaultValue;
+	private ModuleCategory moduleCategory;
+	private Material iconMaterial;
+	private int sortid;
+	
+	
+	public static void init(Laby_SimpleModule module, String displayName, String moduleName, String moduleDescription, String defaultValue, ModuleCategory moduleCategory, Material iconMaterial, int sortid)
+	{
+		//TODO fields
+		try
+		{
+			Field field1 = module.getClass().getDeclaredField("displayName");
+			field1.setAccessible(true);
+			field1.set(module, displayName);
+			Field field2 = module.getClass().getDeclaredField("controlerName");
+			field2.setAccessible(true);
+			field2.set(module, moduleName);
+			Field field3 = module.getClass().getDeclaredField("description");
+			field3.setAccessible(true);
+			field3.set(module, moduleDescription);
+			Field field4 = module.getClass().getDeclaredField("value");
+			field4.setAccessible(true);
+			field4.set(module, field4);
+			Field field5 = module.getClass().getDeclaredField("defaultValue");
+			field5.setAccessible(true);
+			field5.set(module, defaultValue);
+			Field field6 = module.getClass().getDeclaredField("moduleCategory");
+			field6.setAccessible(true);
+			field6.set(module, moduleCategory);
+			Field field7 = module.getClass().getDeclaredField("iconMaterial");
+			field7.setAccessible(true);
+			field7.set(module, iconMaterial);
+			Field field8 = module.getClass().getDeclaredField("sortid");
+			field8.setAccessible(true);
+			field8.set(module, sortid);
+		}
+		catch(Exception ex)
+		{
+		}
+	}
+	
+	@Override
+	public String getDefaultValue()
+	{
+		return this.defaultValue == null ? "?" : this.defaultValue;
+	}
+
+	@Override
+	public String getDisplayName()
+	{
+		return this.displayName;
+	}
+
+	@Override
+	public String getDisplayValue()
+	{
+		return this.value == null ? "?" : this.value;
+	}
+
+	@Override
+	public String getDescription()
+	{
+		return this.description;
+	}
+
+	@Override
+	public IconData getIconData()
+	{
+		return new ControlElement.IconData(this.iconMaterial);
+	}
+
+	@Override
+	public String getControlName()
+	{
+		return this.controlerName;
+	}
+	
+	@Override
+	public int getSortingId()
+	{
+		return this.sortid;
+	}
+
+	@Override
+	public void loadSettings()
+	{
+		
+	}
+	
+	@Override
+	public ModuleCategory getCategory()
+	{
+		return Categorys.CATEGORY_STATS.getModuleCategory();
+	}
+
+	@Override
+	public String getSettingName()
+	{
+		return "";
+	}
+}

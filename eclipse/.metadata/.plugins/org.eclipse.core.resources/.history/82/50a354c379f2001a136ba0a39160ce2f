@@ -1,0 +1,43 @@
+package de.devjava.playshot.addon.objects.modules;
+
+import de.devjava.playshot.addon.objects.settings.Settings;
+
+public class Module
+{
+	private Settings settings;
+	
+	public Module(Settings settings)
+	{
+		this.settings = settings;
+	}
+	
+	public boolean isEnabled()
+	{
+		return this.settings.getValue();
+	}
+	
+	public String getModuleName()
+	{
+		return this.settings.getBrieferDescription();
+	}
+	
+	public String getModuleDescription()
+	{
+		return this.settings.getBriefDescription();
+	}
+	
+	public void onTick(){}
+	public void onTickRender(){}
+	public void onRenderEntityEvent(final RenderEntityEvent event) {}
+	public void onMessageSendEvent(final MessageSendEvent event) {}
+	public void onModifyChatMessage(final ModifyChatMessage event) {}
+	public void OnAttackEvent(final OnAttackEvent event) {}
+	public void OnIncomingPacketEvent(final OnIncomingPacketEvent event) {}
+	public void onOnJoinEvent(final OnJoinEvent event) {}
+	public void onOnQuitEvent(final OnQuitEvent event) {}
+	public void onPluginMessageEvent(final PluginMessageEvent event) {}
+	public void onReceiveChatMessage(final ReceiveChatMessage event) {}
+	public void onServerMessageEvent(final ServerMessageEvent event) {}
+	public void onTabListEvent(final TabListEvent event) {}
+	public void onUserMenuActionEvent(final UserMenuActionEvent event) {}
+}

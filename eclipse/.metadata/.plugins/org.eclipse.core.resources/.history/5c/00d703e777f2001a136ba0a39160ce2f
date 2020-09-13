@@ -1,0 +1,8 @@
+package de.devjava.playshot.addon.objects.modules;
+
+import de.devjava.playshot.addon.objects.settings.Settings;
+
+public class Modul
+{
+	private Settings settings;
+}

@@ -1,0 +1,123 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 12.09.20 17:59
+Description: Updating screen events
+
+java.lang.NullPointerException: Updating screen events
+	at de.devjava.playshot.addon.objects.modules.simplemodule.stats.SimpleModule_Deaths.fillSubSettings(SimpleModule_Deaths.java:161)
+	at net.labymod.ingamegui.Module.createSettingElement(Module.java:672)
+	at net.labymod.ingamegui.Module.getBooleanElement(Module.java:761)
+	at net.labymod.ingamegui.ModuleCategory.createCategoryElement(ModuleCategory.java:76)
+	at net.labymod.ingamegui.ModuleCategory.getCategoryElement(ModuleCategory.java:87)
+	at net.labymod.settings.LabyModModuleEditorGui.toElements(LabyModModuleEditorGui.java:918)
+	at net.labymod.settings.LabyModModuleEditorGui.getFoundModules(LabyModModuleEditorGui.java:886)
+	at net.labymod.settings.LabyModModuleEditorGui.updateScrollbarValues(LabyModModuleEditorGui.java:752)
+	at net.labymod.settings.LabyModModuleEditorGui.initList(LabyModModuleEditorGui.java:257)
+	at net.labymod.settings.LabyModModuleEditorGui.initGui(LabyModModuleEditorGui.java:239)
+	at net.minecraft.client.gui.GuiScreen.setWorldAndResolution(GuiScreen.java:558)
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:976)
+	at net.labymod.settings.LabyModSettingsGui$1.clicked(LabyModSettingsGui.java:68)
+	at net.labymod.settings.elements.CategorySettingsElement.mouseClicked(CategorySettingsElement.java:74)
+	at net.labymod.settings.LabyModSettingsGui.mouseClicked(LabyModSettingsGui.java:352)
+	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:621)
+	at net.labymod.settings.LabyModSettingsGui.handleMouseInput(LabyModSettingsGui.java:425)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:587)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1761)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1080)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:380)
+	at net.minecraft.client.main.Main.main(Main.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at de.devjava.playshot.addon.objects.modules.simplemodule.stats.SimpleModule_Deaths.fillSubSettings(SimpleModule_Deaths.java:161)
+	at net.labymod.ingamegui.Module.createSettingElement(Module.java:672)
+	at net.labymod.ingamegui.Module.getBooleanElement(Module.java:761)
+	at net.labymod.ingamegui.ModuleCategory.createCategoryElement(ModuleCategory.java:76)
+	at net.labymod.ingamegui.ModuleCategory.getCategoryElement(ModuleCategory.java:87)
+	at net.labymod.settings.LabyModModuleEditorGui.toElements(LabyModModuleEditorGui.java:918)
+	at net.labymod.settings.LabyModModuleEditorGui.getFoundModules(LabyModModuleEditorGui.java:886)
+	at net.labymod.settings.LabyModModuleEditorGui.updateScrollbarValues(LabyModModuleEditorGui.java:752)
+	at net.labymod.settings.LabyModModuleEditorGui.initList(LabyModModuleEditorGui.java:257)
+	at net.labymod.settings.LabyModModuleEditorGui.initGui(LabyModModuleEditorGui.java:239)
+	at net.minecraft.client.gui.GuiScreen.setWorldAndResolution(GuiScreen.java:558)
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:976)
+	at net.labymod.settings.LabyModSettingsGui$1.clicked(LabyModSettingsGui.java:68)
+	at net.labymod.settings.elements.CategorySettingsElement.mouseClicked(CategorySettingsElement.java:74)
+	at net.labymod.settings.LabyModSettingsGui.mouseClicked(LabyModSettingsGui.java:352)
+	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:621)
+	at net.labymod.settings.LabyModSettingsGui.handleMouseInput(LabyModSettingsGui.java:425)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:587)
+
+-- Affected screen --
+Details:
+	Screen name: net.labymod.settings.LabyModModuleEditorGui
+Stacktrace:
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1761)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1080)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:380)
+	at net.minecraft.client.main.Main.main(Main.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_241, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 636490016 bytes (607 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.19 Powered by Forge 11.15.1.1855 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.8.9-11.15.1.1855.jar) 
+	UCHIJA	Forge{11.15.1.1855} [Minecraft Forge] (forgeSrc-1.8.9-11.15.1.1855.jar) 
+	UCHIJA	labymod{3.6.6} [LabyMod] (lm_api_mc1.8.9.jar) 
+	Loaded coremods (and transformers): 
+LabyModCoreMod (lm_api_mc1.8.9.jar)
+  net.labymod.core.asm.LabyModTransformer
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 432.00' Renderer: 'GeForce GTX 1070 Ti/PCIe/SSE2'
+	Launched Version: 1.8.9
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1070 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 432.00, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 12x Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz

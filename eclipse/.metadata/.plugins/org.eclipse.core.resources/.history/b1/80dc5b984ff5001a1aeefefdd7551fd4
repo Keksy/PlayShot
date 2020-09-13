@@ -1,0 +1,35 @@
+package de.devjava.playshot.addon.utils.data.click;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.entity.player.EntityPlayer;
+
+public class ClickActionCommand implements ClickAction.IClickAction {
+    public final String command;
+    public boolean clipboard;
+
+    public ClickActionCommand(String command, boolean clipboard) {
+        this.command = command;
+        this.clipboard = clipboard;
+    }
+
+    @Override
+    public ClickAction getClickAction() {
+        return ClickAction.COMMAND;
+    }
+
+    @Override
+    public void onClicked() {
+        Minecraft mc = Minecraft.getMinecraft();
+        EntityPlayer player = mc.thePlayer;
+        String parsedCommand = command.replace("@p", player.getName().getString());
+
+      
+           Minecraft.getMinecraft().thePlayer.sendChatMessage(parsedCommand);
+        
+    }
+
+    @Override
+    public void onRemoved() {
+        clipboard = !clipboard;
+    }
+}

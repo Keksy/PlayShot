@@ -1,0 +1,72 @@
+package com.example.examplemod;
+
+import org.lwjgl.opengl.GL11;
+
+import net.minecraft.client.gui.FontRenderer;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.client.renderer.WorldRenderer;
+import net.minecraft.client.renderer.entity.RendererLivingEntity;
+import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+
+@Mod(modid = ExampleMod.MODID, version = ExampleMod.VERSION)
+public class ExampleMod
+{
+    public static final String MODID = "examplemod";
+    public static final String VERSION = "1.0";
+    
+    @EventHandler
+    public void init(FMLInitializationEvent event)
+    {
+		// some example code
+        System.out.println("DIRT BLOCK >> "+Blocks.dirt.getUnlocalizedName());
+    }
+    
+    
+    public void renderName(RendererLivingEntity renderer, String str, int ping, EntityPlayer entityIn, double x, double y, double z) {
+        if (ping >= 0) {
+          FontRenderer fontrenderer = renderer.func_76983_a();
+          float f = 1.6F;
+          float f3 = this.mod.getSize();
+          GlStateManager.pushMatrix();
+          GlStateManager.translate((float)x + 0.0F, (float)y + entityIn.height + 0.5F, (float)z);
+          GL11.glNormal3f(0.0F, 1.0F, 0.0F);
+          GlStateManager.rotate(-(renderer.func_177068_d()).field_78735_i, 0.0F, 1.0F, 0.0F);
+          GlStateManager.rotate((renderer.func_177068_d()).field_78732_j, 1.0F, 0.0F, 0.0F);
+          GlStateManager.scale(-f3, -f3, f3);
+          GlStateManager.disableLighting();
+          GlStateManager.depthMask(false);
+          GlStateManager.disableDepth();
+          GlStateManager.enableBlend();
+          GlStateManager.func_179120_a(770, 771, 1, 0);
+          Tessellator tessellator = Tessellator.func_178181_a();
+          WorldRenderer worldrenderer = tessellator.func_178180_c();
+          int i = this.mod.getHeight();
+          int j = fontrenderer.func_78256_a(str) / 2;
+          GlStateManager.func_179090_x();
+          worldrenderer.func_181668_a(7, DefaultVertexFormats.field_181706_f);
+          worldrenderer.func_181662_b((-j - 1), (-1 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+          worldrenderer.func_181662_b((-j - 1), (8 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+          worldrenderer.func_181662_b((j + 1), (8 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+          worldrenderer.func_181662_b((j + 1), (-1 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+          tessellator.func_78381_a();
+          GlStateManager.func_179098_w();
+          fontrenderer.func_78276_b(PingTagMod.rainbowPingText ? str : (NetworkInfo.getInstance().getPingColor(ping) + str), -fontrenderer.func_78256_a(str) / 2, i, PingTagMod.rainbowPingText ? PingTagMod.getColorDark() : 553648127);
+          GlStateManager.func_179126_j();
+          GlStateManager.func_179132_a(true);
+          fontrenderer.func_78276_b(PingTagMod.rainbowPingText ? str : (NetworkInfo.getInstance().getPingColor(ping) + str), -fontrenderer.func_78256_a(str) / 2, i, PingTagMod.rainbowPingText ? PingTagMod.getColor() : -1);
+          GlStateManager.func_179145_e();
+          GlStateManager.func_179084_k();
+          GlStateManager.func_179131_c(1.0F, 1.0F, 1.0F, 1.0F);
+          GlStateManager.func_179121_F();
+        } else {
+          return;
+        } 
+      }
+      
+}

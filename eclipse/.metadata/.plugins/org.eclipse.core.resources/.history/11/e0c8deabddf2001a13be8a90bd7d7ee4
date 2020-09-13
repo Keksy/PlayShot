@@ -1,0 +1,74 @@
+package de.devjava.playshot.addon.utils;
+
+import eu.the5zig.mod.The5zigAPI;
+import eu.the5zig.mod.event.ServerQuitEvent;
+import net.labymod.api.events.TabListEvent;
+import net.labymod.core.LabyModCore;
+import net.labymod.gui.elements.Tabs;
+import net.labymod.main.LabyMod;
+import net.labymod.servermanager.ChatDisplayAction;
+import net.labymod.servermanager.Server;
+import net.labymod.settings.elements.SettingsElement;
+import net.labymod.utils.Consumer;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.multiplayer.ServerData;
+import net.minecraft.network.PacketBuffer;
+import eu.beezig.core.BeezigMain;
+import eu.beezig.core.IHive;
+import eu.beezig.forge.gui.briefing.BriefingGui;
+
+import java.util.List;
+import java.util.Map;
+
+/**
+ * Created by Rocco on 05/01/2019.
+ */
+public class LabyPlayshot extends Server {
+
+    private static Consumer<Map<String, Class<? extends GuiScreen>[]>> tab;
+
+    LabyPlayshot() {
+        super("playshot.de");
+    }
+
+
+
+    @Override
+    public void onJoin(ServerData serverData) 
+    {
+
+        
+    }
+
+    @Override
+    public void reset() 
+    {
+        System.out.println("Left Hive \n\n");
+        Tabs.getTabUpdateListener().remove(tab);
+    }
+
+    @Override
+    public ChatDisplayAction handleChatMessage(String s, String s1) throws Exception
+    {
+        return ChatDisplayAction.NORMAL;
+    }
+
+    @Override
+    public void handlePluginMessage(String s, PacketBuffer packetBuffer) throws Exception 
+    {
+
+    }
+
+    @Override
+    public void handleTabInfoMessage(TabListEvent.Type type, String s, String s1) throws Exception 
+    {
+
+    }
+
+    @Override
+    public void fillSubSettings(List<SettingsElement> list) 
+    {
+
+    }
+}

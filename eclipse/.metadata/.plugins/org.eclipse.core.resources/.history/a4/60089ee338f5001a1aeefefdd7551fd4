@@ -1,0 +1,28 @@
+package de.devjava.playshot.addon.utils;
+
+import net.minecraft.util.EnumChatFormatting;
+
+public enum CC
+{
+
+	WHITE(16777215, EnumChatFormatting.WHITE), SILVER(12632256, EnumChatFormatting.GRAY), GRAY(8421504, EnumChatFormatting.DARK_GRAY), BLACK(0, EnumChatFormatting.BLACK), RED(16711680),  MAROON(8388608), YELLOW(16776960), OLIVE(8421376), LIME(65280), GREEN(32768), AQUA(65535), TEAL(32896), BLUE(255), NAVY(128), FUCHSIA(16711935), PURPLE(8388736), ORANGE(16753920);  
+	
+	private int color;
+	private EnumChatFormatting enumChatFormatting;
+	
+	private CC(int color, EnumChatFormatting enumChatFormatting)
+	{
+		this.color = color;
+		this.enumChatFormatting = enumChatFormatting;
+	}
+	
+	public int getColor()
+	{
+		return color;
+	}
+
+	public EnumChatFormatting getChatColor()
+	{
+		return null;
+	}
+}

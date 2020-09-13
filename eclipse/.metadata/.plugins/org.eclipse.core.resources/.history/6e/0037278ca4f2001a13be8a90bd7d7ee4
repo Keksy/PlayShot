@@ -1,0 +1,18 @@
+package de.devjava.playshot.addon.utils;
+
+public enum Search
+{
+	KILLS("kills"), DEATHS("deaths"), KD("kd"), WINS("wins"), LOSES("loses"), PLAYED("played"), PLACE;
+	
+	private String value;
+	
+	private Search(String value)
+	{
+		this.value = value;
+	}
+	
+	public String getValue()
+	{
+		return value;
+	}
+}

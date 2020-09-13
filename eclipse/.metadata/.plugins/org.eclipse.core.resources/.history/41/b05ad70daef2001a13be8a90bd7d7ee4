@@ -1,0 +1,30 @@
+
+package de.devjava.playshot.addon.objects.category;
+
+import net.labymod.ingamegui.ModuleCategory;
+import net.labymod.ingamegui.ModuleCategoryRegistry;
+import net.labymod.settings.elements.ControlElement;
+import net.labymod.utils.Material;
+
+public enum Categorys
+{
+	CATEGORY_STATS(new ModuleCategory("The Hive", true, new ControlElement.IconData(Material.GLOWSTONE_DUST)));
+
+	private ModuleCategory moduleCategory;
+
+	private Categorys(ModuleCategory moduleCategory)
+	{
+		this.moduleCategory = moduleCategory;
+	}
+
+	public ModuleCategory getModuleCategory()
+	{
+		return this.moduleCategory;
+	}
+
+	public void init()
+	{
+		for(Categorys cat : values())
+			ModuleCategoryRegistry.loadCategory(cat.getModuleCategory());
+	}
+}

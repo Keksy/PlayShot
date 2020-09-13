@@ -1,0 +1,5 @@
+package de.devjava.playshot.addon.utils;
+
+public enum MiniGames {
+
+}

@@ -1,0 +1,83 @@
+package de.devjava.playshot.addon.utils;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.net.URL;
+import java.net.URLConnection;
+import java.nio.charset.Charset;
+import java.util.Scanner;
+
+import org.apache.commons.io.IOUtils;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import net.minecraft.client.Minecraft;
+import scala.collection.parallel.ParIterableLike.Min;
+
+
+public class JsonReader {
+
+	
+	private Server miniGames;
+	private Search search;
+	private String result;
+	
+	public JsonReader(Server miniGames, Search search)
+	{
+		this.miniGames = miniGames;
+		this.search = search;
+		this.result = "n/A";
+		
+		if(miniGames.getValue().equals("err"))
+			return;
+		
+		this.result = this.load();
+	}
+	
+	public Server getMiniGames()
+	{
+		return miniGames;
+	}
+	
+	public Search getSearch()
+	{
+		return search;
+	}
+	
+	@SuppressWarnings("resource")
+	private String load()
+	{
+		try
+		{
+			URL url = new URL("https://public-teamspeak.net/stats/" + this.getMiniGames().getValue() + ".php");
+			URLConnection uc = url.openConnection();
+			uc.setUseCaches(false);
+			uc.setDefaultUseCaches(false);
+			uc.addRequestProperty("User-Agent", "Mozilla/5.0");
+			uc.addRequestProperty("Cache-Control", "no-cache, no-store, must-revalidate");
+			uc.addRequestProperty("Pragma", "no-cache");
+
+			String json = "";
+			json = new Scanner(uc.getInputStream(), "UTF-8").useDelimiter("\\A").next();
+			JSONParser parser = new JSONParser();
+
+			JSONArray array = (JSONArray) new JSONParser().parse(json);
+			for(int i = 0; i < array.size(); i++)
+			{
+				JSONObject property = (JSONObject) array.get(i);
+				String name = (String) property.get("name");
+				if(name.equals(Minecraft.getMinecraft().thePlayer.getName()))
+				{
+					String result = (String) property.get(this.getSearch().getValue());
+					return result;
+				}
+			}
+		}
+		catch(Exception exception)
+		{
+			return "Error";
+		}
+		return "n/A";
+	}
+}

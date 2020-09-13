@@ -1,0 +1,69 @@
+
+package de.devjava.playshot.addon.objects.settings;
+
+import eu.beezig.core.BeezigMain;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import de.devjava.playshot.addon.LabyAddon;
+
+public class SettingsFetcher
+{
+
+	private Properties props;
+	
+	public SettingsFetcher()
+	{
+		this.props = new Properties();
+
+	}
+
+	public void loadSettings() throws IOException
+	{
+		this.props = new Properties();
+		FileInputStream fis = new FileInputStream(LabyAddon.getInstance().getMcFile().getAbsolutePath() + "/settings.properties");
+		this.props.load(fis);
+		fis.close();
+		for(Object os : this.props.keySet())
+		{
+
+			if(os instanceof String)
+			{
+				String s = (String) os;
+				try
+				{
+					Setting sett = Setting.valueOf(s.toUpperCase());
+
+					sett.setValueWithoutSaving(Boolean.valueOf(this.props.getProperty(s)));
+
+				}
+				catch(IllegalArgumentException ignored)
+				{
+				}
+			}
+		}
+		System.out.println("Succesfully loaded settings.");
+	}
+
+	public void saveSetting(Setting sett) throws IOException
+	{
+		if(this.props == null)
+			this.props = new Properties();
+
+		final FileOutputStream fos = new FileOutputStream(LabyAddon.getInstance().getMcFile().getAbsolutePath() + "/settings.properties");
+
+		
+		this.props.setProperty(sett.name().toUpperCase(), sett.getValue() + "");
+		this.props.store(fos, "");
+	}
+
+	public void saveSettings() throws IOException
+	{
+		for(Setting s : Setting.values())
+			saveSetting(s);
+		System.out.println("Succesfully saved settings.");
+	}
+}

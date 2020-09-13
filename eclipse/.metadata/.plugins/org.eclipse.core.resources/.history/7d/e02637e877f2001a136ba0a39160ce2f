@@ -1,0 +1,11 @@
+package de.devjava.playshot.addon.objects.modules;
+
+import de.devjava.playshot.addon.objects.settings.Settings;
+import scala.tools.nsc.backend.icode.BBFlags;
+
+public class Modul
+{
+	private boolean isEnabled
+	private Settings settings;
+	
+}

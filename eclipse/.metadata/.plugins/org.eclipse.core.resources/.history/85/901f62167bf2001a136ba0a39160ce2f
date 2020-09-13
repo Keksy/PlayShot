@@ -1,0 +1,30 @@
+
+package de.devjava.controladdon.listener.labymod;
+
+import de.devjava.controladdon.LabyAddon;
+import de.devjava.controladdon.objects.listener.LabyModEvent;
+import de.devjava.controladdon.objects.listener.Listener;
+import de.devjava.controladdon.objects.listener.custom.ReceiveChatMessage;
+import de.devjava.controladdon.objects.listener.custom.RenderEntityEvent;
+import de.devjava.controladdon.objects.module.Module;
+import net.labymod.api.events.MessageReceiveEvent;
+import net.labymod.api.events.MessageSendEvent;
+import net.labymod.api.events.PluginMessageEvent;
+import net.labymod.main.LabyMod;
+import net.labymod.utils.Consumer;
+import net.labymod.utils.ServerData;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
+import net.minecraft.network.PacketBuffer;
+
+public class Listener_ReceiveChatMessage implements Listener
+{
+	@LabyModEvent
+	public void onReceiveChatMessage(ReceiveChatMessage event)
+	{
+		for(Module module : LabyAddon.getInstance().getModuleManager().getModules())
+			if(module.isEnabled())
+				module.onReceiveChatMessage(event);
+	}
+}

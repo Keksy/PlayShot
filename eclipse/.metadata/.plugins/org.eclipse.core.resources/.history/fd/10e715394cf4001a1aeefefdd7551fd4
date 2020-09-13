@@ -1,0 +1,40 @@
+
+package de.devjava.playshot.addon.listener;
+
+import org.lwjgl.opengl.Display;
+
+import de.devjava.playshot.addon.LabyAddon;
+import de.devjava.playshot.addon.render.RenderUtils;
+import de.devjava.playshot.addon.utils.Server;
+import net.labymod.main.LabyMod;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.RendererLivingEntity;
+import net.minecraft.util.EnumChatFormatting;
+import net.minecraftforge.client.event.RenderPlayerEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
+public class Listener_RenderPlayerEvent
+{
+
+	@SubscribeEvent
+	public void render(RenderPlayerEvent.Pre event)
+	{
+		final RenderUtils renderUtils = new RenderUtils();
+//		System.out.println(Display.getTitle());
+		
+		if(!LabyAddon.getInstance().getLabyManager().getLabyClient().isConnected())
+			return;
+		
+		if(!LabyAddon.getInstance().getLabyManager().getLabyClient().isPlaying())
+			return;
+		
+		if(LabyAddon.getInstance().getLabyManager().getLabyClient().getServer() == Server.LAZERTAG)
+			return;
+		
+		if(event.entity.isSneaking())
+			return;
+				
+		if(event.entity.getName().equals("JavaVirus") || event.entity.getName().equals("DevJava"))
+			renderUtils.renderName((RendererLivingEntity) event.renderer, (EnumChatFormatting.WHITE + "" + EnumChatFormatting.WHITE + "§f§lLabyAddon §8┃ §bDeveloper"), event.entityPlayer, event.x, event.y + 0.3D, event.z);
+	}
+}

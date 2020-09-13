@@ -1,0 +1,14 @@
+package de.devjava.playshot.addon.objects;
+
+public class LabyClient 
+{
+
+	private boolean isConnected;
+	
+	
+	
+	public LabyClient()
+	{
+		
+	}
+}

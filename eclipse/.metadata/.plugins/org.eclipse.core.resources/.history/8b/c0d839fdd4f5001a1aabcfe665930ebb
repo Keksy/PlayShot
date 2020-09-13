@@ -1,0 +1,26 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "forge:fluid"
+    },
+    "variants": {
+        "shrinkpymparticles": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "normal": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=0": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=1": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=2": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=3": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=4": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=5": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=6": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=7": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=8": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=9": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=10": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=11": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=12": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=13": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=14": [{ "custom": { "fluid": "shrinkpymparticles" } }],
+        "level=15": [{ "custom": { "fluid": "shrinkpymparticles" } }]
+    }
+}

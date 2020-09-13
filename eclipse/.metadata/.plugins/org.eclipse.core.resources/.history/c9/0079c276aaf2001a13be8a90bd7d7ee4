@@ -1,0 +1,6 @@
+package de.devjava.playshot.addon.objects.category;
+
+public enum Categorys
+{
+
+}

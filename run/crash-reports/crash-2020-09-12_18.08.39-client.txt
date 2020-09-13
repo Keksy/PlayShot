@@ -1,0 +1,120 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 12.09.20 18:08
+Description: Updating screen events
+
+java.lang.NullPointerException: Updating screen events
+	at de.lpmitkev.kinau.LPmitKevAddon.loadConfig(LPmitKevAddon.java:42)
+	at de.lpmitkev.kinau.LPmitKevAddon.saveConfig(LPmitKevAddon.java:54)
+	at net.labymod.settings.LabyModAddonsGui.onGuiClosed(LabyModAddonsGui.java:126)
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:959)
+	at net.labymod.settings.LabyModAddonsGui.keyTyped(LabyModAddonsGui.java:640)
+	at net.minecraft.client.gui.GuiScreen.handleKeyboardInput(GuiScreen.java:647)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:597)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1761)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1080)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:380)
+	at net.minecraft.client.main.Main.main(Main.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at de.lpmitkev.kinau.LPmitKevAddon.loadConfig(LPmitKevAddon.java:42)
+	at de.lpmitkev.kinau.LPmitKevAddon.saveConfig(LPmitKevAddon.java:54)
+	at net.labymod.settings.LabyModAddonsGui.onGuiClosed(LabyModAddonsGui.java:126)
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:959)
+	at net.labymod.settings.LabyModAddonsGui.keyTyped(LabyModAddonsGui.java:640)
+	at net.minecraft.client.gui.GuiScreen.handleKeyboardInput(GuiScreen.java:647)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:597)
+
+-- Affected screen --
+Details:
+	Screen name: net.labymod.settings.LabyModAddonsGui
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 2 total; [EntityPlayerSP['DevJava'/4441, l='MpServer', x=-469,70, y=40,00, z=-595,46], EntityOtherPlayerMP['§bLaserTag'/-8543, l='MpServer', x=-468,50, y=41,00, z=-607,50]]
+	Chunk stats: MultiplayerChunkCache: 289, 289
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: -359,00,41,00,-672,00 - World: (-359,41,-672), Chunk: (at 9,2,0 in -23,-42; contains blocks -368,0,-672 to -353,255,-657), Region: (-1,-2; contains chunks -32,-64 to -1,-33, blocks -512,0,-1024 to -1,255,-513)
+	Level time: 2377520106 game time, 30000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 15 total; [EntityArmorStand['§6Tutorial §7» §bLaserTag'/3, l='MpServer', x=-468,50, y=39,94, z=-583,50], EntityItemFrame['entity.ItemFrame.name'/4, l='MpServer', x=-468,50, y=41,50, z=-584,03], EntityItemFrame['entity.ItemFrame.name'/5, l='MpServer', x=-467,97, y=41,50, z=-583,50], EntityOtherPlayerMP['§bLaserTag'/-8543, l='MpServer', x=-468,50, y=41,00, z=-607,50], EntityArmorStand['Armor Stand'/17, l='MpServer', x=-433,50, y=35,00, z=-610,28], EntityArmorStand['Armor Stand'/18, l='MpServer', x=-442,41, y=35,00, z=-612,06], EntityArmorStand['Armor Stand'/19, l='MpServer', x=-435,47, y=35,00, z=-610,81], EntityArmorStand['Armor Stand'/20, l='MpServer', x=-436,69, y=35,00, z=-608,03], EntityArmorStand['Armor Stand'/21, l='MpServer', x=-440,78, y=35,00, z=-611,22], EntityArmorStand['§bTeam: Grün Punkte: 85'/22, l='MpServer', x=-443,06, y=36,41, z=-612,88], EntityArmorStand['Armor Stand'/23, l='MpServer', x=-435,06, y=35,00, z=-606,34], EntityArmorStand['§bTeam: Blau Punkte: 475'/24, l='MpServer', x=-432,94, y=36,00, z=-605,31], EntityOtherPlayerMP['§bLaserTag'/-8543, l='MpServer', x=-468,50, y=41,00, z=-607,50], EntityPlayerSP['DevJava'/4441, l='MpServer', x=-469,70, y=40,00, z=-595,46], EntityPainting['Painting'/32, l='MpServer', x=-424,50, y=14,50, z=-623,03]]
+	Retry entities: 0 total; []
+	Server brand: GeiloCord (git:GeiloCord-Bootstrap:GEILO-SNAPSHOT:1.8-1.13:${BUILD_NUMBER}) <- Spigot
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:383)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2645)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:401)
+	at net.minecraft.client.main.Main.main(Main.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_241, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 380383504 bytes (362 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.19 Powered by Forge 11.15.1.1855 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.8.9-11.15.1.1855.jar) 
+	UCHIJA	Forge{11.15.1.1855} [Minecraft Forge] (forgeSrc-1.8.9-11.15.1.1855.jar) 
+	UCHIJA	labymod{3.6.6} [LabyMod] (lm_api_mc1.8.9.jar) 
+	Loaded coremods (and transformers): 
+LabyModCoreMod (lm_api_mc1.8.9.jar)
+  net.labymod.core.asm.LabyModTransformer
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 432.00' Renderer: 'GeForce GTX 1070 Ti/PCIe/SSE2'
+	Launched Version: 1.8.9
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1070 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 432.00, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 12x Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz

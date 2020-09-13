@@ -1,0 +1,26 @@
+
+package de.devjava.controladdon.listener.labymod;
+
+import de.devjava.controladdon.LabyAddon;
+import de.devjava.controladdon.objects.listener.LabyModEvent;
+import de.devjava.controladdon.objects.listener.Listener;
+import de.devjava.controladdon.objects.listener.custom.OnTickEvent;
+import de.devjava.controladdon.objects.listener.custom.OnTickEventRender;
+import de.devjava.controladdon.objects.listener.custom.RenderEntityEvent;
+import de.devjava.controladdon.objects.module.Module;
+import net.labymod.api.events.MessageSendEvent;
+import net.labymod.main.LabyMod;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
+
+public class Listener_OnTickEventRender implements Listener
+{
+	@LabyModEvent
+	public void OnTickEvent(OnTickEventRender event)
+	{
+		for(Module module : LabyAddon.getInstance().getModuleManager().getModules())
+			if(module.isEnabled())
+				module.onTickRender();
+	}
+}

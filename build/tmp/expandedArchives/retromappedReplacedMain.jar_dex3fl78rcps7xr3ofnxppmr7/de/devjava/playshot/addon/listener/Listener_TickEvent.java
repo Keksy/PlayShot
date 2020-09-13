@@ -1,0 +1,22 @@
+
+package de.devjava.playshot.addon.listener;
+
+import de.devjava.playshot.addon.LabyAddon;
+import de.devjava.playshot.addon.objects.modules.Module;
+import de.devjava.playshot.addon.objects.register.Listener;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
+
+public class Listener_TickEvent implements Listener
+{
+
+	@SubscribeEvent
+	public void onTick(TickEvent.ClientTickEvent event)
+	{
+		if(!LabyAddon.getInstance().getLabyManager().getLabyClient().isConnected())
+			return;
+
+		for(Module module : LabyAddon.getInstance().getModuleManager().getModules())
+			module.onTick();
+	}
+}

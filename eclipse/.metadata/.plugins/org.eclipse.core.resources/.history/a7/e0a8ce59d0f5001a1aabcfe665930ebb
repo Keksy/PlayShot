@@ -1,0 +1,218 @@
+
+package de.devjava.playshot.addon;
+
+import java.io.File;
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.List;
+
+import de.devjava.playshot.addon.listener.Listener_LabyModEvents;
+import de.devjava.playshot.addon.listener.Listener_TickEvent;
+import de.devjava.playshot.addon.listener.Listener_TickEventRender;
+import de.devjava.playshot.addon.listener.labymod.Listener_MessageSendEvent;
+import de.devjava.playshot.addon.listener.labymod.Listener_ModifyChatMessage;
+import de.devjava.playshot.addon.listener.labymod.Listener_OnAttackEvent;
+import de.devjava.playshot.addon.listener.labymod.Listener_OnIncomingPacketEvent;
+import de.devjava.playshot.addon.listener.labymod.Listener_OnJoinEvent;
+import de.devjava.playshot.addon.listener.labymod.Listener_OnQuitEvent;
+import de.devjava.playshot.addon.listener.labymod.Listener_PluginMessageEvent;
+import de.devjava.playshot.addon.listener.labymod.Listener_ReceiveChatMessage;
+import de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent;
+import de.devjava.playshot.addon.listener.labymod.Listener_ServerMessageEvent;
+import de.devjava.playshot.addon.listener.labymod.Listener_TabListEvent;
+import de.devjava.playshot.addon.listener.labymod.Listener_UserMenuActionEvent;
+import de.devjava.playshot.addon.objects.LabyManager;
+import de.devjava.playshot.addon.objects.category.Categorys;
+import de.devjava.playshot.addon.objects.modules.Module;
+import de.devjava.playshot.addon.objects.modules.ModuleManager;
+import de.devjava.playshot.addon.objects.modules.Module_AutoGG;
+import de.devjava.playshot.addon.objects.modules.Module_LazerTagTeam;
+import de.devjava.playshot.addon.objects.modules.Module_Stats;
+import de.devjava.playshot.addon.objects.register.ListenerManager;
+import de.devjava.playshot.addon.objects.settings.SettingsFetcher;
+import de.devjava.playshot.addon.render.RenderLaser;
+import de.devjava.playshot.addon.utils.EntityLaser;
+import de.devjava.playshot.addon.utils.GuiIngameSidebarMod;
+import de.devjava.playshot.addon.utils.LabyPlayshot;
+import de.devjava.playshot.addon.utils.logger.Logger;
+import net.labymod.addon.AddonLoader;
+import net.labymod.api.LabyModAddon;
+import net.labymod.ingamegui.ModuleCategoryRegistry;
+import net.labymod.settings.elements.SettingsElement;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiIngame;
+import net.minecraft.client.multiplayer.PlayerControllerMP;
+import net.minecraft.client.renderer.entity.Render;
+import net.minecraft.entity.Entity;
+import net.minecraftforge.client.GuiIngameForge;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
+import net.minecraftforge.fml.common.registry.EntityRegistry;
+
+public class LabyAddon extends LabyModAddon
+{
+	public static LabyAddon instance;
+
+	private SettingsFetcher settingsFetcher;
+	private ListenerManager listenerManager;
+	private ModuleManager moduleManager;
+	private LabyManager labyManager;
+	private Logger logger;
+
+	private File mcFile;
+	private String labyName;
+
+	@Override
+	public void onEnable()
+	{
+		instance = this;
+
+		this.labyName = "PlayShot";
+		this.mcFile = new File(AddonLoader.getConfigDirectory() + "/" + this.labyName);
+		this.logger = new Logger();
+
+		this.mcFile.mkdirs();
+
+		this.settingsFetcher = new SettingsFetcher();
+		this.moduleManager = new ModuleManager();
+		this.listenerManager = new ListenerManager(this);
+
+		this.labyManager = new LabyManager();
+
+		this.getApi().registerServerSupport(this, new LabyPlayshot());
+
+		this.registerListener();
+		this.registerCategorys();
+		this.registerModule();
+
+		this.getApi().registerForgeListener(new Listener_RenderEntityEvent());
+		FMLCommonHandler.instance().bus().register(this);
+	}
+
+	private GuiIngameSidebarMod guiIngameSidebarMod;
+
+	@SubscribeEvent
+	public void onRenderTick(TickEvent.RenderTickEvent event)
+	{
+		System.out.println("t");
+		if(Minecraft.getMinecraft().ingameGUI != null && !(Minecraft.getMinecraft().ingameGUI instanceof GuiIngameSidebarMod))
+		{
+			  GuiIngameForge.renderHealth = false;
+			this.guiIngameSidebarMod = new GuiIngameSidebarMod(Minecraft.getMinecraft());
+			Minecraft.getMinecraft().ingameGUI = (GuiIngame)guiIngameSidebarMod;
+		}
+
+	}
+
+	@Override
+	protected void fillSettings(List<SettingsElement> settings)
+	{
+		this.settingsFetcher.addSettings(settings);
+	}
+
+	@Override
+	public void loadConfig()
+	{
+		try
+		{
+			this.settingsFetcher.loadSettings();
+		}
+		catch(IOException e)
+		{
+		}
+	}
+
+	@Override
+	public void onDisable()
+	{
+		try
+		{
+			this.settingsFetcher.saveSettings();
+			this.saveConfig();
+		}
+		catch(IOException e)
+		{
+		}
+	}
+
+	public void registerListener()
+	{
+		new Listener_LabyModEvents(this.getApi()).register();
+
+		this.listenerManager.addListener(new Listener_TickEvent());
+		this.listenerManager.addListener(new Listener_TickEventRender());
+
+		this.listenerManager.addListener(new Listener_MessageSendEvent());
+		this.listenerManager.addListener(new Listener_ModifyChatMessage());
+		this.listenerManager.addListener(new Listener_OnAttackEvent());
+		this.listenerManager.addListener(new Listener_OnIncomingPacketEvent());
+		this.listenerManager.addListener(new Listener_OnJoinEvent());
+		this.listenerManager.addListener(new Listener_OnQuitEvent());
+		this.listenerManager.addListener(new Listener_PluginMessageEvent());
+		this.listenerManager.addListener(new Listener_ReceiveChatMessage());
+		this.listenerManager.addListener(new Listener_RenderEntityEvent());
+		this.listenerManager.addListener(new Listener_ServerMessageEvent());
+		this.listenerManager.addListener(new Listener_TabListEvent());
+		this.listenerManager.addListener(new Listener_UserMenuActionEvent());
+	}
+
+	public void registerCategorys()
+	{
+		for(Categorys category : Categorys.values())
+			ModuleCategoryRegistry.loadCategory(category.getModuleCategory());
+	}
+
+	public void registerModule()
+	{
+		this.getModuleManager().addModule(new Module_Stats());
+		this.getModuleManager().addModule(new Module_AutoGG());
+		this.getModuleManager().addModule(new Module_LazerTagTeam());
+
+		for(Module module : this.getModuleManager().getModules())
+			for(net.labymod.ingamegui.Module module2 : module.registerLabyModules())
+				this.getApi().registerModule(module2);
+	}
+
+	public File getMcFile()
+	{
+		return mcFile;
+	}
+
+	public Logger getLogger()
+	{
+		return logger;
+	}
+
+	public String getLabyName()
+	{
+		return labyName;
+	}
+
+	public SettingsFetcher getSettingsFetcher()
+	{
+		return settingsFetcher;
+	}
+
+	public ModuleManager getModuleManager()
+	{
+		return moduleManager;
+	}
+
+	public ListenerManager getListenerManager()
+	{
+		return listenerManager;
+	}
+
+	public LabyManager getLabyManager()
+	{
+		return labyManager;
+	}
+
+	public static LabyAddon getInstance()
+	{
+		return instance;
+	}
+}

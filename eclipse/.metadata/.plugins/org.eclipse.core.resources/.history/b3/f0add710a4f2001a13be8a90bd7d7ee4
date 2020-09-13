@@ -1,0 +1,6 @@
+package de.devjava.playshot.addon.utils;
+
+public enum MiniGames {
+
+	LAZERTAG, BEDWARS, CITYBUILD, NOTHING;
+}

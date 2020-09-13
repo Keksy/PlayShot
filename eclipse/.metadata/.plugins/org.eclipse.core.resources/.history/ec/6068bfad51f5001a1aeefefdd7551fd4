@@ -1,0 +1,29 @@
+package de.devjava.playshot.addon.utils.data.menu;
+
+import javax.annotation.Nonnull;
+
+import com.google.gson.annotations.SerializedName;
+
+import de.devjava.playshot.addon.utils.data.click.ClickAction;
+import net.minecraft.item.ItemStack;
+
+public class MenuItem {
+    public final String title;
+    @Nonnull
+    public final ItemStack icon;
+
+    @SerializedName("action")
+    public final ClickAction.IClickAction clickAction;
+
+    public MenuItem(String title, @Nonnull ItemStack icon, ClickAction.IClickAction clickAction) {
+        this.title = title;
+        this.icon = icon;
+        this.clickAction = clickAction;
+    }
+
+    public void onRemoved() {
+        if (clickAction != null) {
+            clickAction.onRemoved();
+        }
+    }
+}

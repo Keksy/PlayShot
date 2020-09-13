@@ -1,0 +1,55 @@
+
+package de.devjava.playshot.addon.utils;
+
+import java.util.List;
+
+import net.labymod.ingamegui.moduletypes.SimpleTextModule;
+import net.labymod.settings.elements.SettingsElement;
+
+public abstract class SimpleModule extends SimpleTextModule
+{
+	public SimpleModule()
+	{
+		
+	}
+	
+	public abstract String getDisplayName();
+
+	public abstract String getDisplayValue();
+
+	public abstract String getDefaultValue();
+
+	public void fillSubSettings(List<SettingsElement> settingsElements)
+	{
+		super.fillSubSettings(settingsElements);
+		DefaultElementsCreator.createKeyCustom(this, settingsElements);
+	}
+
+	public String[] getKeys()
+	{
+		String string = getDisplayName();
+		String customKey = getAttribute("customKey", "");
+		if(!customKey.isEmpty())
+			string = customKey;
+		return new String[] { string };
+	}
+
+	public String[] getValues()
+	{
+		return new String[] { isShown() ? getDisplayValue() : getDefaultValue() };
+	}
+
+	public String[] getDefaultKeys()
+	{
+		String string = getDisplayName();
+		String customKey = getAttribute("customKey", "");
+		if(!customKey.isEmpty())
+			string = customKey;
+		return new String[] { string };
+	}
+
+	public String[] getDefaultValues()
+	{
+		return new String[] { getDefaultValue() };
+	}
+}

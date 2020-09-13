@@ -1,0 +1,89 @@
+package de.devjava.playshot.addon.utils;
+
+import java.util.List;
+
+import de.devjava.playshot.addon.LabyAddon;
+import de.devjava.playshot.addon.listener.labymod.Listener_RenderEntityEvent;
+import de.devjava.playshot.addon.objects.LabyClient;
+import net.labymod.api.events.TabListEvent;
+import net.labymod.servermanager.ChatDisplayAction;
+import net.labymod.servermanager.Server;
+import net.labymod.settings.elements.SettingsElement;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.multiplayer.ServerData;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.monster.EntityCreeper;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.network.PacketBuffer;
+import net.minecraft.util.AxisAlignedBB;
+import net.minecraftforge.fml.relauncher.ReflectionHelper;
+
+public class LabyPlayshot extends Server {
+
+
+    public LabyPlayshot() {
+        super("PlayShot", new String[] {"playshot.de", "mc-987.playshot.de"});
+    }
+
+    @Override
+    public void onJoin(ServerData serverData) 
+    {
+        System.out.println("Join PlayShot \n\n");
+        LabyAddon.getInstance().getLabyManager().getLabyClient().setConnected(true);
+        
+        setSize(Minecraft.getMinecraft().thePlayer, 4, 1, 1);
+		System.out.println("test");
+    }
+    
+    public static void setSize(EntityPlayer en, float standardHeight, float standardWidth, float scale) {
+        if (en != null) {
+          float height = standardHeight * scale;
+          float width = standardWidth * scale;
+          float currentWidth = en.width;
+          en.width = 1.0F - scale;
+          en.width = width;
+          en.height = height;
+          en.renderDistanceWeight = 10.0D;
+          if (en instanceof EntityPlayer) {
+            EntityPlayer player = (EntityPlayer)en;
+            player.eyeHeight = player.getDefaultEyeHeight() * scale;
+          } 
+
+          en.setEntityBoundingBox(new AxisAlignedBB((en.getEntityBoundingBox()).minX, (en.getEntityBoundingBox()).minY, (en.getEntityBoundingBox()).minZ, (en.getEntityBoundingBox()).minX + width, (en.getEntityBoundingBox()).minY + height, (en.getEntityBoundingBox()).minZ + width));
+          if (width != currentWidth)
+            en.setPosition(en.posX, en.posY, en.posZ); 
+        } 
+      }
+
+    @Override
+    public void reset() 
+    {
+        System.out.println("Left PlayShot \n\n");
+        LabyAddon.getInstance().getLabyManager().getLabyClient().setConnected(false);
+        LabyAddon.getInstance().getLabyManager().getLabyClient().setServer(de.devjava.playshot.addon.utils.Server.OFFLINE);
+    }
+
+    @Override
+    public ChatDisplayAction handleChatMessage(String s, String s1) throws Exception
+    {
+        return ChatDisplayAction.NORMAL;
+    }
+
+    @Override
+    public void handlePluginMessage(String s, PacketBuffer packetBuffer) throws Exception 
+    {
+
+    }
+
+    @Override
+    public void handleTabInfoMessage(TabListEvent.Type type, String s, String s1) throws Exception 
+    {
+
+    }
+
+    @Override
+    public void fillSubSettings(List<SettingsElement> list) 
+    {
+
+    }
+}

@@ -1,0 +1,19 @@
+
+package de.devjava.controladdon.listener.labymod;
+
+import de.devjava.controladdon.LabyAddon;
+import de.devjava.controladdon.objects.listener.LabyModEvent;
+import de.devjava.controladdon.objects.listener.Listener;
+import de.devjava.controladdon.objects.listener.custom.MessageSendEvent;
+import de.devjava.controladdon.objects.module.Module;
+
+public class Listener_MessageSendEvent implements Listener
+{
+	@LabyModEvent
+	public void onMessageSendEvent(MessageSendEvent event)
+	{
+		for(Module module : LabyAddon.getInstance().getModuleManager().getModules())
+			if(module.isEnabled())
+				module.onMessageSendEvent(event);
+	}
+}

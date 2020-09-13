@@ -1,0 +1,106 @@
+itemGroup.tabAntMan=Ant-Man
+potion.shrink=Shrink
+potion.grow=Grow
+
+antman.info.tier=Tier
+antman.info.infinite=Infinite
+antman.info.creative=Creative
+antman.info.shrinkparticledesc=Shrink Pym-Particles
+antman.info.growparticledesc=Grow Pym-Particles
+antman.info.nopymparticles=No Pym-Particles!
+antman.info.regulator1=Do not screw with the regulator. If that
+antman.info.regulator2=regulator is compromised, you would go subatomic.
+antman.info.refill=Refill your Pym-Particles!
+antman.info.recipes=Install Just Enough Items to display the crafting recipes.
+antman.info.abilites=Abilities
+antman.info.save=Save
+antman.info.size=Size
+antman.info.small=Small
+antman.info.big=Big
+antman.info.findinquantumrealm=Can be found in the Quantum Realm
+
+antman.info.regulatorbutton1=Regulated Shrinking and Growing
+antman.info.regulatorbutton2=Only Shrinking
+antman.info.regulatorbutton3=Only Growing
+antman.info.regulatorbutton4=(Empty slot) Unregulated Shrinking. Quantum Realm!
+antman.info.regulatorbutton5=When you enter the Quantum Realm make 
+antman.info.regulatorbutton6=sure you have a Growing Disc to go back!
+
+antman.shrinker.mcu_antman.name=Ant-Man
+antman.shrinker.mcu_antman_2.name=Ant-Man
+antman.shrinker.mcu_yellowjacket.name=Yellowjacket
+antman.shrinker.mcu_wasp.name=Wasp
+antman.shrinker.comic_antman.name=Ant-Man
+antman.shrinker.comic_wasp.name=Wasp
+
+ability.shrink.name=Shrink
+ability.grow.name=Grow
+ability.flight.name=Flight
+ability.laser.name=Shoot lasers
+ability.sizeRegulator.name=Regulate Size
+ability.antControlling.name=Ant Controlling
+
+tile.pymWorkbench.name=Pym Workbench
+tile.pymParticleProducer.name=Pym-Particle Producer
+tile.quantumRealmBlock.name=Quantum Realm Block
+tile.quantumRealmChest.name=Quantum Realm Chest
+fluid.shrinkpymparticles=Shrink Pym-Particles
+fluid.growpymparticles=Grow Pym-Particles
+
+item.regulator.name=Regulator
+item.yjRegulator.name=Yellowjacket's Regulator
+item.filter.name=Filter
+item.empCummunicationDevice.name=EMP Communication Device
+item.antAntenna.name=Ant Antenna
+item.yjLaserArm.name=Yellowjacket's Laser Arm
+item.waspWing.name=Wasp's Wing
+item.pymTank.name=Pym-Particle Tank
+
+item.discShrink.name=Shrink Disc
+item.discGrow.name=Grow Disc
+
+item.mcu_antmanHelmet.name=Ant-Man Helmet
+item.mcu_antmanChestplate.name=Ant-Man Chestplate
+item.mcu_antmanLegs.name=Ant-Man Legs
+item.mcu_antmanBoots.name=Ant-Man Boots
+
+item.mcu_yellowjacketHelmet.name=Yellowjacket Helmet
+item.mcu_yellowjacketChestplate.name=Yellowjacket Chestplate
+item.mcu_yellowjacketLegs.name=Yellowjacket Legs
+item.mcu_yellowjacketBoots.name=Yellowjacket Boots
+
+item.mcu_waspHelmet.name=Wasp Helmet
+item.mcu_waspChestplate.name=Wasp Chestplate
+item.mcu_waspLegs.name=Wasp Legs
+item.mcu_waspBoots.name=Wasp Boots
+
+item.mcu_antman_2Helmet.name=Ant-Man Helmet
+item.mcu_antman_2Chestplate.name=Ant-Man Chestplate
+item.mcu_antman_2Legs.name=Ant-Man Legs
+item.mcu_antman_2Boots.name=Ant-Man Boots
+
+item.comic_antmanHelmet.name=Ant-Man Helmet
+item.comic_antmanChestplate.name=Ant-Man Chestplate
+item.comic_antmanLegs.name=Ant-Man Legs
+item.comic_antmanBoots.name=Ant-Man Boots
+
+item.comic_waspHelmet.name=Wasp Helmet
+item.comic_waspChestplate.name=Wasp Chestplate
+item.comic_waspLegs.name=Wasp Legs
+item.comic_waspBoots.name=Wasp Boots
+
+antman.keybinding.keySize=Change Size
+antman.keybinding.sizeGUI=Regulator GUI
+antman.keybinding.togglehelmet=Open/close helmet
+antman.keybinding.togglehud=Toggle HUD
+antman.keybinding.laser=Yellowjacket Laser
+
+death.attack.suffocate=%1$s suffocates
+
+entity.AntMan.bulletAnt.name=Bullet Ant
+entity.AntMan.carpenterAnt.name=Carpenter Ant
+
+book.chapter.antman.name=Ant-Man Suits
+book.chapter.antman_ants.name=Ant-Man Ants
+book.ants.bulletAnt.desc=These ants are classified as number one in the Schmidt sting pain index. After you have tamed them they support you in fightning enemies and let you ride them.
+book.ants.carpenterAnt.desc=Carpenter Ants are able to fly. You are able to ride and control them. R.I.P. Ant-thony.

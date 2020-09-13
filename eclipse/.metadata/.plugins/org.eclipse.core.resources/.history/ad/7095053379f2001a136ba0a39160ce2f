@@ -1,0 +1,11 @@
+package de.devjava.controladdon.objects.listener.custom;
+
+import de.devjava.controladdon.objects.listener.Event;
+
+public class OnTickEvent extends Event
+{
+	public OnTickEvent()
+	{
+		
+	}
+}

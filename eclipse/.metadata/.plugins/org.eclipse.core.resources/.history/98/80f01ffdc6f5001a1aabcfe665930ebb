@@ -1,0 +1,113 @@
+package de.devjava.playshot.addon.utils;
+
+import com.google.common.base.Predicate;
+import com.google.common.collect.Iterables;
+import com.google.common.collect.Lists;
+import java.awt.Color;
+import java.util.Collection;
+import java.util.List;
+import java.util.regex.Pattern;
+import me.dewgs.sidebarmod.SidebarMod;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.ScaledResolution;
+import net.minecraft.scoreboard.Score;
+import net.minecraft.scoreboard.ScoreObjective;
+import net.minecraft.scoreboard.ScorePlayerTeam;
+import net.minecraft.scoreboard.Scoreboard;
+import net.minecraft.scoreboard.Team;
+import net.minecraft.util.EnumChatFormatting;
+import net.minecraftforge.client.GuiIngameForge;
+
+public class GuiIngameSidebarMod extends GuiIngameForge {
+  private SidebarMod mod;
+  
+  private final char COLOR_CHAR = ';
+  
+  private final Pattern STRIP_COLOR_PATTERN = Pattern.compile("(?i)" + String.valueOf(') + "[0-9A-FK-OR]");
+  
+  private int minX;
+  
+  private int minY;
+  
+  private int maxX;
+  
+  private int maxY;
+  
+  public GuiIngameSidebarMod(SidebarMod mod, Minecraft mc) {
+    super(mc);
+    this.mod = mod;
+  }
+  
+  private String stripColors(String message) {
+    return this.STRIP_COLOR_PATTERN.matcher(message).replaceAll("");
+  }
+  
+  int getMinX() {
+    return this.minX;
+  }
+  
+  int getMinY() {
+    return this.minY;
+  }
+  
+  int getMaxX() {
+    return this.maxX;
+  }
+  
+  int getMaxY() {
+    return this.maxY;
+  }
+  
+  protected void func_180475_a(ScoreObjective p_180475_1_, ScaledResolution p_180475_2_) {
+    if (this.mod.isHideSidebar())
+      return; 
+    Scoreboard scoreboard = p_180475_1_.func_96682_a();
+    Collection<Score> collection = scoreboard.func_96534_i(p_180475_1_);
+    List<Score> list = Lists.newArrayList(Iterables.filter(collection, new Predicate<Score>() {
+            public boolean apply(Score p_apply_1_) {
+              return (p_apply_1_.func_96653_e() != null && !p_apply_1_.func_96653_e().startsWith("#"));
+            }
+          }));
+    if (list.size() > 15) {
+      collection = Lists.newArrayList(Iterables.skip(list, collection.size() - 15));
+    } else {
+      collection = list;
+    } 
+    int i = func_175179_f().func_78256_a(p_180475_1_.func_96678_d());
+    for (Score score : collection) {
+      ScorePlayerTeam scoreplayerteam = scoreboard.func_96509_i(score.func_96653_e());
+      String s = ScorePlayerTeam.func_96667_a((Team)scoreplayerteam, score.func_96653_e()) + (!this.mod.isHideRedNumbers() ? (": " + EnumChatFormatting.RED + score.func_96652_c()) : "");
+      i = Math.max(i, func_175179_f().func_78256_a(s));
+    } 
+    int i1 = collection.size() * (func_175179_f()).field_78288_b;
+    int j1 = p_180475_2_.func_78328_b() / 2 + i1 / 3;
+    int k1 = 3;
+    int l1 = p_180475_2_.func_78326_a() - i - k1;
+    int j = 0;
+    int addX = this.mod.getAddX();
+    int addY = this.mod.getAddY();
+    for (Score score1 : collection) {
+      j++;
+      ScorePlayerTeam scoreplayerteam1 = scoreboard.func_96509_i(score1.func_96653_e());
+      String s1 = ScorePlayerTeam.func_96667_a((Team)scoreplayerteam1, score1.func_96653_e());
+      String s2 = EnumChatFormatting.RED + "" + score1.func_96652_c();
+      int k = j1 - j * (func_175179_f()).field_78288_b;
+      int l = p_180475_2_.func_78326_a() - k1 + 2;
+      func_73734_a(addX + l1 - 2, addY + k, addX + l, addY + k + (func_175179_f()).field_78288_b, 1342177280);
+      int rainbow = Color.HSBtoRGB((float)(System.currentTimeMillis() % 1000L) / 1000.0F, 0.8F, 0.8F);
+      func_175179_f().func_78276_b(this.mod.isRainbow() ? stripColors(s1) : s1, addX + l1, addY + k, this.mod.isRainbow() ? rainbow : 553648127);
+      if (!this.mod.isHideRedNumbers())
+        func_175179_f().func_78276_b(this.mod.isRainbow() ? stripColors(s2) : s2, addX + l - func_175179_f().func_78256_a(s2), addY + k, this.mod.isRainbow() ? rainbow : 553648127); 
+      if (j == collection.size()) {
+        String s3 = p_180475_1_.func_96678_d();
+        this.minX = l1 - 2;
+        this.minY = k - (func_175179_f()).field_78288_b - 1;
+        this.maxX = l;
+        this.maxY = j1;
+        func_73734_a(addX + l1 - 2, addY + k - (func_175179_f()).field_78288_b - 1, addX + l, addY + k - 1, 1610612736);
+        func_73734_a(addX + l1 - 2, addY + k - 1, addX + l, addY + k, 1342177280);
+        func_175179_f().func_78276_b(this.mod.isRainbow() ? stripColors(s3) : s3, addX + l1 + i / 2 - func_175179_f().func_78256_a(s3) / 2, addY + k - (func_175179_f()).field_78288_b, this.mod.isRainbow() ? rainbow : 553648127);
+      } 
+    } 
+  }
+}

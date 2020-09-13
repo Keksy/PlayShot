@@ -1,0 +1,151 @@
+
+package de.devjava.playshot.addon.listener.labymod;
+
+import de.devjava.playshot.addon.LabyAddon;
+import de.devjava.playshot.addon.listener.custom.OnTickEventRender;
+import de.devjava.playshot.addon.objects.modules.Module;
+import de.devjava.playshot.addon.objects.register.LabyModEvent;
+import de.devjava.playshot.addon.objects.register.Listener;
+import net.labymod.core.LabyModCore;
+import net.labymod.core.WorldRendererAdapter;
+import net.minecraft.client.renderer.Tessellator;
+
+public class Listener_OnTickEventRender implements Listener
+{
+	@LabyModEvent
+	public void OnTickEvent(OnTickEventRender event)
+	{
+		if(!LabyAddon.getInstance().getLabyManager().getLabyClient().isConnected())
+			return;
+
+		for(Module module : LabyAddon.getInstance().getModuleManager().getModules())
+			if(module.isEnabled())
+				module.onTickRender();
+
+	}
+
+	public void render(ModelCosmetics modelCosmetics, pk entityIn, CosmeticSnoxhData cosmeticData, float scale, float movementFactor, float walkingSpeed, float tickValue, float firstRotationX, float secondRotationX, boolean canAnimate)
+	{
+		int minColor = Math.min(cosmeticData.getBrightness(), 0);
+		int maxColor = cosmeticData.getBrightness();
+		float animation = (minColor + (float) Math.abs(Math.cos((tickValue / 30.0F)) * (maxColor - minColor))) / 255.0F;
+		int brightness = 2;
+		User user = LabyMod.getInstance().getUserManager().getUser(entityIn.aK());
+		if(user.getCosmetics().containsKey(Integer.valueOf(36)))
+		{
+			CosmeticEyelids.CosmeticEyelidsData data = (CosmeticEyelids.CosmeticEyelidsData) user.getCosmetics().get(Integer.valueOf(36));
+			animation = (float) (animation * (1.0D - data.lastRenderedPercetage));
+		}
+		bfl.E();
+		bfl.b(firstRotationX, 0.0F, 1.0F, 0.0F);
+		if(entityIn.av())
+		{
+			double sneakRotate = entityIn.z / 70000.0D;
+			sneakRotate = Math.max(0.0D, sneakRotate);
+			bfl.b(0.0D, 0.062D, 0.0D);
+			bfl.b(0.0D, sneakRotate, -sneakRotate);
+		}
+		bfl.b(secondRotationX, 1.0F, 0.0F, 0.0F);
+		bfl.a(0.0625D, 0.0625D, 0.06D);
+		bfl.b(-4.0D, -8.0D, -4.17D);
+		ave.A().P().a(ModTextures.COSMETIC_SNOXH_EYE);
+		bfl.l();
+		bfl.a(770, 772, 1, 1);
+		bfl.c();
+		bfl.j(7425);
+		bfl.x();
+		GL11.glTexParameteri(3553, 10241, 9728);
+		GL11.glTexParameteri(3553, 10240, 9728);
+		GL11.glTexParameteri(3553, 10242, 10496);
+		GL11.glTexParameteri(3553, 10243, 10496);
+		int x = cosmeticData.getX();
+		int y = cosmeticData.getY();
+		int width = cosmeticData.getWidth();
+		int height = cosmeticData.getHeight();
+		(ave.A()).o.h();
+		bfl.f();
+		boolean overlappingLeft = (x + width - 1 == 3);
+		for(int i = 0; i < 2; i++)
+		{
+			for(int b = 0; b < brightness; b++)
+			{
+				if((i == 0) ? cosmeticData.isRightVisible() : cosmeticData.isLeftVisible())
+					renderGlowingBorder((i == 0) ? x : (8 - x - width), y, width, height, cosmeticData.getColor(), animation, overlappingLeft, (i == 0));
+			}
+			bfl.b(0.0D, 0.0D, -0.01D);
+		}
+		(ave.A()).o.i();
+		bfl.w();
+		bfl.j(7424);
+		bfl.d();
+		bfl.k();
+		bfl.e();
+		bfl.F();
+	}
+
+	private void renderGlowingBorder(int x, int y, int width, int height, Color color, float alpha, boolean overlapping, boolean isLeftSide)
+	{
+		float r = color.getRed() / 255.0F;
+		float g = color.getGreen() / 255.0F;
+		float b = color.getBlue() / 255.0F;
+		float middleAlpha = 0.4F;
+		float radius = 0.6F;
+		float basis = 0.0F;
+		float middleLeft = x + basis;
+		float middleTop = y + basis;
+		float middleRight = (x + width) - basis;
+		float middleBottom = (y + height) - basis;
+		Tessellator tessellator = Tessellator.getInstance();
+		WorldRendererAdapter worldrenderer = LabyModCore.getWorldRenderer();
+		worldrenderer.begin(7, worldrenderer.);
+		drawGradient(middleLeft, (middleTop - radius), 0.0F, middleRight, (middleTop - radius), 0.0F, middleRight, middleTop, alpha, middleLeft, middleTop, alpha, r, g, b);
+		drawGradient(middleRight, middleTop, alpha, (middleRight + radius), middleTop, 0.0F, (middleRight + radius), middleBottom, 0.0F, middleRight, middleBottom, alpha, r, g, b);
+		drawGradient(middleLeft, middleTop, alpha, (middleLeft - radius), middleTop, 0.0F, (middleLeft - radius), middleBottom, 0.0F, middleLeft, middleBottom, alpha, r, g, b);
+		drawGradient(middleLeft, (middleBottom + radius), 0.0F, middleRight, (middleBottom + radius), 0.0F, middleRight, middleBottom, alpha, middleLeft, middleBottom, alpha, r, g, b);
+		drawGradient(middleLeft, middleTop, middleAlpha, middleRight, middleTop, middleAlpha, middleRight, middleBottom, middleAlpha, middleLeft, middleBottom, middleAlpha, r, g, b);
+		double cornerRadiusWidth = radius * Math.cos(Math.toRadians(45.0D));
+		double cornerRadiusHeight = radius * Math.sin(Math.toRadians(45.0D));
+		double lowCornerRadiusWidth = radius * Math.cos(Math.toRadians(22.5D));
+		double lowCornerRadiusHeight = radius * Math.sin(Math.toRadians(22.5D));
+		double highCornerRadiusWidth = radius * Math.cos(Math.toRadians(67.5D));
+		double highCornerRadiusHeight = radius * Math.sin(Math.toRadians(67.5D));
+		if(!overlapping || (isLeftSide ? overlapping : !overlapping))
+		{
+			drawGradient((middleLeft - radius), middleTop, 0.0F, middleLeft - lowCornerRadiusWidth, middleTop - lowCornerRadiusHeight, 0.0F, middleLeft - cornerRadiusWidth, middleTop
+					- cornerRadiusHeight, 0.0F, middleLeft, middleTop, alpha, r, g, b);
+			drawGradient(middleLeft - cornerRadiusWidth, middleTop - cornerRadiusHeight, 0.0F, middleLeft - highCornerRadiusWidth, middleTop
+					- highCornerRadiusHeight, 0.0F, middleLeft, (middleTop - radius), 0.0F, middleLeft, middleTop, alpha, r, g, b);
+		}
+		if(!overlapping || (isLeftSide ? !overlapping : overlapping))
+		{
+			drawGradient((middleRight + radius), middleTop, 0.0F, middleRight + lowCornerRadiusWidth, middleTop - lowCornerRadiusHeight, 0.0F, middleRight + cornerRadiusWidth, middleTop
+					- cornerRadiusHeight, 0.0F, middleRight, middleTop, alpha, r, g, b);
+			drawGradient(middleRight + cornerRadiusWidth, middleTop - cornerRadiusHeight, 0.0F, middleRight + highCornerRadiusWidth, middleTop
+					- highCornerRadiusHeight, 0.0F, middleRight, (middleTop - radius), 0.0F, middleRight, middleTop, alpha, r, g, b);
+		}
+		if(!overlapping || (isLeftSide ? overlapping : !overlapping))
+		{
+			drawGradient((middleLeft - radius), middleBottom, 0.0F, middleLeft - lowCornerRadiusWidth, middleBottom + lowCornerRadiusHeight, 0.0F, middleLeft - cornerRadiusWidth, middleBottom
+					+ cornerRadiusHeight, 0.0F, middleLeft, middleBottom, alpha, r, g, b);
+			drawGradient(middleLeft - cornerRadiusWidth, middleBottom + cornerRadiusHeight, 0.0F, middleLeft - highCornerRadiusWidth, middleBottom
+					+ highCornerRadiusHeight, 0.0F, middleLeft, (middleBottom + radius), 0.0F, middleLeft, middleBottom, alpha, r, g, b);
+		}
+		if(!overlapping || (isLeftSide ? !overlapping : overlapping))
+		{
+			drawGradient((middleRight + radius), middleBottom, 0.0F, middleRight + lowCornerRadiusWidth, middleBottom + lowCornerRadiusHeight, 0.0F, middleRight + cornerRadiusWidth, middleBottom
+					+ cornerRadiusHeight, 0.0F, middleRight, middleBottom, alpha, r, g, b);
+			drawGradient(middleRight + cornerRadiusWidth, middleBottom + cornerRadiusHeight, 0.0F, middleRight + highCornerRadiusWidth, middleBottom
+					+ highCornerRadiusHeight, 0.0F, middleRight, (middleBottom + radius), 0.0F, middleRight, middleBottom, alpha, r, g, b);
+		}
+		tessellator.draw();
+	}
+
+	private void drawGradient(double x1, double y1, float a1, double x2, double y2, float a2, double x3, double y3, float a3, double x4, double y4, float a4, float r, float g, float b)
+	{
+		WorldRendererAdapter worldrenderer = LabyModCore.getWorldRenderer();
+		worldrenderer.pos(x1, y1, 0.0D).tex(1.0D, 1.0D).color(r, g, b, a1).endVertex();
+		worldrenderer.pos(x2, y2, 0.0D).tex(1.0D, 1.0D).color(r, g, b, a2).endVertex();
+		worldrenderer.pos(x3, y3, 0.0D).tex(1.0D, 1.0D).color(r, g, b, a3).endVertex();
+		worldrenderer.pos(x4, y4, 0.0D).tex(1.0D, 1.0D).color(r, g, b, a4).endVertex();
+	}
+}

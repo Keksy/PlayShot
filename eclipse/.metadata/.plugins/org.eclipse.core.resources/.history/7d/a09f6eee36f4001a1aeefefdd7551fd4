@@ -1,0 +1,53 @@
+
+package de.devjava.playshot.addon.objects.modules;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import de.devjava.playshot.addon.LabyAddon;
+import de.devjava.playshot.addon.listener.custom.MessageSendEvent;
+import de.devjava.playshot.addon.objects.category.Categorys;
+import de.devjava.playshot.addon.objects.modules.LabyModule.LabyTextModule;
+import de.devjava.playshot.addon.objects.modules.LabyModule.Laby_SimpleModule;
+import de.devjava.playshot.addon.objects.modules.LabyModule.Laby_SimpleModule2;
+import de.devjava.playshot.addon.objects.settings.Settings;
+import de.devjava.playshot.addon.utils.JsonReader;
+import de.devjava.playshot.addon.utils.LabyTextModule2;
+import de.devjava.playshot.addon.utils.Search;
+import de.devjava.playshot.addon.utils.SimpleModule;
+import net.labymod.ingamegui.ModuleCategoryRegistry;
+import net.labymod.ingamegui.enums.EnumDisplayType;
+import net.labymod.settings.elements.ControlElement.IconData;
+import net.labymod.utils.Material;
+
+public class Module_Stats extends Module
+{
+
+	public Module_Stats()
+	{
+		super(Settings.STATS_VIEWER);
+
+		net.labymod.ingamegui.moduletypes.SimpleModule x1 ;
+//		SimpleModule x2 = new LabyTextModule2("x2", "x2 Module", "", "n/A", Categorys.CATEGORY_STATS.getModuleCategory(), new IconData(Material.APPLE)).create();
+//		SimpleModule x3 = new Laby_SimpleModule2();
+
+		LabyAddon.getInstance().getApi().registerModule(x1);
+//		LabyAddon.getInstance().getApi().registerModule(x2);
+//		LabyAddon.getInstance().getApi().registerModule(x3);
+
+
+//		Timer t = new Timer();
+//		t.schedule(new TimerTask() {
+//		    @Override
+//		    public void run() {
+//		      
+//		    	if(x3.isEnabled(EnumDisplayType.INGAME))
+//		    		x3.setValue("KÄSE KUCHEN");
+//		    }
+//		}, 0, 5000);
+	}
+}

@@ -1,0 +1,31 @@
+package de.devjava.controladdon.objects.listener.custom;
+
+import de.devjava.controladdon.objects.listener.Event;
+
+public class MessageSendEvent extends Event
+{
+
+	private String arg0;
+	private boolean canceled = false;
+	
+	public MessageSendEvent(final String arg0)
+	{
+		this.arg0 = arg0;
+	}
+	
+	public String getarg0()
+	{
+		return this.arg0;
+	}
+	
+	public void setCanceled(boolean canceled)
+	{
+		this.canceled = canceled;
+	}
+
+	public boolean isCanceled()
+	{
+		return this.canceled;
+	}
+}
+

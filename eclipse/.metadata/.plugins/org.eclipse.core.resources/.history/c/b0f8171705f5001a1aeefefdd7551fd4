@@ -1,0 +1,10 @@
+{
+  "uuid": "%uuid%",
+  "name": "PlayShot.net - Serveraddon",
+  "mainClass": "de.devjava.playshot.addon.LabyAddon",
+  "description": "With this addon you can view your stats and it offers additional features that enhance the game experience",
+  "version": 1,
+  "author": "DevJava",
+  "category": 3,
+  "icon": "https://public-teamspeak.net/stats/images/PlayShotLogo-RoundTinyTiny.png"
+}

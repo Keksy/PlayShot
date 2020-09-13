@@ -1,0 +1,60 @@
+package de.devjava.playshot.addon.objects;
+
+import de.devjava.playshot.addon.objects.settings.Settings;
+import de.devjava.playshot.addon.utils.Server;
+
+public class LabyClient 
+{
+	private boolean isConnected;
+	private Server server;
+	
+	public LabyClient()
+	{		
+		this.isConnected = false;		
+		this.server = Server.OFFLINE;
+	}
+	
+	public boolean isConnected()
+	{
+		return this.isConnected;
+	}
+	
+	public void setConnected(boolean isConnected)
+	{
+		this.isConnected = isConnected;
+	}
+	
+	public void setServer(Server server)
+	{
+		this.server = server;
+	}
+	
+	public boolean isPlaying()
+	{
+		return this.getServer() == Server.LAZERTAG || this.getServer() == Server.BEDWARS;
+	}
+	
+	public boolean isSettingEnabled(Settings settings)
+	{
+		return settings.getValue();
+	}
+	
+	public Server getServer()
+	{
+		return this.server;
+	}
+
+	public void updateServer(String serverName)
+	{
+		serverName = serverName.toLowerCase();
+		
+		if(serverName.startsWith("lobby"))
+			this.server = Server.LOBBY;
+		else if(serverName.startsWith("bedwars"))
+			this.server = Server.BEDWARS;
+		else if(serverName.startsWith("citybuild"))
+			this.server = Server.CITYBUILD;
+		else if(serverName.startsWith("lazertag"))
+			this.server = Server.LAZERTAG;
+	}
+}

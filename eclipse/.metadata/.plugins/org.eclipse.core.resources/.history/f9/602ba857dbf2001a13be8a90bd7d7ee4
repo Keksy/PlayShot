@@ -1,0 +1,44 @@
+package de.devjava.playshot.addon.objects;
+
+import de.devjava.playshot.addon.objects.settings.Settings;
+import de.devjava.playshot.addon.utils.Server;
+
+public class LabyClient 
+{
+	private boolean isConnected, isPlaying;
+	private Server server;
+	
+	public LabyClient()
+	{		
+		this.isConnected = false;
+		this.isPlaying = false;
+		
+		this.server = Server.OFFLINE;
+	}
+	
+	public boolean isConnected()
+	{
+		return this.isConnected;
+	}
+	
+	public boolean isPlaying()
+	{
+		return this.isPlaying;
+	}
+	
+	public boolean isSettingEnabled(Settings settings)
+	{
+		return settings.getValue();
+	}
+	
+	public Server getMiniGame()
+	{
+		return this.miniGame;
+	}
+
+	public void updateServer(String serverName)
+	{
+		if(serverName.equals("Lobby"))
+			this,
+	}
+}
