@@ -8,7 +8,6 @@ import de.devjava.playshot.addon.objects.register.LabyModEvent;
 import de.devjava.playshot.addon.objects.register.Listener;
 import de.devjava.playshot.addon.render.RenderUtils;
 import de.devjava.playshot.addon.utils.Server;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.EnumChatFormatting;
 
 public class Listener_RenderEntityEvent implements Listener
@@ -16,6 +15,7 @@ public class Listener_RenderEntityEvent implements Listener
 	@LabyModEvent
 	public void onRenderEntityEvent(RenderEntityEvent event)
 	{
+
 		if(!LabyAddon.getInstance().getLabyManager().getLabyClient().isConnected())
 			return;
 

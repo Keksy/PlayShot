@@ -16,6 +16,9 @@ public class Listener_RenderEntityEvent implements Listener
 	@LabyModEvent
 	public void onRenderEntityEvent(RenderEntityEvent event)
 	{
+		if(event.getEntity() instanceof EntityPlayer)
+			System.out.println(((EntityPlayer)event.getEntity()).getCurrentArmor(0).getTagCompound().getCompoundTag("display").getTag("color"));
+		
 		if(!LabyAddon.getInstance().getLabyManager().getLabyClient().isConnected())
 			return;
 

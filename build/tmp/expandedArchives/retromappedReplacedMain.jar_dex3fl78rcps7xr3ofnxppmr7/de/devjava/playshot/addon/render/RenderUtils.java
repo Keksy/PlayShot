@@ -69,7 +69,7 @@ public class RenderUtils
 		float f = 1.6F;
 		float f3 = 0.031133334F;
 		GlStateManager.func_179094_E();
-		GlStateManager.func_179109_b((float) x + 0.0F, (float) y + entity.field_70131_O + 1.5F, (float) z);
+		GlStateManager.func_179109_b((float) x + 0.0F, (float) y + entity.field_70131_O + 1.1F, (float) z);
 		GL11.glNormal3f(0.0F, 1.0F, 0.0F);
 		GlStateManager.func_179114_b(-Minecraft.func_71410_x().func_175598_ae().field_78735_i, 0.0F, 1.0F, 0.0F);
 		GlStateManager.func_179114_b(Minecraft.func_71410_x().func_175598_ae().field_78732_j, 1.0F, 0.0F, 0.0F);

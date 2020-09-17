@@ -69,7 +69,7 @@ public class RenderUtils
 		float f = 1.6F;
 		float f3 = 0.031133334F;
 		GlStateManager.pushMatrix();
-		GlStateManager.translate((float) x + 0.0F, (float) y + entity.height + 1.5F, (float) z);
+		GlStateManager.translate((float) x + 0.0F, (float) y + entity.height + 1.1F, (float) z);
 		GL11.glNormal3f(0.0F, 1.0F, 0.0F);
 		GlStateManager.rotate(-Minecraft.getMinecraft().getRenderManager().playerViewY, 0.0F, 1.0F, 0.0F);
 		GlStateManager.rotate(Minecraft.getMinecraft().getRenderManager().playerViewX, 1.0F, 0.0F, 0.0F);

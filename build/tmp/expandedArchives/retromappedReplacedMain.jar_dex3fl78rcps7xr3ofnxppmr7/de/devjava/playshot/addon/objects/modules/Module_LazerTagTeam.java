@@ -32,8 +32,8 @@ public class Module_LazerTagTeam extends Module
 		for(int i = 0; i < 4; i++)
 			if(entityPlayer.func_82169_q(i) != null)
 				if(entityPlayer.func_82169_q(i).func_77973_b().equals(Items.field_151021_T))
-					if(entityPlayer.func_82169_q(i).serializeNBT().func_74775_l("tag").func_74775_l("display").func_74781_a("color") != null)
-						return this.getColor(Integer.valueOf(entityPlayer.func_82169_q(i).serializeNBT().func_74775_l("tag").func_74775_l("display").func_74781_a("color") + ""));
+					if(entityPlayer.func_82169_q(i).func_77978_p().func_74775_l("display").func_74781_a("color") != null)
+						return this.getColor(Integer.valueOf(entityPlayer.func_82169_q(i).func_77978_p().func_74775_l("display").func_74781_a("color") + ""));
 		return null;
 	}
 
@@ -57,7 +57,7 @@ public class Module_LazerTagTeam extends Module
 		if(this.getTeamColor(Minecraft.func_71410_x().field_71439_g) == null)
 			return;
 
-		EntityPlayer entityPlayer = (EntityPlayer) event.getEntity();
+		final EntityPlayer entityPlayer = (EntityPlayer) event.getEntity();
 
 		if(this.getTeamColor(Minecraft.func_71410_x().field_71439_g).name().equals(this.getTeamColor(entityPlayer).name()))
 			new RenderUtils().renderNameBigger(EnumChatFormatting.BOLD + "" + this.getTeamColor(Minecraft.func_71410_x().field_71439_g).getChatColor() + "TEAM", event.getEntity(), event.getarg1(), event.getarg2(), event.getarg3());

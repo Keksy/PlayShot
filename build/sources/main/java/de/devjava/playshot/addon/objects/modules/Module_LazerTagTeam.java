@@ -32,8 +32,8 @@ public class Module_LazerTagTeam extends Module
 		for(int i = 0; i < 4; i++)
 			if(entityPlayer.getCurrentArmor(i) != null)
 				if(entityPlayer.getCurrentArmor(i).getItem().equals(Items.leather_boots))
-					if(entityPlayer.getCurrentArmor(i).serializeNBT().getCompoundTag("tag").getCompoundTag("display").getTag("color") != null)
-						return this.getColor(Integer.valueOf(entityPlayer.getCurrentArmor(i).serializeNBT().getCompoundTag("tag").getCompoundTag("display").getTag("color") + ""));
+					if(entityPlayer.getCurrentArmor(i).getTagCompound().getCompoundTag("display").getTag("color") != null)
+						return this.getColor(Integer.valueOf(entityPlayer.getCurrentArmor(i).getTagCompound().getCompoundTag("display").getTag("color") + ""));
 		return null;
 	}
 
@@ -57,7 +57,7 @@ public class Module_LazerTagTeam extends Module
 		if(this.getTeamColor(Minecraft.getMinecraft().thePlayer) == null)
 			return;
 
-		EntityPlayer entityPlayer = (EntityPlayer) event.getEntity();
+		final EntityPlayer entityPlayer = (EntityPlayer) event.getEntity();
 
 		if(this.getTeamColor(Minecraft.getMinecraft().thePlayer).name().equals(this.getTeamColor(entityPlayer).name()))
 			new RenderUtils().renderNameBigger(EnumChatFormatting.BOLD + "" + this.getTeamColor(Minecraft.getMinecraft().thePlayer).getChatColor() + "TEAM", event.getEntity(), event.getarg1(), event.getarg2(), event.getarg3());
